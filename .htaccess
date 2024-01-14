@@ -1,8 +1,0 @@
-# включаем модуль mod_rewrite
-RewriteEngine On
-
-# условие, если строка запроса не равна techwork.html
-RewriteCond %{REQUEST_URI} !^techwork.html
-
-# на любой запрос выводим страницы techwork.html
-RewriteRule ^.$ techwork.html
