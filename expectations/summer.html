@@ -10,6 +10,14 @@
 </head>
 <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
 <script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang":"ru","browsers":{"ie":"11","flock":"Infinity","camino":"Infinity"},"theme":"red"});</script>
+<script language="javascript" type="text/javascript">
+var d = new Date();
+var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
+var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа",
+"сентября","октября","ноября","декабря");
+document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ " 
+" + d.getFullYear() + " г.");
+</script>
 <style>
 .countdown {
   display: flex;
@@ -65,14 +73,73 @@ function updateCountdown() {
 // Обновляем счетчик каждую секунду
 setInterval(updateCountdown, 1000);
 </script>
+<script>
+/*global window*/
+(function (global) {
+    "use strict";
+    function Clock(el) {
+        var document = global.document;
+        this.el = document.getElementById(el);
+        this.months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+        this.days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+    }
+    Clock.prototype.addZero = function (i) {
+        if (i < 10) {
+            i = "0" + i;
+            return i;
+        }
+        return i;
+    };
+    Clock.prototype.updateClock = function () {
+        var now, year, month, dayNo, day, hour, minute, second, result, self;
+        now = new global.Date();
+        year = now.getFullYear();
+        month = now.getMonth();
+        dayNo = now.getDay();
+        day = now.getDate();
+        hour = this.addZero(now.getHours());
+        minute = this.addZero(now.getMinutes());
+        second = this.addZero(now.getSeconds());
+        result = this.days[dayNo] + ", " + day + " " + this.months[month] + " " + year + " " + hour + ":" + minute + ":" + second;
+        self = this;
+        self.el.innerHTML = result;
+        global.setTimeout(function () {
+            self.updateClock();
+        }, 1000);
+    };
+    global.Clock = Clock;
+}(window));
+
+function addEvent(elm, evType, fn, useCapture) {
+    "use strict";
+    if (elm.addEventListener) {
+        elm.addEventListener(evType, fn, useCapture);
+    } else if (elm.attachEvent) {
+        elm.attachEvent('on' + evType, fn);
+    } else {
+        elm['on' + evType] = fn;
+    }
+}
+
+addEvent(window, "load", function () {
+    if (document.getElementById("clock")) {
+        var clock = new Clock("clock");
+        clock.updateClock();
+    }
+});
+</script>
 <body>
 <center>
 <p>
   <button onclick="window.location.href = 'index.html';">Назад </button>
 </p>
+<p>
+<body text="black">
+<h2>Сейчас</h2>
+</p>
+<p>
+<p id="clock">Javascript Clock</p>
 </center>
-<p>
-ㅤ
 </p>
 <p>
 ㅤ
@@ -86,10 +153,6 @@ setInterval(updateCountdown, 1000);
 <p>
 ㅤ
 </p>
-<p>
-ㅤ
-</p>
-<body text="#f09a1f">
 <center>
 <h2>До лета 2024 осталось: </h2>
 </center>
