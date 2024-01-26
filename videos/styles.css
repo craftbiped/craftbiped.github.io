@@ -21,15 +21,5 @@ button {
   transition: 0.2s;
 } 
 button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
-button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; 
-}
-@media(max-width: 992px){
-/*Стили, на устройствах с максимальной ширеной экрана 992 пикселя и меньше */
-}
-@media(max-width: 768px){
-/*Стили, на устройствах с максимальной ширеной экрана 768 пикселей и меньше */ 
-}
+button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 
-@media(max-width: 500px){
-/*Стили, на устройствах с максимальной ширеной экрана 500 пикселей и меньше */
-}
