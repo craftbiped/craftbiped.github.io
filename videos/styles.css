@@ -23,7 +23,7 @@ button {
 button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 #title {
-   font-family: 'cursive';
+   font-family: 'times';
 }
     html {
         background: url('https://craftbiped.github.io/images/imagebg.png') no-repeat center center fixed;
