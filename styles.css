@@ -23,5 +23,5 @@ button {
 button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 #title {
-   font-family: 'Cursive';
+   font-family: 'cursive';
 }
