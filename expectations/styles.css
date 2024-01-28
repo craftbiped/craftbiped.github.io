@@ -25,3 +25,10 @@ button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 #title {
    font-family: 'cursive';
 }
+    html {
+        background: url('https://craftbiped.github.io/images/imagebg.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
