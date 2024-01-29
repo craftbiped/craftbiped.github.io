@@ -37,7 +37,6 @@ button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 and (min-device-width : 320px)
 and (max-device-width : 480px){ .showmobile { display: inline; }}
 @media screen and (max-width: 600px) {
-@media screen and (max-width: 600px) {
 .hidemobile {
     visibility: hidden;
     display: none;
