@@ -19,6 +19,32 @@ rules="rows" - убираем двойную рамку.
 style="width:60%;" - добавляем стилевое свойства, делающее
 контейнер и весь сайт "резиновым".
 Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<div class="preloader" id="preload">
+<p>
+<img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="60" height="60">
+</p>
+<h3>ㅤㅤㅤЗагрузка! Пожалуйста, подождите!</h3>
+</div>
+
+<style>
+    .preloader{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+</style>
+
+<script>
+        window.onload = function(){
+            let preloader = document.getElementById('preload');
+            preloader.style.display = 'none';
+        };
+</script>
 <c>
 <center>
 <button onclick="window.location.href = '#menu';">Меню сайта</button>
