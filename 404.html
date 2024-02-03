@@ -1,183 +1,70 @@
 
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<title>404 - Страница на которую вы зашли не найдена!</title>
+<title>CraftBiped - 404</title>
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-<body text="black">
-<link rel="stylesheet" type="text/css" href="https://craftbiped.github.io/styles.css" />
 </head>
-<div class="preloader" id="preload">
-<p>
-<img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="60" height="60">
-</p>
-<h3>ㅤㅤㅤЗагрузка! Пожалуйста, подождите!</h3>
-</div>
-
 <style>
-    .preloader{
-        position: fixed;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        background-color: black;
+body {
+   font-family: 'Arial';
+}
+a:link {
+  color: #1DE81C;
+}
+a:visited {
+  color: #1DE81C;
+}
+button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+#title {
+   font-family: 'times';
+}
+    html {
+        background: url('https://craftbiped.github.io/images/404fon.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
+.showmobile { display: none; }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){ .showmobile { display: inline; }}
+@media screen and (max-width: 600px) {
+.hidemobile {
+    visibility: hidden;
+    display: none;
+  }
+}
 </style>
-
-<script>
-        window.onload = function(){
-            let preloader = document.getElementById('preload');
-            preloader.style.display = 'none';
-        };
-</script>
+<body text="white">
+<center>
+<img src="https://craftbiped.github.io/images/404err.png">
+</center>
+<br><br><br><br><br><br><br><br><br><br>
+<center>
+<h1>Это пустота. Тут ничего нету, зато тут есть ошибка 404...</h1>
+<h2>Страница, на которую вы зашли не найдена или была удалена! Проверьте правильность адреса. Если вы заблудились нажмите на кнопку ниже.</h2>
+<center>
+  <button onclick="window.location.href = 'https://craftbiped.github.io/';">На главную сайта</button>
+</center>
+</center>
+</html>
 </body>
-   <div id="404" class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">❌ 404 - Не найдено</h3>
-        <a href="https://craftbiped.github.io/" title="Закрыть" class="close">×</a>
-      </div>
-      <div class="modal-body">    
-        <ul>
-<center>
-<p>
-Мы искали тщательно, но так и не нашли страницы с таким адресом! Её нету на нашем сайте! Заблудились? Нажмите на кнопку ниже!
-</p>
-<p>
-<center>
-  <button onclick="window.location.href = 'https://craftbiped.github.io/';">На главную страницу</button>
-</center>
-</p>
-</center>
- </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
- 
-<!-- CSS-стили модального окна -->
-<style>
-/* Стили всплывающего окна по-умолчанию */
-.modal {
-    position: fixed; /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5); /* фон */
-    z-index: 1050;
-    opacity: 1; /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in; 
-    -moz-transition: opacity 200ms ease-in;
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: auto; /* элемент невидим для событий мыши */
-    overflow-y: auto;
-    margin: 0;
-    padding: 0;
-}
-/* При отображении модального окно */
-.modal:target {
-    opacity: 1; /* делаем окно видимым */
-   pointer-events: auto; /* элемент видим для событий мыши */
-    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-}
-@media (min-width: 576px) {
-  .modal-dialog {
-      max-width: 500px;
-      margin: 30px auto; /* отображение окна по центру */
-  }
-}
-/* Стили для блока с контентом окна */ 
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    outline: 0;
-}
-@media (min-width: 768px) {
-  .modal-content {
-      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  }
-}
-/* Стили заголовка окна */
-.modal-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
-.modal-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: black;
-}
-/* Стили кнопки "х" ("Закрыть")  */
-.close {
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
-    text-decoration: none;
-    color: red;
-}
-/* Стили для закрывающей кнопки в фокусе или наведении */
-.close:focus, .close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .75;
-}
-/* Стили блока основного содержимого окна */
-.modal-body {
-  position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 15px;
-    overflow: auto;
-}
-</style>
