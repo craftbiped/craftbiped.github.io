@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<?php
+$allow_ip = array(
+"95.25.36.191",
+);
+
+in_array($_SERVER["REMOTE_ADDR"], $allow_ip) OR die("Access denied!");
+?>
 <head>
   <title>CraftBiped - images</title>
 <div class="preloader" id="preload">
