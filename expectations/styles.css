@@ -1,4 +1,6 @@
 body {
+   margin: 0;
+   background-size: 10px 10px;
    font-family: 'Arial';
 }
 button {
@@ -49,34 +51,6 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
     -webkit-box-shadow: 0 0 5px black;
     -moz-box-shadow:    0 0 5px black;
     box-shadow:         0 0 5px black;
-}
-/* Сброс стилей списка */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
- 
-/* Стилизация элементов списка */
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
- 
-/* Стилизация ссылок */
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-}
- 
-/* Стилизация ссылок при наведении */
-nav a:hover {
-  color: #007bff;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background-size: 10px 10px;
 }
 nav ul {
   list-style: none;
