@@ -1,12 +1,6 @@
 body {
    font-family: 'Arial';
 }
-a:link {
-  color: #1DE81C;
-}
-a:visited {
-  color: #1DE81C;
-}
 button {
   display: inline-block;
   color: white;
