@@ -3,10 +3,11 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<title>Ждём ... вместе с CraftBiped</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ждём ... вместе с CraftBiped!</title>
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 <body text="white">
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="../styles.css" />
 </head>
 <body>
 <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
@@ -81,15 +82,6 @@ style="width:60%;" - добавляем стилевое свойства, де�
 </p>
   </ul>
   </ul>
-<table
-border="1"
-align="center"
-rules="rows"
-style="width:100%;">
-<!--Создаём строку-->
-<tr>
-<!--Создаём ячейку строки-->
-<td>
 <!--ШАПКА САЙТА-->
 <!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
 Оформление:
@@ -100,27 +92,23 @@ bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет ка�
 cellpadding="10" - отступ содержимого от рамки не менее 10px.
 style="width:100%; border-radius:5px;" - добавляем "резиновость"
 и закругляем уголки рамки-->
-<table
-border="1"
-background="https://craftbiped.github.io/images/bg.png"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку таблицы-->
-<tr>
-<!--Создаём столбец таблицы-->
-<th>
+<div id="indbgs">
+<br>
+<header>
+<center> 
+<img src="../images/CraftBipedMinecraft.png" width="60" height="60">
+</center>
 <!--Содержание ячейки столбца-->
-    <p>
-      <img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="60" height="60">
-    </p>
-<div id="title">
+<center>
+<p>
 <h1>CraftBiped - Официальный сайт</h1>
 <h3>Отчёты до разных событий!</h3>
+</p>
+<br>
+
+</center>
 </div>
 <!--Закрываем таблицу-->
-</th>
-</tr>
-</table>
 
 <!--ОСНОВНОЙ КОНТЕНТ-->
 
@@ -128,47 +116,24 @@ style="width:100%; border-radius:5px;">
 для основного контента.
 Оформление как и в предыдущей таблице-->
 
-<table
-border="1"
-background="zemlabg.png"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку-->
-<tr>
-<!--Создаём ячейку
-Оформление:
-rowspan="2" - объединяем две ячейки в одну.
-Число объединяемых ячеек по числу ячеек в сайдбаре.
-style="width:80%" - основной контент занимает 80% всей площади,
-оставшиеся 20% для сайдбара-->
-<td
-rowspan="2"
-style="width:80%">
+<div id="content" class="content">
+<hr>
+<br><br><br><br><br><br>
+<center>
 <h2>Отчёты до разных событий - Ждём ... вместе с CraftBiped!</h2>
 <!--Начинаем абзац с красной строки-->
 <p style="text-indent:1px">Что это такое?</p>
 <p style="text-indent:1px">"Ждём ... вместе с CraftBiped" или же "Отчёты до разных событий" на сайте CraftBiped - это отчёты до ожидаемых событий (Например "Отчёт до Лета" или "Отчёт до Нового года"), которые вы можете увидить в этом каталоге. </p>
-<p style="text-indent:1px">Справа вы увидите список текущих отчётов.</p>
+<p style="text-indent:1px">Ниже вы увидите список текущих отчётов.</p>
+</center>
 <!--Закрываем ячейку-->
-</td>
 
 <!--САЙДБАР-->
 
 <!--Создаём ячейку сайдбара-->
-<td 
-background="zemlabg.png">
-<p>
-  <button onclick="window.location.href = 'https://craftbiped.github.io/';">На главную сайта </button>
-</p>
-<!--Закрываем строку Меню-->
-</td>
-</tr>
-<!--Создаём строку с дополнительной информацией-->
-<tr>
-<!--Ячейка с дополнительной информацией-->
-<td
-background="zemlabg.png"
-align="center">
+<br><br><br><br><br><br>
+<hr>
+<center>
 <h3>Список текущих отчётов</h3>
 <p>
   <button onclick="window.location.href = 'spring';">Отчёт до Весны 2024</button>
@@ -179,36 +144,31 @@ align="center">
 <p>
 Больше отчётов нет
 </p>
+
+<br>
+<hr>
+<h3>Наш дискорд сервер</h3>
+<iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<br><br>
+</center>
 <!--Закрываем ячейку с общей информацией
 и таблицу основного контента-->
-</td>
-</tr>
-</table>
-
-<!--ПОДВАЛ-->
-
-<!--Создаём таблицу подвала-->
-<table
-border="1"
-bgcolor="#323339"
-height="100"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку.-->
-<tr>
-<!--Создаём столбец-->
-<th>
+</div>
+</div>
+<div class="copyright">
+<center>
+<br><br>
+    <p>
+      <img src="../images/CraftBipedMinecraft.png" width="60" height="60">
+    </p>
+<h2>Официальный сайт CraftBiped</h2>
 <h5>Created by oldniki</h5>
 <h5>© CraftBipedMC, 2023—2024</h5>
+<br><br>
+</center>
 <!--Закрываем таблицу подвала. При желании в подвале можно
 сделать несколько строк и столбцов-->
-</th>
-</tr>
-</table>
-<!--Закрываем таблицу контейнера-->
-</td>
-</tr>
-</table>
+</div>
 <div id="menu" class="modal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -221,14 +181,14 @@ style="width:100%; border-radius:5px;">
       <div class="modal-body">    
         <ul>
 <center>
- <button onclick="window.location.href = 'https://craftbiped.github.io/';">Главная</button>
+ <button onclick="window.location.href = 'index';">Главная</button>
  <button onclick="window.location.href = 'https://craftbipedbuy.trademc.org/';">Купить донат</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/info';">Вся информация</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/ds.html';">Дискорд сервер</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/news';">Новости</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/rules';">Правила</button>
+ <button onclick="window.location.href = 'info';">Вся информация</button>
+ <button onclick="window.location.href = 'ds.html';">Дискорд сервер</button>
+ <button onclick="window.location.href = 'news';">Новости</button>
+ <button onclick="window.location.href = 'rules';">Правила</button>
  <button onclick="window.location.href = 'https://vk.com/craftbiped';">VK</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/updates';">Об обновлениях</button>
+ <button onclick="window.location.href = 'updates';">Об обновлениях</button>
  <button onclick="window.location.href = 'https://craftbiped.github.io/expectations/';">Отчёты до ожидаемых событий</button>
  <button onclick="window.location.href = 'https://craftbiped.github.io/videos/';">Видео сервера CraftBiped</button>
 <div class="showmobile">

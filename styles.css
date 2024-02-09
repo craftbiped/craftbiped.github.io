@@ -112,3 +112,44 @@ nav a {
   padding: 0 25px;
   font-family: 'Kurale', serif;
 }
+#indbg {
+height: 600;
+border-color: #6d6d6d;
+}
+#citem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  word-break: break-all;
+  font-family: sans-serif;
+ 
+}
+#bgimg {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+
+  font-family: sans-serif;
+ 
+}
+.content {
+        background: url('https://craftbiped.github.io/images/fon.png');
+border-color: #6d6d6d;
+    }
+.copyright {
+ background-color: #323339;
+ height: 300
+}
+.opencon {
+  color: #1DE81C;
+}
+#indbgs  {
+height: 300
+border-color: #6d6d6d;
+}
+
+
