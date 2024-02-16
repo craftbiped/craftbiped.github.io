@@ -153,6 +153,15 @@ border-color: #6d6d6d;
 #indbgs  {
 height: 300
 border-color: #6d6d6d;
+font-family: "minecraft";
 }
-
+@font-face {
+    font-family: "minecraft";
+    src: url(fonts/minecraft.ttf) format("truetype");
+    font-size: normal;
+    font-weight: normal;
+}
+#mc {
+font-family: "minecraft";
+}
 
