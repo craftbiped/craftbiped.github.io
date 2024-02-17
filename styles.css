@@ -157,7 +157,7 @@ font-family: "minecraft";
 }
 @font-face {
     font-family: "minecraft";
-    src: url(fonts/minecraft.ttf) format("truetype");
+    src: url(fonts/GoogleSans-Bold.ttf) format("truetype");
     font-size: normal;
     font-weight: normal;
 }
