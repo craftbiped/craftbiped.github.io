@@ -54,6 +54,7 @@ and (max-device-width : 480px){ .showmobile { display: inline; }}
 body {
   margin: 0;
   background-size: 10px 10px;
+  font-family: 'Arial';
 }
 nav ul {
   list-style: none;
@@ -152,27 +153,10 @@ border-color: #6d6d6d;
 #indbgs  {
 height: 300
 border-color: #6d6d6d;
-font-family: "minecraft";
-}
-@font-face {
-    font-family: "minecraft";
-    src: url(fonts/GoogleSans-Bold.ttf) format("truetype");
-    font-size: normal;
-    font-weight: normal;
 }
 #mc {
-font-family: "minecraft";
-}
-.meme {
-font-family: "impact";
 }
 .ital {
 font-style: italic;
-font-family: Verdana, Geneva, sans-serif;
-}
-p {
-    font-family: 'Arial';
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arial';
+font-family: 'Arial';
 }
