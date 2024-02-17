@@ -167,12 +167,12 @@ font-family: "minecraft";
 font-family: "impact";
 }
 .ital {
-font-size:18px;
 font-style: italic;
-font-family: 'Arial';
+font-family: Verdana, Geneva, sans-serif;
 }
 p {
-  font-family: 'Arial';
+    font-family: 'Arial';
+    font-family: Verdana, Geneva, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Comic Sans MS', cursive, sans-serif;
