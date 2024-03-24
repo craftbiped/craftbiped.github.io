@@ -12,14 +12,6 @@
 <body>
 <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
 <script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang":"ru","browsers":{"ie":"11","flock":"Infinity","camino":"Infinity"},"theme":"red"});</script>
-<!--Создаём таблицу контейнер, которой задаём следующее
-оформление:
-border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
-align="center" - размещаем контейнер по центру экрана.
-rules="rows" - убираем двойную рамку.
-style="width:60%;" - добавляем стилевое свойства, делающее
-контейнер и весь сайт "резиновым".
-Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
 <div class="preloader" id="preload">
 <p>
 <img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="60" height="60">
@@ -109,16 +101,6 @@ style="width:60%;" - добавляем стилевое свойства, де�
 <br>
 </div>
 </nav>
-<!--ШАПКА САЙТА-->
-<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
-Оформление:
-border="1" - двойная рамка толщиной в 1px
-background="images/168.png" - картинка в шапке сайта, если требуется.
-Адрес картинки вы должны вставить свой.
-bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
-cellpadding="10" - отступ содержимого от рамки не менее 10px.
-style="width:100%; border-radius:5px;" - добавляем "резиновость"
-и закругляем уголки рамки-->
 <div id="indbg">
 <div id="citem">
 <div id="mc">
@@ -126,7 +108,6 @@ style="width:100%; border-radius:5px;" - добавляем "резиновос�
 <center> 
 <img src="images/CraftBipedMinecraft.png" width="60" height="60">
 </center>
-<!--Содержание ячейки столбца-->
 <center>
 <p>
 <h1>CraftBiped - Официальный сайт</h1>
@@ -140,20 +121,11 @@ style="width:100%; border-radius:5px;" - добавляем "резиновос�
 </center>
 </div>
 </div>
-<!--Закрываем таблицу-->
-
-<!--ОСНОВНОЙ КОНТЕНТ-->
-
-<!--В этой же ячейке контейнера создаём ещё одну таблицу
-для основного контента.
-Оформление как и в предыдущей таблице-->
-
 <div id="content" class="content">
 <hr>
 <br><br><br><br><br><br>
 <center>
 <h2>Главная</h2>
-<!--Начинаем абзац с красной строки-->
 <p>CraftBiped - Майнкрафт сервер! Вы можете зайти на него указав IP "CraftBiped.aternos.me"! Для входа используйте версию 1.4.7 - 1.20.4, но версия сервера - это 1.17.1. Если вы Bedrock игрок, то помимо IP (CraftBiped.aternos.me) используйте Port: 33276. Версии для бедрок клиентов: 1.20 - 1.20.51</p>
 
 
@@ -178,11 +150,6 @@ style="width:100%; border-radius:5px;" - добавляем "резиновос�
 <hr>
 </div>
 </center>
-<!--Закрываем ячейку-->
-
-<!--САЙДБАР-->
-
-<!--Создаём ячейку сайдбара-->
 <br><br><br><br><br><br>
 <hr>
 <center>
@@ -201,8 +168,6 @@ style="width:100%; border-radius:5px;" - добавляем "резиновос�
 <iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="320" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 <br><br>
 </center>
-<!--Закрываем ячейку с общей информацией
-и таблицу основного контента-->
 </div>
 </div>
 <div class="copyright">
@@ -218,160 +183,6 @@ style="width:100%; border-radius:5px;" - добавляем "резиновос�
   <button onclick="window.location.href = 'lang';">Смена языка / Change the language</button>
 <br><br>
 </center>
-<!--Закрываем таблицу подвала. При желании в подвале можно
-сделать несколько строк и столбцов-->
 </div>
-<div id="menu" class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-<yellow>
-        <h3 class="modal-title">Меню сайта</h3>
-</yellow>
-        <a href="#" title="Закрыть меню" class="close">×</a>
-      </div>
-      <div class="modal-body">    
-        <ul>
-<center>
- <button onclick="window.location.href = 'index';">Главная</button>
- <button onclick="window.location.href = 'https://craftbipedbuy.trademc.org/';">Купить донат</button>
- <button onclick="window.location.href = 'info';">Вся информация</button>
- <button onclick="window.location.href = 'ds.html';">Дискорд сервер</button>
- <button onclick="window.location.href = 'news';">Новости</button>
- <button onclick="window.location.href = 'rules';">Правила</button>
- <button onclick="window.location.href = 'https://vk.com/craftbiped';">VK</button>
- <button onclick="window.location.href = 'updates';">Об обновлениях</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/expectations/';">Отчёты до ожидаемых событий</button>
- <button onclick="window.location.href = 'https://craftbiped.github.io/videos/';">Видео сервера CraftBiped</button>
-<div class="showmobile">
- <button onclick="window.location.href = 'https://craftbiped.github.io/app';">Скачать приложение</button>
-</div>
-</center>
- </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
- 
-<!-- CSS-стили модального окна -->
-<style>
-/* Стили всплывающего окна по-умолчанию */
-.modal {
-    position: fixed; /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5); /* фон */
-    z-index: 1050;
-    opacity: 0; /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in; 
-    -moz-transition: opacity 200ms ease-in;
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: none; /* элемент невидим для событий мыши */
-    margin: 0;
-    padding: 0;
-}
-/* При отображении модального окно */
-.modal:target {
-    opacity: 1; /* делаем окно видимым */
-   pointer-events: auto; /* элемент видим для событий мыши */
-    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-}
-@media (min-width: 576px) {
-  .modal-dialog {
-      max-width: 500px;
-      margin: 30px auto; /* отображение окна по центру */
-  }
-}
-/* Стили для блока с контентом окна */ 
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    outline: 0;
-}
-@media (min-width: 768px) {
-  .modal-content {
-      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  }
-}
-/* Стили заголовка окна */
-.modal-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
-.modal-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: black;
-}
-/* Стили кнопки "х" ("Закрыть")  */
-.close {
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
-    text-decoration: none;
-    color: red;
-}
-/* Стили для закрывающей кнопки в фокусе или наведении */
-.close:focus, .close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: .75;
-}
-/* Стили блока основного содержимого окна */
-.modal-body {
-  position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 15px;
-    overflow: auto;
-}
-</style>
 </body>
 </html>
