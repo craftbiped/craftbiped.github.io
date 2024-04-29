@@ -305,6 +305,75 @@ display:block;
 
 </style>
 <body text="white">
+<!-- Контекстное меню -->
+<div class="context-menu-open">
+    <ul>
+        <li><a href="https://craftbiped.github.io/">На главную</a></li>
+        <li><a href="https://craftbiped.github.io/nav">Меню сайта</a></li>
+        <li><a href="javascript:window.location.href=window.location.href">Перезагрузить страницу</a></li>
+        <li><a href="javascript:history.back()">Назад</a></li>
+    </ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+<script>
+document.oncontextmenu = function() {return false;};
+</script>
+<style>
+.context-menu-open {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.54);
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+.context-menu-open ul {
+    padding: 0;
+    margin: 0;
+}
+.context-menu-open ul li {
+    list-style: none;
+    padding: 10px 12px;
+    margin: 0;
+    border-bottom: 1px solid #BFE2FF;
+}
+.context-menu-open ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+.context-menu-open ul li a:hover {
+    background-color: #BFE2FF;
+}
+</style>
+<script>
+let contextMenu = document.querySelectorAll('html'); 
+let contextMenuOpen = document.querySelector('.context-menu-open'); 
+for (let i = 0; i < contextMenu.length; i++){ 
+    contextMenu[i].addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        contextMenuOpen.style.left = e.clientX + 'px'; 
+        contextMenuOpen.style.top = e.clientY + 'px';
+        contextMenuOpen.style.display = 'block';
+    });
+}    
+window.addEventListener('click', function() {
+    contextMenuOpen.style.display = 'none';
+});
+</script>
+<script>
+let = contextMenu = $('.context-menu-open');
+$('.context-menu').on('contextmenu', function (e) {
+    e.preventDefault();
+    contextMenu.css({top: e.clientY + 'px', left: e.clientX + 'px' }); 
+    contextMenu.show();
+});
+$(document).on('click', function () {
+    contextMenu.hide();
+});
+</script>
+<!-- Контекстное меню -->
 <center>
 <div class="errnumber">
 <h1>404</h1>
