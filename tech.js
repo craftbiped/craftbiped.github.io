@@ -1,2 +1,3 @@
 let summer_come = "Лето пока не может наступить, но мы думаем что совсем скоро оно придёт! Когда наступит лето можно узнать на странице https://craftbiped.github.io/expectations/summer";
 let craftbiped = "CraftBiped - Майнкрафт сервер! Вы можете зайти на него указав IP CraftBiped.aternos.me! Для входа используйте версию 1.4.7 - 1.20.4, но версия сервера - это 1.17.1. Если вы Bedrock игрок, то помимо IP (CraftBiped.aternos.me) используйте Port: 33276. Версии для бедрок клиентов: 1.20 - 1.20.51";
+window.location.href = 'https://craftbiped.github.io/tech';
