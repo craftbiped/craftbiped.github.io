@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <!-- 
 Лето - самое лучшее время года!
-Именно в его канун выйдет обновление CraftBiped 6.0!
+Именно в его канун вышло обновление CraftBiped 6.0!
 -->
 <html lang="ru">
 <head>
@@ -100,6 +100,18 @@ button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 #title {
    font-family: 'cursive';
+}
+#note {
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #10a536;
+    line-height: 2.5;
+    text-align: center;
+    line-height: 0.5;
+    overflow: hidden; 
+    position: absolute;
 }
 </style>
 <script>
@@ -251,7 +263,10 @@ $(document).on('click', function () {
 </script>
 <!-- Контекстное меню -->
 <center>
-<p>
+<div id="note">
+<p>Новый Летний варп на нашем сервере уже доступен! /warp leto</p>
+</div>
+<br><br>
   <button onclick="window.location.href = 'index';">Назад </button> 
 <button onclick="window.location.href = 'https://craftbiped.github.io/blog/article/2';">Наши планы на Лето 2024</button>
 </p>
