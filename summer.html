@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Встречаем лето!</title>
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+<script src="https://craftbiped.github.io/tech.js"></script>
+</head>
+<div class="preloader" id="preload">
+<p>
+<img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="60" height="60">
+</p>
+<h3>ㅤㅤㅤЗагрузка! Пожалуйста, подождите!</h3>
+</div>
+<style>
+    .preloader{
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+</style>
+
+<script>
+        window.onload = function(){
+            let preloader = document.getElementById('preload');
+            preloader.style.display = 'none';
+        };
+</script>
+<style>
+
+a {
+    color: blue;
+}
+button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+#title {
+   font-family: 'times';
+}
+    html {
+        background: url('https://craftbiped.github.io/images/imagebg.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.showmobile { display: none; }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){ .showmobile { display: inline; }}
+@media screen and (max-width: 600px) {
+.hidemobile {
+    visibility: hidden;
+    display: none;
+  }
+}
+nav {
+background: rgba(255,255,255,.8);
+}
+#note {
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #10a536;
+    line-height: 2.5;
+    text-align: center;
+    line-height: 0.5;
+    overflow: hidden; 
+    position: absolute;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-size: 10px 10px;
+  font-family: 'Arial';
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  backface-visibility: hidden;
+  background: rgba(255,255,255,.8);
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  font-family: 'Exo 2', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px;
+  font-weight: bold;
+  color: #003559;
+  text-transform: uppercase;
+}
+.down:after {
+  content: "⬇️";
+  margin-left: 8px;
+  font-family: FontAwesome;
+}
+.topmenu li a:hover { color: #E6855F; }
+.submenu {
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+  color: #7f7f7f;
+  font-size: 13px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: 'Kurale', serif;
+}
+#indbg {
+height: 600;
+border-color: #6d6d6d;
+}
+#citem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  word-break: break-all;
+  font-family: sans-serif;
+ 
+}
+#bgimg {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+
+  font-family: sans-serif;
+ 
+}
+.content {
+        background: url('https://craftbiped.github.io/images/LETO.png');
+border-color: #6d6d6d;
+    }
+.copyright {
+ background-color: #323339;
+ height: 300
+}
+.opencon {
+  color: #1DE81C;
+}
+#indbgs  {
+height: 300
+border-color: #6d6d6d;
+}
+#mc {
+}
+.ital {
+font-style: italic;
+font-family: 'Arial';
+}
+.burger-checkbox {
+  display:none;
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  display:none;
+  left: 20px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.menu {
+display:none;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  font-family: 'Kurale', serif;
+  background: white;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 200px;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: #003559;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(134, 134, 134, 1);
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+@media screen and (max-width: 948px) {
+.topmenu {
+display:none;
+}
+.submenu {
+display:none;
+}
+.burger {
+display:block;
+}
+.burger-checkbox {
+display:block;
+}
+.menu {
+display:block;
+}
+}
+</style>
+<body text="white">
+<!-- Контекстное меню -->
+<div class="context-menu-open">
+    <ul>
+        <li><a href="https://craftbiped.github.io/">На главную</a></li>
+        <li><a href="https://craftbiped.github.io/nav">Меню сайта</a></li>
+        <li><a href="javascript:window.location.href=window.location.href">Перезагрузить страницу</a></li>
+        <li><a href="javascript:history.back()">Назад</a></li>
+    </ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+<script>
+document.oncontextmenu = function() {return false;};
+</script>
+<style>
+.context-menu-open {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.54);
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+.context-menu-open ul {
+    padding: 0;
+    margin: 0;
+}
+.context-menu-open ul li {
+    list-style: none;
+    padding: 10px 12px;
+    margin: 0;
+    border-bottom: 1px solid #BFE2FF;
+}
+.context-menu-open ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+.context-menu-open ul li a:hover {
+    background-color: #BFE2FF;
+}
+</style>
+<script>
+let contextMenu = document.querySelectorAll('html'); 
+let contextMenuOpen = document.querySelector('.context-menu-open'); 
+for (let i = 0; i < contextMenu.length; i++){ 
+    contextMenu[i].addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        contextMenuOpen.style.left = e.clientX + 'px'; 
+        contextMenuOpen.style.top = e.clientY + 'px';
+        contextMenuOpen.style.display = 'block';
+    });
+}    
+window.addEventListener('click', function() {
+    contextMenuOpen.style.display = 'none';
+});
+</script>
+<script>
+let = contextMenu = $('.context-menu-open');
+$('.context-menu').on('contextmenu', function (e) {
+    e.preventDefault();
+    contextMenu.css({top: e.clientY + 'px', left: e.clientX + 'px' }); 
+    contextMenu.show();
+});
+$(document).on('click', function () {
+    contextMenu.hide();
+});
+</script>
+<!-- Контекстное меню -->
+<nav>  
+   <ul class="topmenu">
+    <li><a href="https://craftbiped.github.io/">Главная</a></li>
+    <li><a href="https://craftbiped.github.io/go/donate.html">Купить донат</a></li>
+    <li><a href="https://craftbiped.github.io/info">Информация</a></li>
+    <li><a href="https://craftbiped.github.io/news">Новости</a></li>
+    <li><a href="https://craftbiped.github.io/rules">Правила</a></li>
+    <li><a class="down">Ещё</a>
+   <ul class="submenu">
+<p>
+    <a href="https://craftbiped.github.io/go/discord.html">Дискорд-сервер</a>
+</p>
+<br>
+<p>
+    <a href="https://vk.com/craftbiped">VK</a></li>
+</p>
+<br>
+<p>
+    <a href="https://craftbiped.github.io/updates">Об обновлениях</a>
+</p>
+<br>
+<p>
+    <a href="https://craftbiped.github.io/expectations">Отчёты до ожидаемых событий</a>
+</p>
+<br>
+<p>
+    <a href="https://craftbiped.github.io/videos">Видео сервера CraftBiped</a>
+</p>
+<br>
+<p>
+    <a href="https://craftbiped.github.io/blog/">Наш блог</a>
+</p>
+<br>
+<p>
+<div class="showmobile">
+    <a href="https://craftbiped.github.io/app">Скачать приложение</a>
+</div>
+</p>
+  </ul>
+  </ul>
+        <div class="menu">
+<br>
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    <label for="burger-checkbox" class="burger"></label>
+    <ul class="menu-list">
+<br><br>
+            <li><a class="menu-item" href="https://craftbiped.github.io/">Главная</a></li>
+            <li><a class="menu-item" href="https://craftbipedbuy.trademc.org/">Купить донат</a></li>
+            <li><a class="menu-item" href="https://craftbiped.github.io/info">Информация</a></li>
+            <li><a class="menu-item" href="https://craftbiped.github.io/news">Новости</a></li>
+            <li><a class="menu-item" href="https://craftbiped.github.io/rules">Правила</a></li>
+<li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
+<li><a class="menu-item" href="https://vk.com/craftbiped">VK</a></li>
+<li><a class="menu-item" href="https://craftbiped.github.io/updates">Об обновлениях</a></li>
+<li><a class="menu-item" href="https://craftbiped.github.io/expectations">Отчёты до ожидаемых событий</a></li>
+<li><a class="menu-item" href="https://craftbiped.github.io/videos">Видео сервера CraftBiped</a></li>
+<li><a class="menu-item" href="https://craftbiped.github.io/blog/">Наш блог</a></li>
+<div class="showmobile">
+<li><a class="menu-item" href="https://craftbiped.github.io/app">Скачать приложение</a></li>
+</div>
+       </ul>
+<br>
+</div>
+</nav>
+<center>
+<h1>Здравствуй, лето!</h1>
+<h3>Лето наступило! Поздравляем!!!</h3>
+<br>
+<p>Здравствуйте! Мы наконец дожили до этого! Лето НАСТУПИЛО!!!</p>
+<p>Желаем всем удачного лета, удачного отдыха! Наш сервер теперь так же будет дольше работать! Возможно этим летом выйдет обновление Minecraft 1.21! Желаем удачи!/p>
+<br>
+<br>
+  <button onclick="window.location.href = 'https://craftbiped.github.io/blog/article/2';">Наши планы на лето</button>
+<br>
+<br>
+  <button onclick="window.location.href = 'https://craftbiped.github.io';">На главную страницу сайта</button>
+<br>
+</center>
+</body>
+</html>
