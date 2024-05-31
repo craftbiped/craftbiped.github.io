@@ -1,14 +1,10 @@
 
 
 <!DOCTYPE html>
-<!-- 
-Лето - самое лучшее время года!
-Именно в его канун вышло обновление CraftBiped 6.0!
--->
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<title>Ждём Лето вместе с CraftBiped</title>
+<title>Встречаем лето!</title>
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 <script src="https://craftbiped.github.io/tech.js"></script>
 </head>
@@ -37,51 +33,10 @@
             preloader.style.display = 'none';
         };
 </script>
-<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
-<script>var yaBrowserUpdater = new ya.browserUpdater.init({"lang":"ru","browsers":{"ie":"11","flock":"Infinity","camino":"Infinity"},"theme":"red"});</script>
-<script language="javascript" type="text/javascript">
-var d = new Date();
-var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
-var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа",
-"сентября","октября","ноября","декабря");
-document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ " 
-" + d.getFullYear() + " г.");
-</script>
 <style>
+
 a {
     color: blue;
-}
-.countdown {
-  display: flex;
-  justify-content: center;
- font-family: Arial;
-  color: black
-}
- 
-.countdown-item {
-  margin: 0 20px;
-  text-align: center;
-  color: black
-}
- 
-.countdown-item span {
-  display: block;
-  font-size: 2em;
-  color: black
-}
- 
-.label {
-  font-size: 0.8em;
-  color: red
-}
-    { margin: 0; padding: 0; }
-    html {
-        background: url('https://craftbiped.github.io/images/LETO.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        font-family: Arial;
 }
 button {
   display: inline-block;
@@ -99,7 +54,27 @@ button {
 button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 #title {
-   font-family: 'cursive';
+   font-family: 'times';
+}
+    html {
+        background: url('https://craftbiped.github.io/images/LETO.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+.showmobile { display: none; }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){ .showmobile { display: inline; }}
+@media screen and (max-width: 600px) {
+.hidemobile {
+    visibility: hidden;
+    display: none;
+  }
+}
+nav {
+background: rgba(255,255,255,.8);
 }
 #note {
     z-index: 101;
@@ -113,91 +88,220 @@ button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
     overflow: hidden; 
     position: absolute;
 }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-size: 10px 10px;
+  font-family: 'Arial';
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  backface-visibility: hidden;
+  background: rgba(255,255,255,.8);
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  font-family: 'Exo 2', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px;
+  font-weight: bold;
+  color: #003559;
+  text-transform: uppercase;
+}
+.down:after {
+  content: "⬇️";
+  margin-left: 8px;
+  font-family: FontAwesome;
+}
+.topmenu li a:hover { color: #E6855F; }
+.submenu {
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+  color: #7f7f7f;
+  font-size: 13px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-family: 'Kurale', serif;
+}
+#indbg {
+height: 600;
+border-color: #6d6d6d;
+}
+#citem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  word-break: break-all;
+  font-family: sans-serif;
+ 
+}
+#bgimg {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+
+  font-family: sans-serif;
+ 
+}
+.content {
+        background: url('https://craftbiped.github.io/images/LETO.png');
+border-color: #6d6d6d;
+    }
+.copyright {
+ background-color: #323339;
+ height: 300
+}
+.opencon {
+  color: #1DE81C;
+}
+#indbgs  {
+height: 300
+border-color: #6d6d6d;
+}
+#mc {
+}
+.ital {
+font-style: italic;
+font-family: 'Arial';
+}
+.burger-checkbox {
+  display:none;
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  display:none;
+  left: 20px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.menu {
+display:none;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  font-family: 'Kurale', serif;
+  background: white;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 200px;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: #003559;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(134, 134, 134, 1);
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+@media screen and (max-width: 948px) {
+.topmenu {
+display:none;
+}
+.submenu {
+display:none;
+}
+.burger {
+display:block;
+}
+.burger-checkbox {
+display:block;
+}
+.menu {
+display:block;
+}
+}
 </style>
-<script>
-const countdown = document.querySelector('.countdown');
-const targetDate = new Date('2024-06-01T00:00:00');
- 
-function updateCountdown() {
-  const now = new Date();
-  const remainingTime = targetDate - now;
- 
-  const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
- 
-  document.getElementById('days').innerText = days.toString().padStart(2, '0');
-  document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-  document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-  document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
-}
- 
-// Обновляем счетчик каждую секунду
-setInterval(updateCountdown, 1000);
-</script>
-<script>
-/*global window*/
-(function (global) {
-    "use strict";
-    function Clock(el) {
-        var document = global.document;
-        this.el = document.getElementById(el);
-        this.months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
-        this.days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
-    }
-    Clock.prototype.addZero = function (i) {
-        if (i < 10) {
-            i = "0" + i;
-            return i;
-        }
-        return i;
-    };
-    Clock.prototype.updateClock = function () {
-        var now, year, month, dayNo, day, hour, minute, second, result, self;
-        now = new global.Date();
-        year = now.getFullYear();
-        month = now.getMonth();
-        dayNo = now.getDay();
-        day = now.getDate();
-        hour = this.addZero(now.getHours());
-        minute = this.addZero(now.getMinutes());
-        second = this.addZero(now.getSeconds());
-        result = this.days[dayNo] + ", " + day + " " + this.months[month] + " " + year + " " + hour + ":" + minute + ":" + second;
-        self = this;
-        self.el.innerHTML = result;
-        global.setTimeout(function () {
-            self.updateClock();
-        }, 1000);
-    };
-    global.Clock = Clock;
-}(window));
-
-function addEvent(elm, evType, fn, useCapture) {
-    "use strict";
-    if (elm.addEventListener) {
-        elm.addEventListener(evType, fn, useCapture);
-    } else if (elm.attachEvent) {
-        elm.attachEvent('on' + evType, fn);
-    } else {
-        elm['on' + evType] = fn;
-    }
-}
-
-addEvent(window, "load", function () {
-    if (document.getElementById("clock")) {
-        var clock = new Clock("clock");
-        clock.updateClock();
-    }
-});
-</script>
-<body>
+<body text="black">
 <!-- Контекстное меню -->
 <div class="context-menu-open">
     <ul>
         <li><a href="https://craftbiped.github.io/">На главную</a></li>
         <li><a href="https://craftbiped.github.io/nav">Меню сайта</a></li>
-        <li><a href="index">К списку отчётов</a></li>
         <li><a href="javascript:window.location.href=window.location.href">Перезагрузить страницу</a></li>
         <li><a href="javascript:history.back()">Назад</a></li>
     </ul>
@@ -263,49 +367,27 @@ $(document).on('click', function () {
 </script>
 <!-- Контекстное меню -->
 <center>
-<div id="note">
-<p>Новый Летний варп на нашем сервере уже доступен! /warp leto</p>
-</div>
-<br><br>
-  <button onclick="window.location.href = 'index';">Назад </button> 
-<button onclick="window.location.href = 'https://craftbiped.github.io/blog/article/2';">Наши планы на Лето 2024</button>
-</p>
+<br>
 <p>
-<body text="black">
-<h2>Сейчас:</h2>
+  <button onclick="window.location.href = 'index';">Назад</button>
 </p>
-<p>
-<p id="clock">Загрузка...</p>
-</p>
-<p>
-<h1>!</h1>
-<h4>В некоторых часовых поясах, лето уже началось!</h4>
-<h4>Если отсчёт ниже имеет отрицательное значение, значит лето началось! Поздравляем!!!</h4>
-</p>
+<h1>Здравствуй, лето!</h1>
+<h3>Лето наступило! Поздравляем!!!</h3>
+<br>
+<p>Здравствуйте! Мы наконец дожили до этого! Лето НАСТУПИЛО!!!</p>
+<p>Желаем всем удачного лета, удачного отдыха! Наш сервер теперь так же будет дольше работать! Возможно этим летом выйдет обновление Minecraft 1.21! Желаем удачи!</p>
+<br>
+<br>
+  <button onclick="window.location.href = 'https://craftbiped.github.io/blog/article/2';">Наши планы на лето</button>
+<br>
+<br>
+  <button onclick="window.location.href = 'https://craftbiped.github.io';">На главную страницу сайта</button>
+<br>
+<hr>
+<br>
+<h3>У меня не наступило лето?</h3>
+<p>Если у вас ещё не наступило лето, то возможно у вас другой часовой пояс. Нажмите на кнопку ниже, чтобы перейти к сохранённой версии отсчёта до лета.</p>
+  <button onclick="window.location.href = 'https://craftbiped.github.io/expectations/saved-1';">Сохраненная версия отсчёта</button>
 </center>
-<center>
-<h2>До лета 2024 осталось: </h2>
-</center>
-</body>
-<div class="countdown">
-  <div class="countdown-item">
-    <span id="days">Загрузка...</span>
-    <span class="label">Дней</span>
-  </div>
-  <div class="countdown-item">
-    <span id="hours">Загрузка...</span>
-    <span class="label">Часов</span>
-  </div>
-  <div class="countdown-item">
-    <span id="minutes">Загрузка...</span>
-    <span class="label">Минут</span>
-  </div>
-  <div class="countdown-item">
-    <span id="seconds">Загрузка...</span>
-    <span class="label">Секунд</span>
-  </div>
-</div>
-<!--Начинаем абзац с красной строки-->
-<!--Закрываем ячейку-->
 </body>
 </html>
