@@ -48,19 +48,19 @@ document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ "
   display: flex;
   justify-content: center;
  font-family: Arial;
-  color: black
+  color: white
 }
  
 .countdown-item {
   margin: 0 20px;
   text-align: center;
-  color: black
+  color: white
 }
  
 .countdown-item span {
   display: block;
   font-size: 2em;
-  color: black
+  color: white
 }
  
 .label {
@@ -178,13 +178,12 @@ addEvent(window, "load", function () {
     }
 });
 </script>
-<body>
+<body text="white">
 <center>
 <p>
   <button onclick="window.location.href = 'index';">Назад </button>
 </p>
 <p>
-<body text="black">
 <h2>Сейчас:</h2>
 </p>
 <p>
@@ -206,7 +205,6 @@ addEvent(window, "load", function () {
 <center>
 <h2>До нового года 2024 осталось: </h2>
 </center>
-</body>
 <div class="countdown">
   <div class="countdown-item">
     <span id="days">Загрузка...</span>
