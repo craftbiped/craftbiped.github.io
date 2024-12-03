@@ -590,21 +590,5 @@ if (path == "/app" || path == "/app.html"){
 
 
 
-// 404
 
-else {
-    document.title = "Страница не найдена - CraftBiped";
-   var pageinfo = document.getElementById("pageinfo");
-   pageinfo.innerHTML = "404: Страница не найдена!";
-   var content = document.getElementById("content");
-content.innerHTML = `
-<hr>
-<br><br><br><br><br><br>
-<center>
-<h1>Эта страница не найдена!</h1>
-<p><b>Одно из трёх: либо страницу удалили, либо вы ошиблись адресом, или страничку украли. Проверьте, нет ли ошибок в URL. Если они есть, исправьте их, и повторите попытку. Если вы не знаете, как сюда попали, то перейдите на главную.</b></p>
-<h2><a href="/">Главная</a></h2>
-</center>
-`
-}
 
