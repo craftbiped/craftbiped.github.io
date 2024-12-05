@@ -28,7 +28,7 @@ topmenu.innerHTML = `
 </p>
 <br>
 <p>
-    <a href="https://craftbiped.github.io/expectations">Отчёты до ожидаемых событий</a>
+    <a href="https://craftbiped.github.io/expectations">Отсчёты до ожидаемых событий</a>
 </p>
 <br>
 <p>
@@ -56,7 +56,7 @@ topmenu.innerHTML = `
 <li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
 <li><a class="menu-item" href="https://vk.com/craftbiped">VK</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/updates">Об обновлениях</a></li>
-<li><a class="menu-item" href="https://craftbiped.github.io/expectations">Отчёты до ожидаемых событий</a></li>
+<li><a class="menu-item" href="https://craftbiped.github.io/expectations">Отсчёты до ожидаемых событий</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/videos">Видео сервера CraftBiped</a></li>
 <div class="showmobile">
 <li><a class="menu-item" href="https://craftbiped.github.io/app">Скачать приложение</a></li>
