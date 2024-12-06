@@ -1,5 +1,19 @@
 var path = window.location.pathname;
 
+function browser_name(){
+      var browser_id = navigator.userAgent;    
+
+    if (browser_id.search(/Chrome/) != -1) return 'Chrome';
+    if (browser_id.search(/Firefox/) != -1) return 'Firefox';
+    if (browser_id.search(/Opera/) != -1) return 'Opera';
+    if (browser_id.search(/Safari/) != -1) return 'Safari';
+    if (browser_id.search(/MSIE/) != -1) return 'MSIE';
+    
+    return 'unknown';
+}
+
+var browser = browser_name()
+
 
 
 var topmenu = document.getElementById("topmenu");
@@ -50,7 +64,8 @@ topmenu.innerHTML = `
     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
     <label for="burger-checkbox" class="burger"></label>
     <ul class="menu-list">
-<br><br><br><br>
+<br><br>
+<div id="Firefox"></div>
             <li><a class="menu-item" href="https://craftbiped.github.io/">Главная</a></li>
             <li><a class="menu-item" href="https://craftbipedbuy.trademc.org/">Купить донат</a></li>
             <li><a class="menu-item" href="https://craftbiped.github.io/info">Информация</a></li>
@@ -588,7 +603,10 @@ if (path == "/app" || path == "/app.html"){
    `
 }
 
-
+  if (browser == "Firefox"){
+var ffox = document.getElementById("Firefox");
+ffox.innerHTML = "<br><br><br><br><br>";
+  }
 
 
 
