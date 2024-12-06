@@ -1,11 +1,18 @@
 var path = window.location.pathname;
 
-// НА ВСЕХ СТРАНИЦАХ
 
 
-// СВЕРХУ
 var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
+<!-- Инфобар сверху -->
+<div style="background-color: #82b1ff;">
+<center style="color: green;"><b>Ждём новый год вместе с CraftBiped!<br>
+  <a href="/expectations/newyear.html" style="color: red;">Ждём тут!</a></b>
+</center>
+</div>
+
+
+<!-- Навигация -->
 <nav>  
    <ul class="topmenu">
     <li><a href="https://craftbiped.github.io/">Главная</a></li>
@@ -17,10 +24,6 @@ topmenu.innerHTML = `
    <ul class="submenu">
 <p>
     <a href="https://craftbiped.github.io/go/discord.html">Дискорд-сервер</a>
-</p>
-<br>
-<p>
-    <a href="https://vk.com/craftbiped">VK</a></li>
 </p>
 <br>
 <p>
@@ -54,7 +57,6 @@ topmenu.innerHTML = `
             <li><a class="menu-item" href="https://craftbiped.github.io/news">Новости</a></li>
             <li><a class="menu-item" href="https://craftbiped.github.io/rules">Правила</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
-<li><a class="menu-item" href="https://vk.com/craftbiped">VK</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/updates">Об обновлениях</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/expectations">Отсчёты до ожидаемых событий</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/videos">Видео сервера CraftBiped</a></li>
