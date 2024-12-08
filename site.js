@@ -103,6 +103,7 @@ bottom.innerHTML = `
 <br>
 <br><br>
 </center>
+<div id="copyright">
 <br>  
 <h2><img src=\"/images/CraftBipedMinecraft.png\" width=\"70\" height=\"70\" align=\"center\"> 
 <span class=\"sitename-12812\">CraftBiped </span>
@@ -119,6 +120,7 @@ bottom.innerHTML = `
 <p><a href=\"/expectations/\" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
 <p><a href=\"/updates\" class=\"bottom-element\">Список обновлений сервера</a></p> 
 <div class=\"avtor-pravo\"><h5>© CraftBiped, 2024</h5></div> <br>;
+</div>
 `
 
 
