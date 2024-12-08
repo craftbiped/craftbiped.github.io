@@ -1,5 +1,8 @@
 var path = window.location.pathname;
+pages();
 
+
+function pages(){
 
 function browser_name(){
       var browser_id = navigator.userAgent;    
@@ -615,7 +618,7 @@ if (path == "/app" || path == "/app.html"){
 var ffox = document.getElementById("Firefox");
 ffox.innerHTML = "<br><br><br><br><br>";
   }
-
+}
 
 
 
