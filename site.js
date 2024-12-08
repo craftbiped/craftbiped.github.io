@@ -119,7 +119,8 @@ bottom.innerHTML = `
 <p><a href=\"/go/discord.html\" class=\"bottom-element\">Дискорд</a></p> 
 <p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
 <p><a href=\"/expectations/\" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
-<p><a href=\"/updates\" class=\"bottom-element\">Список обновлений сервера</a></p> 
+<p><a href=\"/updates\" class=\"bottom-element\">Список обновлений сервера</a></p>
+<br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
 <div class=\"avtor-pravo\"><h5>© CraftBiped, 2023—2024</h5></div> <br>
 </div>
