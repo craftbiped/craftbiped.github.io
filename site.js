@@ -103,19 +103,22 @@ bottom.innerHTML = `
 <br>
 <br><br>
 </center>
-<div class="copyright">
-<center>
-<br><br>
-    <p>
-      <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
-    </p>
-<h2>Официальный сайт CraftBiped</h2>
-<h5>Created by oldniki</h5>
-<h5>© CraftBipedMC, 2023—2024</h5>
+<br>  
+<h2><img src=\"/images/CraftBipedMinecraft.png\" width=\"70\" height=\"70\" align=\"center\"> 
+<span class=\"sitename-12812\">CraftBiped </span>
+</h2><h4 class=\"element-12812\">craftbiped.aternos.me</h4> 
+<br><center> 
+<h3>Навигация</h3>
 <br>
-<br><br>
-</center>
-</div>
+<p><a href=\"/\" class=\"bottom-element\">Главная</a></p> 
+<p><a href=\"/rules\" class=\"bottom-element\">Правила</a></p> 
+<p><a href=\"/news\" class=\"bottom-element\">Новости</a></p> 
+<p><a href=\"/info\" class=\"bottom-element\">Информация о сервере</a></p> 
+<p><a href=\"/go/discord.html\" class=\"bottom-element\">Дискорд</a></p> 
+<p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
+<p><a href=\"/expectations/\" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
+<p><a href=\"/updates\" class=\"bottom-element\">Список обновлений сервера</a></p> 
+<div class=\"avtor-pravo\"><h5>© CraftBiped, 2024</h5></div> <br>;
 `
 
 
