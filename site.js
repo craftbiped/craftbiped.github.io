@@ -1,8 +1,9 @@
-var path = window.location.pathname;
+
 pages();
 
 
 function pages(){
+var path = window.location.pathname;
 
 function browser_name(){
       var browser_id = navigator.userAgent;    
