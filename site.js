@@ -1,5 +1,6 @@
 var path = window.location.pathname;
 
+
 function browser_name(){
       var browser_id = navigator.userAgent;    
 
@@ -119,7 +120,7 @@ bottom.innerHTML = `
 <p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
 <p><a href=\"/expectations/\" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
 <p><a href=\"/updates\" class=\"bottom-element\">Список обновлений сервера</a></p> 
-<div class=\"avtor-pravo\"><h5>© CraftBiped, 2024</h5></div> <br>
+<div class=\"avtor-pravo\"><h5>© CraftBiped, 2023—2024</h5></div> <br>
 </div>
 `
 
