@@ -1,5 +1,7 @@
 a {
     color: #42aaff;
+    cursor: pointer;
+    text-decoration: underline;
 }
 button {
   display: inline-block;

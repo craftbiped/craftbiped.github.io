@@ -1,4 +1,4 @@
-
+pathinload = window.location.pathname;
 pages();
 
 
@@ -34,32 +34,32 @@ topmenu.innerHTML = `
 <!-- Навигация -->
 <nav>  
    <ul class="topmenu">
-    <li><a href="https://craftbiped.github.io/">Главная</a></li>
-    <li><a href="https://craftbiped.github.io/go/donate.html">Купить донат</a></li>
-    <li><a href="https://craftbiped.github.io/info">Информация</a></li>
-    <li><a href="https://craftbiped.github.io/news">Новости</a></li>
-    <li><a href="https://craftbiped.github.io/rules">Правила</a></li>
+    <li><a onclick="go('/')">Главная</a></li>
+    <li><a href="/go/donate.html">Купить донат</a></li>
+    <li><a onclick="go('/info')">Информация</a></li>
+    <li><a onclick="go('/news')">Новости</a></li>
+    <li><a onclick="go('/rules')">Правила</a></li>
     <li><a class="down">Ещё</a>
    <ul class="submenu">
 <p>
-    <a href="https://craftbiped.github.io/go/discord.html">Дискорд-сервер</a>
+    <a href="/go/discord.html">Дискорд-сервер</a>
 </p>
 <br>
 <p>
-    <a href="https://craftbiped.github.io/updates">Об обновлениях</a>
+    <a onclick="go('/updates')">Об обновлениях</a>
 </p>
 <br>
 <p>
-    <a href="https://craftbiped.github.io/expectations">Отсчёты до ожидаемых событий</a>
+    <a onclick="go('/expectations/')">Отсчёты до ожидаемых событий</a>
 </p>
 <br>
 <p>
-    <a href="https://craftbiped.github.io/videos">Видео сервера CraftBiped</a>
+    <a onclick="go('/videos/')">Видео сервера CraftBiped</a>
 </p>
 <br>
 <p>
 <div class="showmobile">
-    <a href="https://craftbiped.github.io/app">Скачать приложение</a>
+    <a onclick="go('/app')">Скачать приложение</a>
 </div>
 </p>
   </ul>
@@ -71,17 +71,17 @@ topmenu.innerHTML = `
     <ul class="menu-list">
 <br><br>
 <div id="Firefox"></div>
-            <li><a class="menu-item" href="https://craftbiped.github.io/">Главная</a></li>
-            <li><a class="menu-item" href="https://craftbipedbuy.trademc.org/">Купить донат</a></li>
-            <li><a class="menu-item" href="https://craftbiped.github.io/info">Информация</a></li>
-            <li><a class="menu-item" href="https://craftbiped.github.io/news">Новости</a></li>
-            <li><a class="menu-item" href="https://craftbiped.github.io/rules">Правила</a></li>
+            <li><a class="menu-item" onclick="go('/')">Главная</a></li>
+            <li><a class="menu-item" href="/go/donate.html">Купить донат</a></li>
+            <li><a class="menu-item" onclick="go('/info')">Информация</a></li>
+            <li><a class="menu-item" onclick="go('/news')">Новости</a></li>
+            <li><a class="menu-item" onclick="go('/rules')">Правила</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
-<li><a class="menu-item" href="https://craftbiped.github.io/updates">Об обновлениях</a></li>
-<li><a class="menu-item" href="https://craftbiped.github.io/expectations">Отсчёты до ожидаемых событий</a></li>
-<li><a class="menu-item" href="https://craftbiped.github.io/videos">Видео сервера CraftBiped</a></li>
+<li><a class="menu-item" onclick="go('/updates')">Об обновлениях</a></li>
+<li><a class="menu-item" onclick="go('/expectations/')">Отсчёты до ожидаемых событий</a></li>
+<li><a class="menu-item" onclick="go('/videos/')">Видео сервера CraftBiped</a></li>
 <div class="showmobile">
-<li><a class="menu-item" href="https://craftbiped.github.io/app">Скачать приложение</a></li>
+<li><a class="menu-item" onclick="go('/app')">Скачать приложение</a></li>
 </div>
        </ul>
 <br>
@@ -116,14 +116,14 @@ bottom.innerHTML = `
 <br><center> 
 <h3>Навигация</h3>
 <br>
-<p><a href=\"/\" class=\"bottom-element\">Главная</a></p> 
-<p><a href=\"/rules\" class=\"bottom-element\">Правила</a></p> 
-<p><a href=\"/news\" class=\"bottom-element\">Новости</a></p> 
-<p><a href=\"/info\" class=\"bottom-element\">Информация о сервере</a></p> 
+<p><a onclick="go('/')" class=\"bottom-element\">Главная</a></p> 
+<p><a onclick="go('/rules')" class=\"bottom-element\">Правила</a></p> 
+<p><a onclick="go('/news')" class=\"bottom-element\">Новости</a></p> 
+<p><a onclick="go('/info')" class=\"bottom-element\">Информация о сервере</a></p> 
 <p><a href=\"/go/discord.html\" class=\"bottom-element\">Дискорд</a></p> 
 <p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
-<p><a href=\"/expectations/\" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
-<p><a href=\"/updates\" class=\"bottom-element\">Список обновлений сервера</a></p>
+<p><a onclick="go('/expectations/')" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
+<p><a onclick="go('/updates')" class=\"bottom-element\">Список обновлений сервера</a></p>
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
 <div class=\"avtor-pravo\"><h5>© CraftBiped, 2023—2024</h5></div> <br>
@@ -523,7 +523,7 @@ content.innerHTML = `
 `
 }
 
-  if (path == "/videos/" || path == "/videos/index.html" || path == "/videos/index"){
+  if (path == "/videos/" || path == "/videos/index.html" || path == "/videos/index" || path == "/videos"){
     
     document.title = "Видео - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
@@ -548,7 +548,7 @@ _____________________________________
 `
 }
 
-  if (path == "/expectations/" || path == "/expectations/index.html" || path == "/expectations/index"){
+  if (path == "/expectations/" || path == "/expectations/index.html" || path == "/expectations/index" || path == "/expectations"){
     
     document.title = "Ждём ... вместе с CraftBiped - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
@@ -580,6 +580,9 @@ content.innerHTML = `
 }
 if (path == "/nav" || path == "/nav.html"){
 window.location.pathname = "/";
+}
+if (path == "/expectations/newyear.html" || path == "/expectations/newyear"){
+window.location.reload();
 }
 if (path == "/app" || path == "/app.html"){
     document.title = "Приложение - CraftBiped";
@@ -621,6 +624,22 @@ ffox.innerHTML = "<br><br><br><br><br>";
   }
 }
 
+function go(url){
+history.pushState(null, null, url);
+}
 
+function refresh(){
+pathinload = window.location.pathname;
+window.scrollTo(0, 0);
+pages();
+}
+
+setInterval(() => {
+  if (pathinload == window.location.pathname){
+  // empty
+  } else {
+  refresh();
+  }
+}, 10);
 
 
