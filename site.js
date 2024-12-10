@@ -42,6 +42,9 @@ topmenu.innerHTML = `
     <li><a class="down">Ещё</a>
    <ul class="submenu">
 <p>
+    <a href="/blog/">Наш блог</a>
+</p>
+<p>
     <a href="/go/discord.html">Дискорд-сервер</a>
 </p>
 <br>
@@ -76,6 +79,7 @@ topmenu.innerHTML = `
             <li><a class="menu-item" onclick="go('/info')">Информация</a></li>
             <li><a class="menu-item" onclick="go('/news')">Новости</a></li>
             <li><a class="menu-item" onclick="go('/rules')">Правила</a></li>
+<li><a class="menu-item" href="/blog/">Наш блог</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
 <li><a class="menu-item" onclick="go('/updates')">Об обновлениях</a></li>
 <li><a class="menu-item" onclick="go('/expectations/')">Отсчёты до ожидаемых событий</a></li>
@@ -252,7 +256,7 @@ content.innerHTML = `
 <br><br><br><br><br><br>
 <center>
 <h2>Новости</h2>
-<iframe src="/content/contentnews.html" width="300" height="400" allowtransparency="true" frameborder="1"></iframe>
+<iframe src="/content/contentnews.html" width="100%" height="1000" allowtransparency="true" frameborder="1"></iframe>
 </center>
 `
 }
@@ -582,6 +586,9 @@ if (path == "/nav" || path == "/nav.html"){
 window.location.pathname = "/";
 }
 if (path == "/expectations/newyear.html" || path == "/expectations/newyear"){
+window.location.reload();
+}
+if (path == "/blog/" || path == "/blog/index" || path == "/blog/index.html"){
 window.location.reload();
 }
 if (path == "/app" || path == "/app.html"){
