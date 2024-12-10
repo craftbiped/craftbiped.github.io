@@ -44,6 +44,7 @@ topmenu.innerHTML = `
 <p>
     <a href="/blog/">Наш блог</a>
 </p>
+<br>
 <p>
     <a href="/go/discord.html">Дискорд-сервер</a>
 </p>
