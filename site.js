@@ -256,7 +256,7 @@ content.innerHTML = `
 <br><br><br><br><br><br>
 <center>
 <h2>Новости</h2>
-<iframe src="/content/contentnews.html" width="100%" height="1000" allowtransparency="true" frameborder="1"></iframe>
+<iframe src="/content/contentnews.html" width="70%" height="1000" allowtransparency="true" frameborder="1"></iframe>
 </center>
 `
 }
