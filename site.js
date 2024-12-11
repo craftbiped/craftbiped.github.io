@@ -37,14 +37,11 @@ topmenu.innerHTML = `
     <li><a onclick="go('/')">Главная</a></li>
     <li><a href="/go/donate.html">Купить донат</a></li>
     <li><a onclick="go('/info')">Информация</a></li>
-    <li><a onclick="go('/news')">Новости</a></li>
+    <li><a href="/blog/news/">Новости</a></li>
+    <li><a href="/blog/">Блог</a></li>
     <li><a onclick="go('/rules')">Правила</a></li>
     <li><a class="down">Ещё</a>
    <ul class="submenu">
-<p>
-    <a href="/blog/">Наш блог</a>
-</p>
-<br>
 <p>
     <a href="/go/discord.html">Дискорд-сервер</a>
 </p>
