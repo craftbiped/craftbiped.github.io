@@ -78,9 +78,9 @@ topmenu.innerHTML = `
             <li><a class="menu-item" onclick="go('/')">Главная</a></li>
             <li><a class="menu-item" href="/go/donate.html">Купить донат</a></li>
             <li><a class="menu-item" onclick="go('/info')">Информация</a></li>
-            <li><a class="menu-item" onclick="go('/news')">Новости</a></li>
+            <li><a class="menu-item" href="/blog/news/">Новости</a></li>
+            <li><a class="menu-item" href="/blog/">Блог</a></li>
             <li><a class="menu-item" onclick="go('/rules')">Правила</a></li>
-<li><a class="menu-item" href="/blog/">Наш блог</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
 <li><a class="menu-item" onclick="go('/updates')">Об обновлениях</a></li>
 <li><a class="menu-item" onclick="go('/expectations/')">Отсчёты до ожидаемых событий</a></li>
@@ -123,7 +123,8 @@ bottom.innerHTML = `
 <br>
 <p><a onclick="go('/')" class=\"bottom-element\">Главная</a></p> 
 <p><a onclick="go('/rules')" class=\"bottom-element\">Правила</a></p> 
-<p><a onclick="go('/news')" class=\"bottom-element\">Новости</a></p> 
+<p><a href="/blog/news/" class=\"bottom-element\">Новости</a></p> 
+<p><a href="/blog/" class=\"bottom-element\">Наш блог</a></p> 
 <p><a onclick="go('/info')" class=\"bottom-element\">Информация о сервере</a></p> 
 <p><a href=\"/go/discord.html\" class=\"bottom-element\">Дискорд</a></p> 
 <p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
@@ -250,9 +251,9 @@ content.innerHTML = `
     document.title = "Новости - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Новости";
-    
 var content = document.getElementById("content");
 content.innerHTML = `
+<meta http-equiv="refresh" content="0;URL=http://craftbiped.github.io/blog/news/"/>
 <hr>
 <br><br><br><br><br><br>
 <center>
