@@ -23,7 +23,7 @@ function browser_name(){
 var browser = browser_name()
 
 
-console.log("Загрузка страницы "+ path +")
+console.log("Загрузка страницы "+ path +"")
 var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
