@@ -631,7 +631,11 @@ ffox.innerHTML = "<br><br><br><br><br>";
 }
 
 function go(url){
+  if (url == window.location.pathname){
+window.scrollTo(0, 0);
+  } else {
 history.pushState(null, null, url);
+  }
 }
 
 function refresh(){
