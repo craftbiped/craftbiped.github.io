@@ -1,8 +1,11 @@
+
+
 pathinload = window.location.pathname;
 pages();
 
 
 function pages(){
+
 var path = window.location.pathname;
 
 function browser_name(){
@@ -20,7 +23,7 @@ function browser_name(){
 var browser = browser_name()
 
 
-
+console.log("Загрузка страницы "+ path +")
 var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
@@ -628,12 +631,14 @@ if (path == "/app" || path == "/app.html"){
 var ffox = document.getElementById("Firefox");
 ffox.innerHTML = "<br><br><br><br><br>";
   }
+console.log("Загрузка завершена.")
 }
 
 function go(url){
   if (url == window.location.pathname){
 window.scrollTo(0, 0);
   } else {
+console.log("Переход на "+ url +"")
 history.pushState(null, null, url);
   }
 }
