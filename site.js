@@ -23,7 +23,7 @@ function browser_name(){
 var browser = browser_name()
 
 
-console.log("Загрузка страницы "+ path +"")
+console.log("Загрузка страницы \""+ path +"\"...")
 var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
@@ -638,7 +638,8 @@ function go(url){
   if (url == window.location.pathname){
 window.scrollTo(0, 0);
   } else {
-console.log("Переход на "+ url +"")
+console.log("    ")
+console.log("Переход на \""+ url +"\"...")
 history.pushState(null, null, url);
   }
 }
