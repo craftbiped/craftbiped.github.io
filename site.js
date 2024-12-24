@@ -99,7 +99,7 @@ topmenu.innerHTML = `
 var bottom = document.getElementById("bottom");
 bottom.innerHTML = `
 <br><br><br><br><br><br>
-<hr>
+<br>
 <center>
 
 <br>
