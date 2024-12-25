@@ -124,7 +124,7 @@ bottom.innerHTML = `
 <p><a onclick="go('/updates')" class=\"bottom-element\">Список обновлений сервера</a></p>
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
-<div class=\"avtor-pravo\"><h5>© CraftBiped, 2023—2024</h5></div> <br>
+<div class=\"avtor-pravo\"><h5>© CraftBipedMC, 2023—2024</h5></div> <br>
 </div>
 `
 
