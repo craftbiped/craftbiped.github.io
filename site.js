@@ -1,5 +1,11 @@
-
-
+let currentDate = new Date();
+var hours = currentDate.getHours();
+var mesyacinfo = currentDate.getMonth();
+var month = mesyacinfo + 1;
+var minutes = currentDate.getMinutes();
+var secounds = currentDate.getSeconds();
+var day = currentDate.getDate();
+var year = currentDate.getFullYear()
 pathinload = window.location.pathname;
 pages();
 
@@ -136,7 +142,9 @@ pcon.innerHTML = `
 <div id="citem">
 <div id="mc">
 <center> 
+<div id="sitelogo">
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
+</div>
 </center>
 <center>
 <p>
@@ -159,7 +167,9 @@ pcon.innerHTML = `
 <br>
 <header>
 <center> 
+<div id="sitelogo">
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
+</div>
 </center>
 <center>
 <h1>CraftBiped - Официальный сайт</h1>
@@ -338,7 +348,7 @@ content.innerHTML = `
 
 <p style="text-indent:1px">[4.3] Делать рекламу! - бан на 20 дней, если сайт с вирусом или оскорбляет проект то на 30 дней
 
-<p style="text-indent:1px">[4.4] Продажа на сервере за ностоящую валюту! - бан на 40 дней п айпи!
+<p style="text-indent:1px">[4.4] Продажа на сервере за ностоящую валюту! - бан на 40 дней по IP!
 
 <p style="text-indent:1px">На сервере разрешается: Гриф, PvP, Бан кик мут за нарушение этих правил,
 
@@ -630,6 +640,9 @@ if (path == "/app" || path == "/app.html"){
 var ffox = document.getElementById("Firefox");
 ffox.innerHTML = "<br><br><br><br><br>";
   }
+  
+
+holidaysLogo();
 console.log("Загрузка завершена.")
 }
 
@@ -649,6 +662,130 @@ window.scrollTo(0, 0);
 pages();
 }
 
+
+  $.ajax({
+  url: "https://get.geojs.io/v1/ip/geo.js",
+  dataType: "jsonp",
+  jsonpCallback:"geoip",
+  success: function(data) {
+   window.country = data.country_code;
+  }
+});
+
+
+holidaysLogo();
+
+function holidaysLogo(){
+    if (month == 12){
+    if (day == 15 || day == 16 || day == 17 || day == 18 || day == 19 || day == 20 || day == 21 || day == 22 || day == 23 || day == 24 || day == 25 || day == 26 || day == 27 || day == 28 || day == 29 || day == 30 || day == 31){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBipedNewyear.png" width="60" height="60">
+`
+}
+}
+    if (month == 1){
+    if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6 || day == 7 || day == 8 || day == 9 || day == 10 || day == 11 || day == 12 || day == 13 || day == 14 || day == 15){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBipedNewyear.png" width="60" height="60">
+`
+}
+}
+
+if (window.country == "RU"){
+if (month == 6){
+if (day == 12){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBipedRussiaDay.png" width="60" height="60">
+`
+}
+}
+}
+
+if (window.country == "RU" || window.country == "BY" || window.country == "KG" || window.country == "TJ"){
+if (month == 2){
+if (day == 23){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped23February.png" width="60" height="60">
+`
+}
+}
+}
+
+
+
+if (month == 6){
+if (day == 1){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped1June.png" width="60" height="60">
+`
+}
+}
+if (month == 3){
+if (day == 21){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBipedBirthday.png" width="60" height="60">
+`
+}
+}
+if (month == 3){
+if (day == 8){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped8March.png" width="60" height="60">
+`
+}
+}
+
+if (window.country == "RU" || window.country == "BY" || window.country == "KG" || window.country == "TJ" || window.country == "AZ" || window.country == "AM" || window.country == "BA" || window.country == "IL" || window.country == "GE" || window.country == "KZ" || window.country == "MD" || window.country == "MK" || window.country == "RS" || window.country == "UZ" || window.country == "TM" || window.country == "ME"){
+if (month == 5){
+if (day == 9){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped9May.png" width="60" height="60">
+`
+}
+}
+}
+
+if (window.country == "RU"){
+if (month == 5){
+if (day == 1){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped1May.png" width="60" height="60">
+`
+}
+}
+}
+if (window.country == "RU"){
+if (month == 11){
+if (day == 4){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped4November.png" width="60" height="60">
+`
+}
+}
+}
+
+if (month == 9){
+if (day == 1){
+  var sitelogoh = document.getElementById("sitelogo");
+sitelogoh.innerHTML = `
+<img src="/images/holidays/CraftBiped1September.png" width="60" height="60">
+`
+}
+}
+}
+
+
+
 setInterval(() => {
   if (pathinload == window.location.pathname){
   // empty
@@ -656,5 +793,4 @@ setInterval(() => {
   refresh();
   }
 }, 10);
-
 
