@@ -658,6 +658,8 @@ console.log("Загрузка завершена с ошибками.")
    var content = document.getElementById("content");
    content.innerHTML = `
 <center>
+<hr>
+<br><br><br><br><br><br>
 <h2>404 - Нет такой страницы!</h2>
 <h3>На сайте нет этой частицы!</h3>
 <p>Не отчаивайся, друг!<br>Нам поможет тут<br>кнопочка "НА ГЛАВНУЮ"!</p>
