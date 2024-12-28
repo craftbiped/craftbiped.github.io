@@ -190,9 +190,10 @@ pcon.innerHTML = `
 //   ТУТ КОНТЕНТ
 // `
 // }
+    var nonf = "yes";
 
     if (path == "/" || path == "/index" || path == "/index.html"){
-    
+    var nonf = "no";
     document.title = "Официальный сайт CraftBiped";
     
 var content = document.getElementById("content");
@@ -225,7 +226,7 @@ content.innerHTML = `
 
 }
   if (path == "/info" || path == "/info.html"){
-    
+        var nonf = "no";
     document.title = "Информация - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Информация";
@@ -249,7 +250,7 @@ content.innerHTML = `
 }
 
   if (path == "/news" || path == "/news.html"){
-    
+        var nonf = "no";
     document.title = "Новости - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Новости";
@@ -267,7 +268,7 @@ content.innerHTML = `
 
 
   if (path == "/rules" || path == "/rules.html"){
-    
+        var nonf = "no";
     document.title = "Правила - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Правила сервера";
@@ -358,7 +359,7 @@ content.innerHTML = `
 }
 
   if (path == "/updates" || path == "/updates.html"){
-    
+        var nonf = "no";
     document.title = "Список обновлений - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Список обновлений";
@@ -539,7 +540,7 @@ content.innerHTML = `
 }
 
   if (path == "/videos/" || path == "/videos/index.html" || path == "/videos/index" || path == "/videos"){
-    
+        var nonf = "no";
     document.title = "Видео - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Видео сервера CraftBiped";
@@ -564,7 +565,7 @@ _____________________________________
 }
 
   if (path == "/expectations/" || path == "/expectations/index.html" || path == "/expectations/index" || path == "/expectations"){
-    
+        var nonf = "no";
     document.title = "Ждём ... вместе с CraftBiped - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Ждём ... вместе с CraftBiped";
@@ -594,15 +595,19 @@ content.innerHTML = `
 `
 }
 if (path == "/nav" || path == "/nav.html"){
+    var nonf = "no";
 window.location.pathname = "/";
 }
 if (path == "/expectations/newyear.html" || path == "/expectations/newyear"){
+    var nonf = "no";
 window.location.reload();
 }
 if (path == "/blog/" || path == "/blog/index" || path == "/blog/index.html"){
+    var nonf = "no";
 window.location.reload();
 }
 if (path == "/app" || path == "/app.html"){
+    var nonf = "no";
     document.title = "Приложение - CraftBiped";
    var pageinfo = document.getElementById("pageinfo");
    pageinfo.innerHTML = "Целое приложение к сайту!";
@@ -643,7 +648,28 @@ ffox.innerHTML = "<br><br><br><br><br>";
   
 
 holidaysLogo();
+  if (nonf == "yes"){
+console.error("ОШИБКА СЕРВЕРА: 404 Not Found")
+console.log("Загрузка завершена с ошибками.")
+
+    document.title = "Что-то пошло не так - CraftBiped";
+   var pageinfo = document.getElementById("pageinfo");
+   pageinfo.innerHTML = "404 - Страница не найдена!";
+   var content = document.getElementById("content");
+   content.innerHTML = `
+<center>
+<h2>404 - Нет такой страницы!</h2>
+<h3>На сайте нет этой частицы!</h3>
+<p>Не отчаивайся, друг!<br>Нам поможет тут<br>кнопочка "НА ГЛАВНУЮ"!</p>
+<br>
+<h1><a onclick="go('/')">НА ГЛАВНУЮ</a></h1>
+</center>
+   `;
+
+}
+  if (nonf == "no"){
 console.log("Загрузка завершена.")
+  }
 }
 
 function go(url){
