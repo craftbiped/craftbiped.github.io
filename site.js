@@ -6,6 +6,7 @@ var minutes = currentDate.getMinutes();
 var secounds = currentDate.getSeconds();
 var day = currentDate.getDate();
 var year = currentDate.getFullYear()
+
 pathinload = window.location.pathname;
 pages();
 
@@ -149,6 +150,13 @@ bottom.innerHTML = `
 pcon.innerHTML = `
 <div id="citem">
 <div id="mc">
+<p style="text-align: right; position: relative;
+left: -9px;" id="mskmsg">Московское время:</p>
+<p style="text-align: right; position: relative;
+left: -9px;" id="mskdate">Загрузка...</p>
+<p style="text-align: right; position: relative;
+left: -9px;" id="msktime">Пожалуйста, подождите...</p>
+<br><br>
 <center> 
 <div id="sitelogo">
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
@@ -174,6 +182,13 @@ pcon.innerHTML = `
 <div id="indbgs">
 <br>
 <header>
+<p style="text-align: right; position: relative;
+left: -9px;" id="mskmsg">Московское время:</p>
+<p style="text-align: right; position: relative;
+left: -9px;" id="mskdate">Загрузка...</p>
+<p style="text-align: right; position: relative;
+left: -9px;" id="msktime">Пожалуйста, подождите...</p>
+<br>
 <center> 
 <div id="sitelogo">
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
@@ -845,6 +860,21 @@ setInterval(() => {
   refresh();
   }
 }, 10);
+
+setInterval(() => {
+// МСК
+var moscowtimezone = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"})); 
+var monthmsk = moscowtimezone.getMonth() + 1;
+var mskdatet = ""+ moscowtimezone.getDate() +"."+ monthmsk +"."+ moscowtimezone.getFullYear() +""
+
+var msktimet = ""+ moscowtimezone.getHours() +":"+ moscowtimezone.getMinutes() +""
+
+  var mskdatee = document.getElementById("mskdate");
+mskdatee.innerHTML = mskdatet;
+  var msktimeee = document.getElementById("msktime");
+msktimeee.innerHTML = msktimet;
+//
+}, 1000);
 
 // СНЕГ НА САЙТЕ
 /**
