@@ -132,10 +132,14 @@ bottom.innerHTML = `
 <p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
 <p><a onclick="go('/expectations/')" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
 <p><a onclick="go('/updates')" class=\"bottom-element\">Список обновлений сервера</a></p>
+
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
+</center>
 <div class=\"avtor-pravo\"><h5>© CraftBipedMC, 2023—2024</h5></div> <br>
+<div style="height: 10px; background: url(https://craftbiped.github.io/images/snow.png) repeat-x 100%;"></div>
 </div>
+
 `
 
 
