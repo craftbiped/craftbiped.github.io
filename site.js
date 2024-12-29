@@ -98,6 +98,10 @@ topmenu.innerHTML = `
 <br>
 </div>
 </nav>
+
+
+
+<div style="height: 30px; background: url(https://craftbiped.github.io/images/gurlanda.gif) repeat-x 100%;"></div>
 `
 
 // СНИЗУ
