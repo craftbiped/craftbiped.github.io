@@ -852,17 +852,22 @@ setInterval(() => {
   refresh();
   }
 }, 10);
-
 setInterval(() => {
 // МСК
 var moscowtimezone = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"})); 
 var monthmsk = moscowtimezone.getMonth() + 1;
+if (moscowtimezone.getMinutes() < 10){
+var minmsk = "0"+ moscowtimezone.getMinutes() +""
+} else {
+var minmsk = moscowtimezone.getMinutes()
+}
 var mskdatet = ""+ moscowtimezone.getDate() +"."+ monthmsk +"."+ moscowtimezone.getFullYear() +""
-
-var msktimet = ""+ moscowtimezone.getHours() +":"+ moscowtimezone.getMinutes() +""
+var msktimet = ""+ moscowtimezone.getHours() +":"+ minmsk +""
 
   var mskdatee = document.getElementById("mskdate");
-mskdatee.innerHTML = ""+ mskdatet +":"+ msktimet +"";
+if (mskdatee) {
+mskdatee.innerHTML = ""+ mskdatet +" "+ msktimet +"";
+}
 //  var msktimeee = document.getElementById("msktime");
 //msktimeee.innerHTML = msktimet;
 //
