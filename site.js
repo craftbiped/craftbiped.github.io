@@ -150,12 +150,6 @@ bottom.innerHTML = `
 pcon.innerHTML = `
 <div id="citem">
 <div id="mc">
-<p style="text-align: right; position: relative;
-left: -9px;" id="mskmsg">Московское время:</p>
-<p style="text-align: right; position: relative;
-left: -9px;" id="mskdate">Загрузка...</p>
-<p style="text-align: right; position: relative;
-left: -9px;" id="msktime">Пожалуйста, подождите...</p>
 <br><br>
 <center> 
 <div id="sitelogo">
@@ -186,8 +180,6 @@ pcon.innerHTML = `
 left: -9px;" id="mskmsg">Московское время:</p>
 <p style="text-align: right; position: relative;
 left: -9px;" id="mskdate">Загрузка...</p>
-<p style="text-align: right; position: relative;
-left: -9px;" id="msktime">Пожалуйста, подождите...</p>
 <br>
 <center> 
 <div id="sitelogo">
@@ -870,9 +862,9 @@ var mskdatet = ""+ moscowtimezone.getDate() +"."+ monthmsk +"."+ moscowtimezone.
 var msktimet = ""+ moscowtimezone.getHours() +":"+ moscowtimezone.getMinutes() +""
 
   var mskdatee = document.getElementById("mskdate");
-mskdatee.innerHTML = mskdatet;
-  var msktimeee = document.getElementById("msktime");
-msktimeee.innerHTML = msktimet;
+mskdatee.innerHTML = ""+ mskdatet +":"+ msktimet +"";
+//  var msktimeee = document.getElementById("msktime");
+//msktimeee.innerHTML = msktimet;
 //
 }, 1000);
 
