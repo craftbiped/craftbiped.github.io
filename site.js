@@ -121,7 +121,15 @@ bottom.innerHTML = `
 <h2><img src=\"/images/CraftBipedMinecraft.png\" width=\"70\" height=\"70\" align=\"center\"> 
 <span class=\"sitename-12812\">CraftBiped </span>
 </h2><h4 class=\"element-12812\">craftbiped.aternos.me</h4> 
-<br><center> 
+<br><br>
+<center>
+<div style="background-color: black; width: 150px; text-align:center; position:relative; border-width: 10px; border-style: dashed">
+<p id="mskmsg">Московское время:</p>
+<p id="mskdate">Загрузка...</p>
+</div>
+</center>
+<br><p>Т.к. у наших игроков разные часовые пояса, мы решили добавить на сайт Московское время - часовой пояс, по которому работает наш сервер.<br>ВНИМАНИЕ! Убедитесь, что на вашем устройстве верно установлены дата и время. Если они сбиты, сбой также может повлиять на отображаемое Московское время.</p>
+<br><br><center> 
 <h3>Навигация</h3>
 <br>
 <p><a onclick="go('/')" class=\"bottom-element\">Главная</a></p> 
@@ -134,12 +142,6 @@ bottom.innerHTML = `
 <p><a onclick="go('/expectations/')" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
 <p><a onclick="go('/updates')" class=\"bottom-element\">Список обновлений сервера</a></p>
 
-<center>
-<div style="background-color: black; width: 150px; text-align:center; position:relative; border-width: 10px; border-style: dashed">
-<p id="mskmsg">Московское время:</p>
-<p id="mskdate">Загрузка...</p>
-</div>
-  </center>
 
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
