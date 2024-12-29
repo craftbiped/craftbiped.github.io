@@ -134,6 +134,13 @@ bottom.innerHTML = `
 <p><a onclick="go('/expectations/')" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
 <p><a onclick="go('/updates')" class=\"bottom-element\">Список обновлений сервера</a></p>
 
+<center>
+<div style="background-color: black; width: 150px; text-align:center; position:relative; border-width: 10px; border-style: dashed">
+<p id="mskmsg">Московское время:</p>
+<p id="mskdate">Загрузка...</p>
+</div>
+  </center>
+
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
 </center>
@@ -176,11 +183,8 @@ pcon.innerHTML = `
 <div id="indbgs">
 <br>
 <header>
-<p style="text-align: right; position: relative;
-left: -9px;" id="mskmsg">Московское время:</p>
-<p style="text-align: right; position: relative;
-left: -9px;" id="mskdate">Загрузка...</p>
-<br>
+<center>
+<br><br><br>
 <center> 
 <div id="sitelogo">
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
@@ -190,6 +194,7 @@ left: -9px;" id="mskdate">Загрузка...</p>
 <h1>CraftBiped - Официальный сайт</h1>
 <h3>Работаем уже более года для вас!</h3>
 <h4 id="pageinfo"></h4>
+<br><br><br>
 `
 }
 
@@ -866,7 +871,7 @@ var msktimet = ""+ moscowtimezone.getHours() +":"+ minmsk +""
 
   var mskdatee = document.getElementById("mskdate");
 if (mskdatee) {
-mskdatee.innerHTML = ""+ mskdatet +" "+ msktimet +"";
+mskdatee.innerHTML = ""+ mskdatet +" <br> "+ msktimet +"";
 }
 //  var msktimeee = document.getElementById("msktime");
 //msktimeee.innerHTML = msktimet;
