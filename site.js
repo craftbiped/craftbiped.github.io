@@ -82,18 +82,18 @@ topmenu.innerHTML = `
     <ul class="menu-list">
 <br><br>
 <div id="Firefox"></div>
-            <li><a class="menu-item" onclick="go('/')">Главная</a></li>
+            <li><a class="menu-item" href="#" onclick="go('/')">Главная</a></li>
             <li><a class="menu-item" href="/go/donate.html">Купить донат</a></li>
-            <li><a class="menu-item" onclick="go('/info')">Информация</a></li>
+            <li><a class="menu-item" href="#" onclick="go('/info')">Информация</a></li>
             <li><a class="menu-item" href="/blog/news/">Новости</a></li>
             <li><a class="menu-item" href="/blog/">Блог</a></li>
-            <li><a class="menu-item" onclick="go('/rules')">Правила</a></li>
+            <li><a class="menu-item" href="#" onclick="go('/rules')">Правила</a></li>
 <li><a class="menu-item" href="https://craftbiped.github.io/ds.html">Дискорд-сервер</a></li>
-<li><a class="menu-item" onclick="go('/updates')">Об обновлениях</a></li>
-<li><a class="menu-item" onclick="go('/expectations/')">Отсчёты до ожидаемых событий</a></li>
-<li><a class="menu-item" onclick="go('/videos/')">Видео сервера CraftBiped</a></li>
+<li><a class="menu-item" href="#" onclick="go('/updates')">Об обновлениях</a></li>
+<li><a class="menu-item" href="#" onclick="go('/expectations/')">Отсчёты до ожидаемых событий</a></li>
+<li><a class="menu-item" href="#" onclick="go('/videos/')">Видео сервера CraftBiped</a></li>
 <div class="showmobile">
-<li><a class="menu-item" onclick="go('/app')">Скачать приложение</a></li>
+<li><a class="menu-item" href="#" onclick="go('/app')">Скачать приложение</a></li>
 </div>
        </ul>
 <br>
