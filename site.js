@@ -167,7 +167,7 @@ pcon.innerHTML = `
 </center>
 <center>
 <p>
-<h1>CraftBiped - Официальный сайт</h1>
+<h1>CraftBiped - Майнкрафт сервер</h1>
 <h3>Работаем уже более года для вас!</h3>
     <p>
       <a href="#content"><img src="/images/go.png" width="60" height="60"></a>
@@ -193,7 +193,7 @@ pcon.innerHTML = `
 </div>
 </center>
 <center>
-<h1>CraftBiped - Официальный сайт</h1>
+<h1>Майнкрафт сервер CraftBiped</h1>
 <h3>Работаем уже более года для вас!</h3>
 <h4 id="pageinfo"></h4>
 <br><br><br>
