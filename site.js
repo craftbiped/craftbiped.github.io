@@ -136,7 +136,7 @@ bottom.innerHTML = `
 <p><a onclick="go('/rules')" class=\"bottom-element\">Правила</a></p> 
 <p><a href="/blog/news/" class=\"bottom-element\">Новости</a></p> 
 <p><a href="/blog/" class=\"bottom-element\">Наш блог</a></p> 
-<p><a onclick="go('/info')" class=\"bottom-element\">Информация о сервере</a></p> 
+<p><a onclick="go('/info')" class=\"bottom-element\">Информация</a></p> 
 <p><a href=\"/go/discord.html\" class=\"bottom-element\">Дискорд</a></p> 
 <p><a href=\"/go/donate.html\" class=\"bottom-element\">Купить донат</a></p> 
 <p><a onclick="go('/expectations/')" class=\"bottom-element\">Отсчёты до ожидаемых событий</a></p> 
