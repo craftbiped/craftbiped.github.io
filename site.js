@@ -35,8 +35,8 @@ var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
 <div style="background-color: #82b1ff;">
-<center style="color: green;"><b>Ждём новый год вместе с CraftBiped!<br>
-  <a href="/expectations/newyear.html" style="color: red;">Ждём тут!</a></b>
+<center style="color: green;"><b>С новым 2025 годом!<br>
+  <a href="https://craftbiped.github.io/blog/news/2024/12/31/new-year.html" style="color: red;">Подробнее...</a></b>
 </center>
 </div>
 
