@@ -263,15 +263,25 @@ content.innerHTML = `
 <hr>
 <br><br><br><br><br><br>
 <center>
-<h2>Информация</h2>
-<p>Информация о сервере:</p>
+<h2>Информация о сервере</h2>
 
-<p> IP: CraftBiped.aternos.me</p>
-<p> Port: 20863</p>
+<p> IP адрес:</p>
+<a href="#" onclick="copyToClipboard('#servip'); new Toast({title: 'Буфер обмена', text: 'IP успешно скопирован!', theme: 'info', autohide: true, interval: 4000});"><p id="servip" style="color:white;">craftbiped.aternos.me</p></a>
+<br><br>
+<p> Порт: 20863</p>
+<br><br>
 <p> Версия: 1.4.6 - 1.20.6</p>
-<p> Версия Ядра: 1.17.1</p>
-<p> Discord: <a href="/go/discord.html">Клик</a></p>
+<br><br>
+<p> Версия Ядра: 1.17.1 (рекомендуется играть с неё)</p>
+<br><br>
 <br>
+<h2>Ссылки</h2>
+<p> Discord: <br><a href="/ds">http://craftbiped.github.io/ds</a></p>
+<br><br>
+<p> Блог: <br><a href="/blog/">http://craftbiped.github.io/blog/</a></p>
+<br><br>
+<p> Официальный сайт: <br><a onclick="go('/')">http://craftbiped.github.io/</a></p>
+<br><br><br>
 </center>
 `
 }
