@@ -266,13 +266,13 @@ content.innerHTML = `
 <h2>Информация о сервере</h2>
 
 <p> IP адрес:</p>
-<a href="#" onclick="copyToClipboard('#servip'); new Toast({title: 'Буфер обмена', text: 'IP успешно скопирован!', theme: 'info', autohide: true, interval: 4000});"><p id="servip" style="color:white;">craftbiped.aternos.me</p></a>
+<a href="#copy" onclick="copyToClipboard('#servip'); new Toast({title: 'Буфер обмена', text: 'IP успешно скопирован!', theme: 'info', autohide: true, interval: 4000});"><p id="servip" style="color:white;">craftbiped.aternos.me</p></a>
 <br><br>
-<p> Порт: 20863</p>
+<p> Порт: <br>20863</p>
 <br><br>
-<p> Версия: 1.4.6 - 1.20.6</p>
+<p> Версия: <br>1.4.6 - 1.20.6</p>
 <br><br>
-<p> Версия Ядра: 1.17.1 (рекомендуется играть с неё)</p>
+<p> Версия Ядра: <br>1.17.1 (рекомендуется играть с неё)</p>
 <br><br>
 <br>
 <h2>Ссылки</h2>
