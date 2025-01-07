@@ -40,7 +40,7 @@ var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
 <div style="background-color: #82b1ff;">
-<center style="color: green;"><b><br><br>С рождеством!<br><br>
+<center style="color: green;"><b><br>С рождеством!<br><br>
 <!--  <a href="https://craftbiped.github.io/blog/news/2024/12/31/new-year.html" style="color: red;">Подробнее...</a></b>
 -->
 </center>
