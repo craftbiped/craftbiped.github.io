@@ -39,13 +39,13 @@ console.log("Загрузка страницы \""+ path +"\"...")
 var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
+<!--
 <div style="background-color: #82b1ff;">
-<center style="color: green;"><b>С новым годом<br>и рождеством!</b>
-<!--  <a href="https://craftbiped.github.io/blog/news/2024/12/31/new-year.html" style="color: red;">Подробнее...</a></b>
--->
+<center style="color: green;"><b>С новым годом<br>
+<a href="https://craftbiped.github.io/blog/news/2024/12/31/new-year.html" style="color: red;">Подробнее...</a></b>
 </center>
 </div>
-
+-->
 
 <!-- Навигация -->
 <nav>  
@@ -107,8 +107,9 @@ topmenu.innerHTML = `
 </nav>
 
 
-
+<!--
 <div style="height: 30px; background: url(https://craftbiped.github.io/images/gurlanda.gif) repeat-x 100%;"></div>
+-->
 `
 
 // СНИЗУ
@@ -759,7 +760,7 @@ sitelogoh.innerHTML = `
 }
 }
     if (month == 1){
-    if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6 || day == 7 || day == 8 || day == 9 || day == 10 || day == 11 || day == 12 || day == 13 || day == 14 || day == 15){
+    if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6 || day == 7 || day == 8 || day == 9 || day == 10 || day == 11 || day == 12 || day == 13 || day == 14){
   var sitelogoh = document.getElementById("sitelogo");
 sitelogoh.innerHTML = `
 <img src="/images/holidays/CraftBipedNewyear.png" width="60" height="60">
