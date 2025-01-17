@@ -388,7 +388,7 @@ content.innerHTML = `
 <br><br><br><br>
 <p>1. Откройте любой браузер на вашем телефоне или компьютере.</p>
 <br><br>
-<p>2. Введите в адресную строку <a href="#copy" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">https://craftbiped.github.io/ds</p></a></p>
+<p>2. Введите в адресную строку <a href="#copy" style="color:white;" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">https://craftbiped.github.io/ds</p></a></p>
 <br><br>
 <p>3. Нажмите Enter. Вас перекинет на страницу с приглашением. При необходимости зарегистрируйтесь или авторизируйтесь в дискорд.</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
