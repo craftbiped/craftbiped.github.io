@@ -195,8 +195,8 @@ pcon.innerHTML = `
 
 <center>
 <h1>Официальное приложение CraftBiped</h1>
-<h3>craftbiped.aternos.me</h3>
-<h4 id="pageinfo">Главная приложения</h4>
+<h3>Работаем уже более года для вас!</h3>
+<h4 id="pageinfo">Главная</h4>
 <br><br><br><br>
 </center>
 </div>
@@ -209,7 +209,7 @@ pcon.innerHTML = `
 
 <center>
 <h1>Официальное приложение CraftBiped</h1>
-<h3>craftbiped.aternos.me</h3>
+<h3>Работаем уже более года для вас!</h3>
 <h4 id="pageinfo"></h4>
 <br><br><br><br>
 </center>
@@ -289,11 +289,9 @@ content.innerHTML = `
 <hr>
 <br><br><br><br><br><br>
 <center>
-<h2>Мы снова с вами!</h2>
-<p>Ура! Наш сервер уже доступен! Вы можете играть на нём.</p>
 <h2>Главная</h2>
 <p>CraftBiped - Майнкрафт сервер! Вы можете зайти на него указав IP "CraftBiped.aternos.me"! Для входа используйте версию 1.4.7 - 1.20.6, но версия сервера - это 1.17.1. Порт сервера: 20863</p>
-
+<br>
 
 <h2>О нас</h2>
 <p>
@@ -302,10 +300,10 @@ content.innerHTML = `
 </p>
 <div class="showmobile">
 <hr>
-<h2>Только для Мобильных устройств!</h2>
-<p>Попробуйте наш сайт в одном приложении! (Приложение в данный момент на бета-тестировании, могут быть артефакты.)</p>
+<h2>Официальное приложение CraftBiped ВЫПУЩЕНО!</h2>
+<p>Скачивайте новую версию нашего приложения и узнавайте наши новости, донатьте, заглядывайте на отсчёты до ожидаемых событий и не только!</p>
 <p>
-  <button onclick="window.location.href = 'https://craftbiped.github.io/app';">Попробовать</button>
+  <button onclick="window.location.href = 'https://craftbiped.github.io/app';">СКАЧАТЬ!</button>
 </p>
 <hr>
 </div>
@@ -390,7 +388,7 @@ content.innerHTML = `
 <br><br><br><br>
 <p>1. Откройте любой браузер на вашем телефоне или компьютере.</p>
 <br><br>
-<p>2. Введите в адресную строку <a href="#copy" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">craftbiped.github.io</p></a></p>
+<p>2. Введите в адресную строку <a href="#copy" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">https://craftbiped.github.io/ds</p></a></p>
 <br><br>
 <p>3. Нажмите Enter. Вас перекинет на страницу с приглашением. При необходимости зарегистрируйтесь или авторизируйтесь в дискорд.</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -803,20 +801,16 @@ if (path == "/app" || path == "/app.html"){
 <br><br><br><br><br><br>
    <h2>
 <center>
-  <p>CraftBiped - Мобильное приложение к сайту!</p>
+  <p>Официальное приложение CraftBiped!</p>
 </center>
 <h1>
-<p>
-<center>Целый сайт в одном приложении! В данный момент приложение на Бета-тесте, поэтому могут быть проблемы.</center>
-</p>
+<center>Ура! Наше полностью разработано!</center>
 </h1>
-<p>
-<center>Наше мобильное приложение позволяет попадать на наш сайт в один клик!</center>
-</p>
+<p><center>Оно до сих пор основано на нашем сайте, однако это уже не просто сайт целиком, а уже отдельный интерфейс. Да, он тоже написан на HTML, CSS и JS, но уже отличается от интерфейса официального сайта. Новому приложению также необходим доступ в интернет для его работы. Через него вы можете, также как и через сайт узнать информацию о сервере, прочитать правила сервера, прочитать новости проекта, купить донат, наблюдать за отсчётами и не только! Приложение доступно только для Android, начиная с версии 5.0. Контент в приложении обновляется автоматически.</center></p>
 </h2>
 <p>
 <center>
-  <button onclick="window.location.href = 'https://craftbiped.github.io/content/CraftBipedapp.apk';">Попробовать (.apk)</button>
+  <button onclick="window.location.href = 'https://craftbiped.github.io/content/CraftBipedapp.apk';">Загрузить (.apk)</button>
 </center>
 </p>
 <p>
