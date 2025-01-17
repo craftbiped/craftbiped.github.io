@@ -194,7 +194,7 @@ pcon.innerHTML = `
 <br>
 
 <center>
-<h1>CraftBiped</h1>
+<h1>Официальное приложение CraftBiped</h1>
 <h3>craftbiped.aternos.me</h3>
 <h4 id="pageinfo">Главная приложения</h4>
 <br><br><br><br>
@@ -208,7 +208,7 @@ pcon.innerHTML = `
 <br>
 
 <center>
-<h1>CraftBiped</h1>
+<h1>Официальное приложение CraftBiped</h1>
 <h3>craftbiped.aternos.me</h3>
 <h4 id="pageinfo"></h4>
 <br><br><br><br>
@@ -322,6 +322,7 @@ var content = document.getElementById("content");
 content.innerHTML = `
 <hr>
 <br><br><br><br><br><br>
+<center>
 <h1>Добро пожаловать в приложение CraftBiped!</h1>
 <h3>Через него вы можете, также как и через сайт узнать информацию о сервере, прочитать правила сервера, прочитать новости проекта, купить донат, наблюдать за отсчётами и не только! Мы создали новый интерфейс нашему приложению. Теперь оно выглядит не также как сайт, а по-другому! Чтобы перейти на другую страницу, нажмите на кнопку "≡ МЕНЮ" и нажмите на кнопку, куда нужно перейти. Приложению необходим интернет, не смотря на обновление интерфейса, оно всё равно продолжает работать за счёт нашего сайта. Обновляться приложение будет автоматически. Спасибо за установку!</h3>
 <br><hr><br>
@@ -330,6 +331,7 @@ content.innerHTML = `
 <h2>О нас</h2>
 <p>Мы небольшой майнкрафт проект, который был открыт Весной 2023. Сервер был создан и запущен 21.03.2023. Наша основная соц-сеть - Дискорд, также публикуем наши новости в <a href="/blog/">нашем блоге</a>. Так-же мы имеем свой сайт. Мы существуем уже 1 год, и пока-что никаких проблем нету. Наш проект пережил достаточно тяжёлые осложнения и тех-неполадки, но не смотря на это мы продолжаем работать!
 В данный момент у нас нету никаких проблем!</p>
+</center>
 `
   }
 } else {
@@ -360,7 +362,7 @@ content.innerHTML = `
 <br><br>
 <br>
 <h2>Ссылки</h2>
-<p> Discord: <br><a href="/ds">http://craftbiped.github.io/ds</a></p>
+<p> Discord: <br><a href="/dsinapp">http://craftbiped.github.io/ds</a></p>
 <br><br>
 <p> Блог: <br><a href="/blog/">http://craftbiped.github.io/blog/</a></p>
 <br><br><br>
@@ -389,10 +391,11 @@ content.innerHTML = `
 <p>2. Введите в адресную строку <a href="#copy" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">craftbiped.github.io</p></a></p>
 <p>3. Нажмите Enter. Вас перекинет на страницу с приглашением. При необходимости зарегистрируйтесь или авторизируйтесь в дискорд.</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</center>
 `
   }
 } else {
-window.location.href = "/ds";
+// NO CODE
 }
   if (path == "/info" || path == "/info.html"){
         var nonf = "no";
