@@ -880,6 +880,49 @@ function copyToClipboard(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+setInterval(() => {
+  if (pathinload == window.location.pathname){
+  // empty
+  } else {
+  refresh();
+  }
+}, 10);
+
+if (typeof parent.mobilemode !== 'undefined') {
+// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+} else {
+// меню он.
+setInterval(() => {
+var moscowtimezone = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"})); 
+var monthmsk = moscowtimezone.getMonth() + 1;
+if (moscowtimezone.getMinutes() < 10){
+var minmsk = "0"+ moscowtimezone.getMinutes() +""
+} else {
+var minmsk = moscowtimezone.getMinutes()
+}
+var mskdatet = ""+ moscowtimezone.getDate() +"."+ monthmsk +"."+ moscowtimezone.getFullYear() +""
+var msktimet = ""+ moscowtimezone.getHours() +":"+ minmsk +""
+
+  var mskdatee = document.getElementById("mskdate");
+if (mskdatee) {
+mskdatee.innerHTML = ""+ mskdatet +" <br> "+ msktimet +"";
+}
+//  var msktimeee = document.getElementById("msktime");
+//msktimeee.innerHTML = msktimet;
+//
+}, 1000);
+}
+
+  if ('serviceWorker' in navigator) {
+    console.log('CLIENT: service worker registration in progress.');
+    navigator.serviceWorker.register('/service-worker.js').then(function () {
+      console.log('CLIENT: service worker registration complete.');
+    }, function () {
+      console.log('CLIENT: service worker registration failure.');
+    });
+  } else {
+    console.log('CLIENT: service worker is not supported.');
+  }
 
   $.ajax({
   url: "https://get.geojs.io/v1/ip/geo.js",
@@ -1009,37 +1052,6 @@ sitelogoh.innerHTML = `
 
 
 
-setInterval(() => {
-  if (pathinload == window.location.pathname){
-  // empty
-  } else {
-  refresh();
-  }
-}, 10);
-if (typeof parent.mobilemode !== 'undefined') {
-// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
-} else {
-// меню он.
-setInterval(() => {
-var moscowtimezone = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"})); 
-var monthmsk = moscowtimezone.getMonth() + 1;
-if (moscowtimezone.getMinutes() < 10){
-var minmsk = "0"+ moscowtimezone.getMinutes() +""
-} else {
-var minmsk = moscowtimezone.getMinutes()
-}
-var mskdatet = ""+ moscowtimezone.getDate() +"."+ monthmsk +"."+ moscowtimezone.getFullYear() +""
-var msktimet = ""+ moscowtimezone.getHours() +":"+ minmsk +""
-
-  var mskdatee = document.getElementById("mskdate");
-if (mskdatee) {
-mskdatee.innerHTML = ""+ mskdatet +" <br> "+ msktimet +"";
-}
-//  var msktimeee = document.getElementById("msktime");
-//msktimeee.innerHTML = msktimet;
-//
-}, 1000);
-}
 
 
 // СНЕГ НА САЙТЕ
