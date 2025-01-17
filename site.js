@@ -36,6 +36,10 @@ var browser = browser_name()
 
 
 console.log("Загрузка страницы \""+ path +"\"...")
+if (typeof parent.mobilemode !== 'undefined') {
+// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+} else {
+// меню он.
 var topmenu = document.getElementById("topmenu");
 topmenu.innerHTML = `
 <!-- Инфобар сверху -->
@@ -110,10 +114,14 @@ topmenu.innerHTML = `
 <!--
 <div style="height: 30px; background: url(https://craftbiped.github.io/images/gurlanda.gif) repeat-x 100%;"></div>
 -->
-`
+`;
+}
 
 // СНИЗУ
-
+if (typeof parent.mobilemode !== 'undefined') {
+// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+} else {
+// меню он.
 var bottom = document.getElementById("bottom");
 bottom.innerHTML = `
 <br><br><br><br><br><br>
@@ -157,10 +165,15 @@ bottom.innerHTML = `
 <div style="height: 10px; background: url(https://craftbiped.github.io/images/snow.png) repeat-x 100%;"></div>
 </div>
 
-`
+`;
+}
 
 
 // До контента
+if (typeof parent.mobilemode !== 'undefined') {
+// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+} else {
+// меню он.
     if (path == "/" || path == "/index" || path == "/index.html"){
     var pcon = document.getElementById("pcon");
 pcon.innerHTML = `
@@ -205,6 +218,7 @@ pcon.innerHTML = `
 <h4 id="pageinfo"></h4>
 <br><br><br>
 `
+}
 }
 
 
@@ -751,6 +765,10 @@ function copyToClipboard(element) {
 holidaysLogo();
 
 function holidaysLogo(){
+if (typeof parent.mobilemode !== 'undefined') {
+// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+} else {
+// меню он.
     if (month == 12){
     if (day == 15 || day == 16 || day == 17 || day == 18 || day == 19 || day == 20 || day == 21 || day == 22 || day == 23 || day == 24 || day == 25 || day == 26 || day == 27 || day == 28 || day == 29 || day == 30 || day == 31){
   var sitelogoh = document.getElementById("sitelogo");
@@ -858,6 +876,7 @@ sitelogoh.innerHTML = `
 }
 }
 }
+}
 
 
 
@@ -868,8 +887,11 @@ setInterval(() => {
   refresh();
   }
 }, 10);
+if (typeof parent.mobilemode !== 'undefined') {
+// ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+} else {
+// меню он.
 setInterval(() => {
-// МСК
 var moscowtimezone = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"})); 
 var monthmsk = moscowtimezone.getMonth() + 1;
 if (moscowtimezone.getMinutes() < 10){
@@ -888,6 +910,8 @@ mskdatee.innerHTML = ""+ mskdatet +" <br> "+ msktimet +"";
 //msktimeee.innerHTML = msktimet;
 //
 }, 1000);
+}
+
 
 // СНЕГ НА САЙТЕ
 /**
