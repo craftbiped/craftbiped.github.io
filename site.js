@@ -126,6 +126,12 @@ topmenu.innerHTML = `
 // СНИЗУ
 if (typeof parent.mobilemode !== 'undefined') {
 // ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+var bottom = document.getElementById("bottom");
+bottom.innerHTML = `
+<br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br>`;
 } else {
 // меню он.
 var bottom = document.getElementById("bottom");
@@ -178,6 +184,38 @@ bottom.innerHTML = `
 // До контента
 if (typeof parent.mobilemode !== 'undefined') {
 // ЕСЛИ РЕЖИМ ПРИЛОЖЕНИЯ
+    if (path == "/index" || path == "/index.html" || path == "/"){
+          window.location.href = "/indexapp.html"
+    }
+    if (path == "/indexapp" || path == "/indexapp.html"){
+    var pcon = document.getElementById("pcon");
+pcon.innerHTML = `
+<div id="indbgs">
+<br>
+
+<center>
+<h1>CraftBiped</h1>
+<h3>craftbiped.aternos.me</h3>
+<h4 id="pageinfo">Главная приложения</h4>
+<br><br><br><br>
+</center>
+</div>
+`
+} else {
+    var pcon = document.getElementById("pcon");
+pcon.innerHTML = `
+<div id="indbgs">
+<br>
+
+<center>
+<h1>CraftBiped</h1>
+<h3>craftbiped.aternos.me</h3>
+<h4 id="pageinfo"></h4>
+<br><br><br><br>
+</center>
+</div>
+`
+}
 } else {
 // меню он.
     if (path == "/" || path == "/index" || path == "/index.html"){
@@ -210,7 +248,6 @@ pcon.innerHTML = `
 pcon.innerHTML = `
 <div id="indbgs">
 <br>
-<header>
 <center>
 <br><br><br>
 <center> 
@@ -223,6 +260,8 @@ pcon.innerHTML = `
 <h3>Работаем уже более года для вас!</h3>
 <h4 id="pageinfo"></h4>
 <br><br><br>
+</center>
+</div>
 `
 }
 }
@@ -258,8 +297,8 @@ content.innerHTML = `
 
 <h2>О нас</h2>
 <p>
-Мы небольшой майнкрафт проект, который был открыт Весной 2023. Сервер был создан и запущен 21.03.2023. Наша основная соц-сеть - Дискорд, также публикуем наши новости в <a href="/blog/">нашем блоге</a>. Так-же мы имеем свой сайт. Это сайт, где вы сейчас находитесь. Мы существуем уже 1 год, и пока-что никаких проблем нету. Наш проект пережил достаточно тяжёлые осложнения и тех-неполадки, но не смотря на это мы продолжаем работать!
-В данный момент у нас нету никаких проблем, но совсем недавно из нашей команды ушёл один Администратор, который был в нашей команде ещё с весны, ночью 25.01.2024 он вернулся и снова покинул нас 11.02.2024.
+Мы небольшой майнкрафт проект, который был открыт Весной 2023. Сервер был создан и запущен 21.03.2023. Наша основная соц-сеть - Дискорд, также публикуем наши новости в <a href="/blog/">нашем блоге</a>. Так-же мы имеем свой сайт. Мы существуем уже 1 год, и пока-что никаких проблем нету. Наш проект пережил достаточно тяжёлые осложнения и тех-неполадки, но не смотря на это мы продолжаем работать!
+В данный момент у нас нету никаких проблем!
 </p>
 <div class="showmobile">
 <hr>
@@ -273,6 +312,87 @@ content.innerHTML = `
 </center>
 `
 
+}
+if (typeof parent.mobilemode !== 'undefined') {
+  if (path == "/indexapp" || path == "/indexapp.html"){
+        var nonf = "no";
+    document.title = "Главная (Режим приложения) - CraftBiped";
+    
+var content = document.getElementById("content");
+content.innerHTML = `
+<hr>
+<br><br><br><br><br><br>
+<h1>Добро пожаловать в приложение CraftBiped!</h1>
+<h3>Через него вы можете, также как и через сайт узнать информацию о сервере, прочитать правила сервера, прочитать новости проекта, купить донат, наблюдать за отсчётами и не только! Мы создали новый интерфейс нашему приложению. Теперь оно выглядит не также как сайт, а по-другому! Чтобы перейти на другую страницу, нажмите на кнопку "≡ МЕНЮ" и нажмите на кнопку, куда нужно перейти. Приложению необходим интернет, не смотря на обновление интерфейса, оно всё равно продолжает работать за счёт нашего сайта. Обновляться приложение будет автоматически. Спасибо за установку!</h3>
+<br><hr><br>
+<p>CraftBiped - это майнкрафт сервер! Вы можете зайти на него указав IP "CraftBiped.aternos.me"! Для входа используйте версию 1.4.7 - 1.20.6, но версия сервера - это 1.17.1. Порт сервера: 20863 </p>
+<br>
+<h2>О нас</h2>
+<p>Мы небольшой майнкрафт проект, который был открыт Весной 2023. Сервер был создан и запущен 21.03.2023. Наша основная соц-сеть - Дискорд, также публикуем наши новости в <a href="/blog/">нашем блоге</a>. Так-же мы имеем свой сайт. Мы существуем уже 1 год, и пока-что никаких проблем нету. Наш проект пережил достаточно тяжёлые осложнения и тех-неполадки, но не смотря на это мы продолжаем работать!
+В данный момент у нас нету никаких проблем!</p>
+`
+  }
+} else {
+// no code
+}
+      if (typeof parent.mobilemode !== 'undefined') {
+  if (path == "/infoapp" || path == "/infoapp.html"){
+        var nonf = "no";
+    document.title = "Информация о сервере (Режим приложения) - CraftBiped";
+       var pageinfo = document.getElementById("pageinfo");
+   pageinfo.innerHTML = "Информация о сервере";
+
+var content = document.getElementById("content");
+content.innerHTML = `
+<hr>
+<br><br><br><br><br><br>
+<center>
+<h2>Информация о сервере</h2>
+
+<p> IP адрес:</p>
+<a href="#copy" onclick="copyToClipboard('#servip'); new Toast({title: 'Буфер обмена', text: 'IP успешно скопирован!', theme: 'info', autohide: true, interval: 4000});"><p id="servip" style="color:white;">craftbiped.aternos.me</p></a>
+<br><br>
+<p> Порт: <br>20863</p>
+<br><br>
+<p> Версия: <br>1.4.6 - 1.20.6</p>
+<br><br>
+<p> Версия Ядра: <br>1.17.1 (рекомендуется играть с неё)</p>
+<br><br>
+<br>
+<h2>Ссылки</h2>
+<p> Discord: <br><a href="/ds">http://craftbiped.github.io/ds</a></p>
+<br><br>
+<p> Блог: <br><a href="/blog/">http://craftbiped.github.io/blog/</a></p>
+<br><br><br>
+</center>
+`
+  }
+} else {
+// NO CODE
+}
+      if (typeof parent.mobilemode !== 'undefined') {
+  if (path == "/dsinapp" || path == "/dsinapp.html"){
+        var nonf = "no";
+    document.title = "Discord (Режим приложения) - CraftBiped";
+   var pageinfo = document.getElementById("pageinfo");
+   pageinfo.innerHTML = "Как присоединиться к дискорд-серверу?";
+    
+var content = document.getElementById("content");
+content.innerHTML = `
+<hr>
+<br><br><br><br><br><br>
+<center>
+<h2>Присоединение к Discord-серверу CraftBiped</h2>
+
+<p>Чтобы присоединиться к нашему Discord-серверу, сделайте следующее:</p>
+<p>1. Откройте любой браузер на вашем телефоне или компьютере.</p>
+<p>2. Введите в адресную строку <a href="#copy" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">craftbiped.github.io</p></a></p>
+<p>3. Нажмите Enter. Вас перекинет на страницу с приглашением. При необходимости зарегистрируйтесь или авторизируйтесь в дискорд.</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+`
+  }
+} else {
+window.location.href = "/ds";
 }
   if (path == "/info" || path == "/info.html"){
         var nonf = "no";
@@ -702,8 +822,12 @@ if (path == "/app" || path == "/app.html"){
 }
 
   if (browser == "Firefox"){
+if (typeof parent.mobilemode !== 'undefined') {
+// вкл
+} else {
 var ffox = document.getElementById("Firefox");
 ffox.innerHTML = "<br><br><br><br><br>";
+}
   }
   
 
