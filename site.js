@@ -1,3 +1,9 @@
+if (typeof parent.mobilemode !== 'undefined') {
+console.log('Режим приложения включён')
+} else {
+console.log('Режим приложения выключен')
+}
+
 let currentDate = new Date();
 var hours = currentDate.getHours();
 var mesyacinfo = currentDate.getMonth();
