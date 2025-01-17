@@ -387,8 +387,11 @@ content.innerHTML = `
 <h2>Присоединение к Discord-серверу CraftBiped</h2>
 
 <p>Чтобы присоединиться к нашему Discord-серверу, сделайте следующее:</p>
+<br><br><br><br>
 <p>1. Откройте любой браузер на вашем телефоне или компьютере.</p>
+<br><br>
 <p>2. Введите в адресную строку <a href="#copy" onclick="copyToClipboard('#dsip'); new Toast({title: 'Буфер обмена', text: 'Скопировано!', theme: 'info', autohide: true, interval: 4000});"><p id="dsip" style="color:white;">craftbiped.github.io</p></a></p>
+<br><br>
 <p>3. Нажмите Enter. Вас перекинет на страницу с приглашением. При необходимости зарегистрируйтесь или авторизируйтесь в дискорд.</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </center>
