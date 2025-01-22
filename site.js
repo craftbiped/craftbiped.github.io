@@ -1,5 +1,5 @@
 // ТЕХ-РАБОТЫ
-// window.location.pathname = "/maintenance"
+window.location.pathname = "/maintenance"
 
 
 if (typeof parent.mobilemode !== 'undefined') {
