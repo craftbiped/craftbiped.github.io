@@ -73,7 +73,7 @@ topmenu.innerHTML = `
     <li><a class="down">Ещё</a>
    <ul class="submenu">
 <p>
-    <a href="/go/discord.html">Дискорд-сервер</a>
+    <a href="/go/discord.html">Наш дискорд</a>
 </p>
 <br>
 <p>
@@ -1072,4 +1072,5 @@ sitelogoh.innerHTML = `
 //a.clientHeight;h=a.offsetWidth;m=a.offsetTop;n=a.offsetLeft};for(i=0;i<b.flakeCount;i+=1)f=d.length,d.push(new q(e(k,h-k),e(0,g),e(100*b.minSize,100*b.maxSize)/100,e(b.minSpeed,b.maxSpeed),f));s()},clear:function(){for(var b=null,b=a.getElementsByClassName?a.getElementsByClassName("snowfall-flakes"):a.querySelectorAll(".snowfall-flakes"),c=b.length;c--;)a.removeChild(b[c]);d=[];cancelAnimationFrame(r)}}}return{snow:function(c,b){if("string"==typeof b)if(0<c.length)for(var a=0;a<c.length;a++)c[a].snow&&
 //c[a].snow.clear();else c.snow.clear();else if(0<c.length)for(a=0;a<c.length;a++)(new d).snow(c[a],b);else(new d).snow(c,b)}}}(),q=setInterval(function(){"complete"===document.readyState&&(p.snow(document.body,{shadow:!0,flakeCount:150,maxSize:3,round:!0}),clearInterval(q))},100)})();
 //
+
 
