@@ -1,3 +1,7 @@
+// ТЕХ-РАБОТЫ
+// window.location.pathname = "/maintenance"
+
+
 if (typeof parent.mobilemode !== 'undefined') {
 console.log('Режим приложения включён')
 } else {
