@@ -73,7 +73,7 @@ topmenu.innerHTML = `
     <li><a class="down">Ещё</a>
    <ul class="submenu">
 <p>
-    <a href="/go/discord.html">Дискорд</a>
+    <a href="/go/discord.html">Дискорд-сервер</a>
 </p>
 <br>
 <p>
