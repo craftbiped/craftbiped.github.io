@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /androidapp/
+Disallow: /images/
+Disallow: /go/
+Disallow: /offline/
+Disallow: /404.html
+Disallow: /indexapp.html
+Disallow: /dsinapp.html
+Disallow: /infoapp.html
+Disallow: /maintenance.html
