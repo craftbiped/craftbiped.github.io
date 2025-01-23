@@ -2,6 +2,7 @@ User-agent: *
 
 Disallow: /androidapp/
 Disallow: /images/
+Disallow: /content/
 Disallow: /go/
 Disallow: /offline/
 Disallow: /404.html
@@ -9,3 +10,15 @@ Disallow: /indexapp.html
 Disallow: /dsinapp.html
 Disallow: /infoapp.html
 Disallow: /maintenance.html
+Disallow: /favicon.ico
+Disallow: /styles.css
+Disallow: /site.js
+Disallow: /jquery.js
+Allow: /
+Allow: /info
+Allow: /donate
+Allow: /app
+Allow: /rules
+Allow: /updates
+Allow: /expectations/
+Allow: /videos/
