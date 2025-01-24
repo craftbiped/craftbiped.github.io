@@ -14,7 +14,7 @@ Disallow: /favicon.ico
 Disallow: /styles.css
 Disallow: /site.js
 Disallow: /jquery.js
-Disallow: /wikipageadd.html
+Disallow: /wikipageadd
 Allow: /
 Allow: /info
 Allow: /donate
