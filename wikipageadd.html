@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Создание статьи в CraftBiped Wiki!</title>
 <style>
 body {
@@ -23,8 +24,8 @@ color: white;
 function createpage(){
 var get = document.getElementById('create');
 var article = get.value;
-var redirect = "https://craftbiped.fandom.com/ru/wiki/"+ article +"?veaction=edit";
-if (redirect === "https://craftbiped.fandom.com/ru/wiki/?veaction=edit"){
+var redirect = "https://craftbiped.fandom.com/ru/wiki/"+ article +"?action=edit";
+if (redirect === "https://craftbiped.fandom.com/ru/wiki/?action=edit"){
 alert("Пожалуйста, введите название статьи!")
 } else {
 window.location.href = redirect;
