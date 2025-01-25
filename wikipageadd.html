@@ -18,9 +18,12 @@ color: white;
 <input type="text" id="create" placeholder="Название статьи">
 <button type="button" onclick="createpage()">Создать страницу!</button>
 <br><br><br>
-<button type="button" onclick="window.location.href = \"https://craftbiped.fandom.com/ru/\"">Отмена</button>
+<button type="button" onclick="cancel()">Отмена</button>
 </center>
 <script>
+function cancel(){
+window.location.href = "https://craftbiped.fandom.com/ru/"
+}
 function createpage(){
 var get = document.getElementById('create');
 var article = get.value;
