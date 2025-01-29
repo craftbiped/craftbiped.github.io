@@ -51,7 +51,6 @@ cop.innerHTML = `
 <p><a href="/go/discord.html" class="bottom-element">Дискорд</a></p>
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
-<p><a href="/updates" class="bottom-element">Список обновлений сервера</a></p>
 
 
 <br>
