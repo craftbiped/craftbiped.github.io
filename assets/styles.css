@@ -1,0 +1,123 @@
+a {
+    color: white;
+}
+.zag {
+    text-align: center;
+}
+p {
+    text-indent: 1px;
+}
+#mobilemenu {
+    display: none;
+}
+.btn {
+          /* Меняем цвет фона, чтобы выделить кнопку */
+  background-color: #4CAF50;
+  /* Убираем границы блока */
+  border: none;
+  /* Меняем цвет текста */
+  color: white;
+  /* Добавляем отступы внутри */
+  padding: 15px 32px;
+  /* Центрируем текст по центру */
+  text-align: center;
+  /* Убираем нижнюю черту у тега a */
+  text-decoration: none;
+  /* Меняем тип на inline-block, чтобы кнопка занимала только столько места, сколько требуется */
+  display: inline-block;
+  /* Устанавливаем размер текста */
+  font-size: 16px;
+  /* При наведении курсора на блок будет меняться тип курсора */
+  cursor: pointer;
+}
+@font-face {
+    font-family: 'Minecraft 1.1';
+    src: url('/assets/minecraft1.1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ html {
+     background-color: gray;
+     color: white;
+     font-family: 'Minecraft 1.1';
+     background: url('/images/fon.png');
+}
+ #menu {
+     text-align: center;
+     border: 3px solid orange;
+    background: url('/images/imagebg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+ #menulist {
+     color: white;
+     font-weight: bold;
+     list-style: none;
+     text-decoration: none;
+}
+ ul li {
+     list-style: none;
+     display: inline;
+}
+ li a {
+     color: white;
+     font-weight: bold;
+     margin-right: 1rem;
+     text-decoration: none;
+}
+ li a:hover {
+     color: #c5d0e6;
+     font-weight: bold;
+     margin-right: 1rem;
+     text-decoration: none;
+}
+ #jsnof {
+     background-color: red;
+     text-align: center;
+     border: 3px solid black;
+}
+
+
+
+.sitename-12812 {
+display: inline;
+position: relative;
+top: -10px;
+}
+.element-12812 {
+display: inline;
+position: relative;
+right: -76px;
+top: -50px;
+}
+.avtor-pravo {
+text-align: right;
+position: relative;
+left: -9px;
+top: 13px;
+}
+#copyright {
+color: white;
+background-color: #2f2f2f;
+height: 300;
+border: 3px solid black;
+}
+.bottom-element {
+color: white;
+text-decoration: none;
+font-family: 'Minecraft 1.1';
+font-weight: bold;
+}
+.bottom-element:hover {
+color: #2b82c4;
+}
+@media screen and (max-width: 1034px) {
+.themenu {
+    display: none;
+}
+#mobilemenu {
+    display: block;
+}
+}
