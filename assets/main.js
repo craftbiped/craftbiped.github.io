@@ -8,6 +8,9 @@ jjs.innerHTML = `
 var menumenu = document.getElementById("menu");
 menumenu.innerHTML = `
 <nav>
+<div id="jsnof">
+<p>В данный момент мы испытываем проблемы с интернетом, из-за чего сервер не может работать! Ожидайте новых постов в <a href="/blog/">нашем блоге</a>. <br><a href="https://craftbiped.github.io/blog/news/2025/01/29/internet-connection.html">Подробнее...</a></a>.</p>
+</div>
 <br>
 <div class="site">
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
