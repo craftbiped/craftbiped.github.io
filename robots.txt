@@ -15,11 +15,3 @@ Disallow: /styles.css
 Disallow: /site.js
 Disallow: /jquery.js
 Disallow: /wikipageadd
-Allow: /
-Allow: /info
-Allow: /donate
-Allow: /app
-Allow: /rules
-Allow: /updates
-Allow: /expectations/
-Allow: /videos/
