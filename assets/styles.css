@@ -37,7 +37,7 @@ p {
     font-style: normal;
 }
  html {
-     background-color: gray;
+     background-color: black;
      color: white;
      font-family: 'Minecraft 1.1';
      background: url('/images/fon.png');
@@ -45,6 +45,7 @@ p {
  #menu {
      text-align: center;
      border: 3px solid orange;
+     background-color: #ffb433;
     background: url('/images/imagebg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
