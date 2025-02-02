@@ -114,7 +114,7 @@ font-weight: bold;
 .bottom-element:hover {
 color: #2b82c4;
 }
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1112px) {
 .themenu {
     display: none;
 }
