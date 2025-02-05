@@ -1,4 +1,6 @@
-
+if (window.location.host == 'craftbiped.github.io.') {
+window.location.host = "craftbiped.github.io";
+}
 var jjs = document.getElementById("jsn");
 jjs.innerHTML = `
 `;
