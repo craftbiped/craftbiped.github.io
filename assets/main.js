@@ -32,6 +32,8 @@ menumenu.innerHTML = `
 <li><a href="/rules">ПРАВИЛА</a></li>
 <li><a href="/expectations/">ОТСЧЁТЫ</a></li>
 <li><a href="/app">ПРИЛОЖЕНИЕ</a></li>
+<br><br>
+<li><a href="/videos/">ВИДЕО</a></li>
 </ul>
 <h2 id="mobilemenu"><a onclick="openmenu()" id="openmenubutton" class="btn" style="color: white; text-decoration: none;">☰ меню</a></h2>
 <div id="menulist">
@@ -58,6 +60,7 @@ cop.innerHTML = `
 <p><a href="/go/discord.html" class="bottom-element">Дискорд</a></p>
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
+<p><a href="/videos/" class="bottom-element">Видео</a></p>
 
 
 <br>
@@ -89,6 +92,8 @@ function openmenu(){
 <li><a href="/expectations/"> ОТСЧЁТЫ</a></li>
 <br>
 <li><a href="/app"> ПРИЛОЖЕНИЕ</a></li>
+<br>
+<li><a href="/videos/"> ВИДЕО</a></li>
 <br><br><br>
 </center>
     `;
