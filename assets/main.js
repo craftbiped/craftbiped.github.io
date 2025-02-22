@@ -106,6 +106,10 @@ function openmenu(){
 <li><a href="/app"> ПРИЛОЖЕНИЕ</a></li>
 <br>
 <li><a href="/videos/"> ВИДЕО</a></li>
+<br>
+<li><a href="/support"> ПОДДЕРЖКА</a></li>
+<br>
+<li><a href="/sets/"> НАБОРЫ</a></li>
 <br><br><br>
 </center>
     `;
