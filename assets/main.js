@@ -10,7 +10,8 @@ jjs.innerHTML = `
 var menumenu = document.getElementById("menu");
 menumenu.innerHTML = `
 <div id="jsnof">
-<p>Начиная с 22 февраля наш IP меняется!!!! Новый IP: craftbiped.falixsrv.me!!! <a href="https://craftbiped.github.io/blog/news/2025/02/14/new-ip.html">Подробнее...</a></p>
+<p>Наш новый IP: craftbiped.falixsrv.me <!--<a href="https://craftbiped.github.io/blog/news/2025/02/14/new-ip.html">Подробнее...</a></p>
+--> </p>
 </div>
 <br>
 <nav>
@@ -36,8 +37,12 @@ menumenu.innerHTML = `
 <li><a href="/rules">ПРАВИЛА</a></li>
 <li><a href="/expectations/">ОТСЧЁТЫ</a></li>
 <li><a href="/app">ПРИЛОЖЕНИЕ</a></li>
+<li><a href="/support">ПОДДЕРЖКА</a></li>
+<li><a href="/sets/">НАБОРЫ</a></li>
 <br><br>
 <li><a href="/videos/">ВИДЕО</a></li>
+<li><a href="/sets/">НАБОРЫ</a></li>
+<li><a href="/support">ПОДДЕРЖКА</a></li>
 </ul>
 <h2 id="mobilemenu"><a onclick="openmenu()" id="openmenubutton" class="btn" style="color: white; text-decoration: none;">☰ меню</a></h2>
 <div id="menulist">
@@ -51,7 +56,7 @@ cop.innerHTML = `
 <br>
 <h2><img src="/images/CraftBipedMinecraft.png" width="70" height="70" align="center">
 <span class="sitename-12812">CraftBiped </span>
-</h2><h4 class="element-12812">craftbiped.aternos.me</h4>
+</h2><h4 class="element-12812">craftbiped.falixsrv.me</h4>
 <br><br>
 <br><br><center>
 <h3>Навигация</h3>
@@ -65,6 +70,9 @@ cop.innerHTML = `
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
 <p><a href="/videos/" class="bottom-element">Видео</a></p>
+<p><a href="/support" class="bottom-element">Поддержка</a></p>
+<p><a href="/sets/" class="bottom-element">Наборы</a></p>
+
 
 
 <br>

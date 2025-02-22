@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CraftBiped</title>
+<title>Форма - CraftBiped</title>
   <link rel="icon" href="/assets/favicon.ico"><!-- 32×32 -->
 <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
 <div id="customcss">
@@ -47,17 +47,8 @@
 </div>
 <!-- страница -->
 <br><br><br><br><br><br>
-<h1 class="zag">Добро пожаловать на Официальный сайт CraftBiped!</h1>
-<p>CraftBiped - это маленький майнкрафт сервер! Наш IP, порт и список поддерживаемых версий можно узнать <a href="/info">тут</a>.</p>
-<h2 class="zag">О нас</h2>
-<p>
-Мы небольшой майнкрафт проект, который был открыт Весной 2023. Сервер был создан и запущен 21.03.2023. Наша основная соц-сеть - Дискорд, также публикуем наши новости в <a href="/blog/">нашем блоге</a>. Так-же мы имеем свой сайт. Мы существуем уже 1 год, и пока-что никаких проблем нету. Наш проект пережил достаточно тяжёлые осложнения и тех-неполадки, но не смотря на это мы продолжаем работать!
-В данный момент у нас нету никаких проблем!
-</p>
-<h2 class="zag">Официальное приложение CraftBiped ВЫПУЩЕНО!</h2>
-<p>Скачивайте новую версию нашего приложения и узнавайте наши новости, донатьте, заглядывайте на отсчёты до ожидаемых событий и не только! В данный момент приложение доступно только для Android.</p>
 <center>
-  <button onclick="window.location.href = 'https://craftbiped.github.io/app';">СКАЧАТЬ!</button>
+<div id="form">Произошла ошибка</div>
 </center>
 <br><br><br><br><br><br>
 <!-- Конец страницы -->
@@ -88,5 +79,28 @@
 <div style="height: 10px; background: url(https://craftbiped.github.io/images/snow.png) repeat-x 100%;"></div>
 </div>
 <script src="/assets/main.js"></script>
+<script>
+if (window.location.hash == "#moder"){
+console.log("Заявка на модерку");
+var formform = document.getElementById("form");
+formform.innerHTML = `
+<h1>Заполните форму для получения Модерки</h1>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJv4vDcP9pe754F9KYEpJ-5rquo1IT6zuHWxGeGOfiQ6ErRA/viewform?embedded=true" width="300" height="600" frameborder="0" marginheight="0" marginwidth="0" style="background-color: gray;">Загрузка…</iframe>
+<br><br><br>
+<a onclick="end()" class="btn">Закончить</a>
+`
+}
+</script>
+<script>
+function end(){
+window.scrollTo(0, 0);
+var formform = document.getElementById("form");
+formform.innerHTML = `
+<p>Если вы отправили заявку, то спасибо! Ваша заявка будет рассмотрена в течении 24 часов. Когда заявка будет рассмотрена, мы сразу сообщим вам об этом и выдадим/не выдадим вам модератора, если вы будете на сервере. Если вы будете оффлайн, то модераторка будет выдана (или не выдана) сразу, а оповестим вас об рассмотрении заявки, как только вы зайдёте на сервер.</p><br><br>
+<a href="/" class="btn">На главную сайта</a><br><br>
+<a href="/sets/" class="btn">К наборам</a>
+`;
+}
+</script>
 </body>
 </html>
