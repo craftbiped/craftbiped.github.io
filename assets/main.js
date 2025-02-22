@@ -37,7 +37,6 @@ menumenu.innerHTML = `
 <li><a href="/rules">ПРАВИЛА</a></li>
 <li><a href="/expectations/">ОТСЧЁТЫ</a></li>
 <li><a href="/app">ПРИЛОЖЕНИЕ</a></li>
-<li><a href="/support">ПОДДЕРЖКА</a></li>
 <li><a href="/sets/">НАБОРЫ</a></li>
 <br><br>
 <li><a href="/videos/">ВИДЕО</a></li>
