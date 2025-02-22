@@ -87,18 +87,40 @@ formform.innerHTML = `
 <h1>Заполните форму для получения Модерки</h1>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJv4vDcP9pe754F9KYEpJ-5rquo1IT6zuHWxGeGOfiQ6ErRA/viewform?embedded=true" width="300" height="600" frameborder="0" marginheight="0" marginwidth="0" style="background-color: gray;">Загрузка…</iframe>
 <br><br><br>
-<a onclick="end()" class="btn">Закончить</a>
+<a onclick="endmoder()" class="btn">Закончить</a>
 `
 }
 </script>
 <script>
-function end(){
+if (window.location.hash == "#support"){
+console.log("Support");
+var formform = document.getElementById("form");
+formform.innerHTML = `
+<h1>Запрос в поддержку</h1>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxvWo9-f_qS46jt2Nm6j9FbBkGBIgMNa3eZIcvLorqNxUmGA/viewform?embedded=true" width="300" height="600" frameborder="0" marginheight="0" marginwidth="0" style="background-color: gray;">Загрузка…</iframe>
+<br><br><br>
+<a onclick="endsupport()" class="btn">Закончить</a>
+`
+}
+</script>
+<script>
+function endmoder(){
 window.scrollTo(0, 0);
 var formform = document.getElementById("form");
 formform.innerHTML = `
 <p>Если вы отправили заявку, то спасибо! Ваша заявка будет рассмотрена в течении 24 часов. Когда заявка будет рассмотрена, мы сразу сообщим вам об этом и выдадим/не выдадим вам модератора, если вы будете на сервере. Если вы будете оффлайн, то модераторка будет выдана (или не выдана) сразу, а оповестим вас об рассмотрении заявки, как только вы зайдёте на сервер.</p><br><br>
 <a href="/" class="btn">На главную сайта</a><br><br>
 <a href="/sets/" class="btn">К наборам</a>
+`;
+}
+</script>
+<script>
+function endsupport(){
+window.scrollTo(0, 0);
+var formform = document.getElementById("form");
+formform.innerHTML = `
+<p>Спасибо, если отправили запрос в поддержку! Мы отправим ответ на вашу электронную почту в течении 2-24 часов! Если ответ не пришёл в течении 24 часов, проверьте папку "Спам".</p>
+<a href="/" class="btn">На главную сайта</a><br><br>
 `;
 }
 </script>
