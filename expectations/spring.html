@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ждём Весну вместе с CraftBiped</title>
+<title>Отсчёт окончен - CraftBiped</title>
   <link rel="icon" href="/assets/favicon.ico"><!-- 32×32 -->
 <style>
 a {
@@ -61,17 +61,6 @@ button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
    font-family: 'cursive';
 }
 </style>
-<script>
-function redirtime() {
-let thecurrentDate = new Date();
-var month = thecurrentDate.getMonth();
-if (month == "2") {
-window.location.href = "./end.html#spring";
-}
-}
-
-setInterval(redirtime, 1000);
-</script>
 </head>
 <body>
 <center>
@@ -83,51 +72,14 @@ setInterval(redirtime, 1000);
 <p>
 <p id="clock"></p>
 <br>
-<h3>До весны 2025 осталось: </h3>
+<h3>Отсчёт до весны был завершён!</h3>
+<h4>Мы возобновим отсчёт через несколько месяцев.</h4>
 </center>
-</div>
-<div class="countdown">
-  <div class="countdown-item">
-    <div><span id="days"></span> Дней</div>
-  </div>
-  <br><br>
-  <div class="countdown-item">
-    <div><span id="hours"></span> Часов</div>
-  </div>
-  <br><br>
-  <div class="countdown-item">
-    <div><span id="minutes"></span> Минут</div>
-  </div>
-  <br><br>
-  <div class="countdown-item">
-    <div><span id="seconds"></span> Секунд</div>
-  </div>
 </div>
 <br>
 <center>
 <h1>🌱 Наши планы на эту весну <a href="https://craftbiped.github.io/blog/news/2025/02/28/spring-plans.html">тут</a>!</h1>
 </center>
-<script>
-const countdown = document.querySelector('.countdown');
-const targetDate = new Date('2025-03-01T00:00:01');
- 
-function updateCountdown() {
-  const now = new Date();
-  const remainingTime = targetDate - now;
- 
-  const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
- 
-  document.getElementById('days').innerText = days.toString().padStart(2, '0');
-  document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-  document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-  document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
-}
- 
-setInterval(updateCountdown, 20);
-</script>
 <script language="javascript" type="text/javascript">
 var d = new Date();
 var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
