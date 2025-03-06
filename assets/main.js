@@ -41,8 +41,8 @@ menumenu.innerHTML = `
 <li><a href="/videos/">ВИДЕО</a></li>
 <li><a href="/sets/">НАБОРЫ</a></li>
 <li><a href="/support">ПОДДЕРЖКА</a></li>
-<li><a href="/ds">Наш Discord</a></li>
-<li><a href="https://t.me/craftbipedmc">Наш Telegram</a></li>
+<li><a href="/ds">НАШ DISCORD</a></li>
+<li><a href="https://t.me/craftbipedmc">НАШ TELEGRAM</a></li>
 </ul>
 <h2 id="mobilemenu"><a onclick="openmenu()" id="openmenubutton" class="btn" style="color: white; text-decoration: none;">☰ меню</a></h2>
 <div id="menulist">
@@ -71,7 +71,8 @@ cop.innerHTML = `
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
 <p><a href="/videos/" class="bottom-element">Видео</a></p>
 <p><a href="/support" class="bottom-element">Поддержка</a></p>
-<p><a href="/sets/" class="bottom-element">Наборы</a></p>
+<p><a href="/ds" class="bottom-element">Наш Discord</a></p>
+<p><a href="https://t.me/craftbipedmc" class="bottom-element">Наш Telegram</a></p>
 
 
 
