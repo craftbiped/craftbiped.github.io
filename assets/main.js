@@ -111,6 +111,10 @@ function openmenu(){
 <li><a href="/support"> ПОДДЕРЖКА</a></li>
 <br>
 <li><a href="/sets/"> НАБОРЫ</a></li>
+<br>
+<li><a href="/ds">НАШ DISCORD</a></li>
+<br>
+<li><a href="https://t.me/craftbipedmc">НАШ TELEGRAM</a></li>
 <br><br><br>
 </center>
     `;
