@@ -41,6 +41,8 @@ menumenu.innerHTML = `
 <li><a href="/videos/">ВИДЕО</a></li>
 <li><a href="/sets/">НАБОРЫ</a></li>
 <li><a href="/support">ПОДДЕРЖКА</a></li>
+<li><a href="/ds">Наш Discord</a></li>
+<li><a href="https://t.me/craftbipedmc">Наш Telegram</a></li>
 </ul>
 <h2 id="mobilemenu"><a onclick="openmenu()" id="openmenubutton" class="btn" style="color: white; text-decoration: none;">☰ меню</a></h2>
 <div id="menulist">
