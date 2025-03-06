@@ -66,7 +66,6 @@ cop.innerHTML = `
 <p><a href="/blog/news/" class="bottom-element">Новости</a></p>
 <p><a href="/blog/" class="bottom-element">Наш блог</a></p>
 <p><a href="/info" class="bottom-element">Информация</a></p>
-<p><a href="/go/discord.html" class="bottom-element">Дискорд</a></p>
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
 <p><a href="/videos/" class="bottom-element">Видео</a></p>
