@@ -157,7 +157,7 @@ if (ccode == 'RU') {
 var socialss = document.getElementById("insocials");
 socialss.innerHTML = `
 <center>
-<h1>Мы в соц. сетях</h1>
+<h1>Мы в <s>соц. сетях</s>мессенджерах</h1>
 <br>
 <h3>Мы в Discord</h3>
 <p style="color: red;">Discord заблокирован в вашей стране, однако, если у вас работает дискорд, вы можете присоединиться к нашему Discord-серверу!</p>
