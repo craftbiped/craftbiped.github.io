@@ -156,6 +156,7 @@ if (window.location.pathname == '/' || window.location.pathname == '/index' || w
 if (ccode == 'RU') {
 var socialss = document.getElementById("insocials");
 socialss.innerHTML = `
+<center>
 <h1>Мы в соц. сетях</h1>
 <br>
 <h3>Мы в Discord</h3>
@@ -163,12 +164,13 @@ socialss.innerHTML = `
 <br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
 <br>
 <h3>Мы в Telegram</h3>
-<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="craftbipedmc/4" data-width="100%"></script>
 <br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
+</center>
 `;
 } else {
 var socialss = document.getElementById("insocials");
 socialss.innerHTML = `
+<center>
 <h1>Мы в соц. сетях</h1>
 <br>
 <h3>Мы в Discord</h3>
@@ -176,8 +178,8 @@ socialss.innerHTML = `
 <br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
 <br>
 <h3>Мы в Telegram</h3>
-<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="craftbipedmc/4" data-width="100%"></script>
 <br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
+</center>
 `;
 }
 
