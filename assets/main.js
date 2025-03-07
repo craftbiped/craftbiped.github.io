@@ -152,6 +152,36 @@ fetch('https://ipwho.is/?lang=ru')
 function checkcountry(ccode, counrtyname, img, rg){
 var ccodeccodename = document.getElementById("cname");
 ccodeccodename.innerHTML = ""+ img +" "+ rg +", "+ counrtyname +"";
+if (window.location.pathname == '/' || window.location.pathname == '/index' || window.location.pathname == '/index.html') {
+if (ccode == 'RU') {
+var socialss = document.getElementById("insocials");
+socialss.innerHTML = `
+<h1>Мы в соц. сетях</h1>
+<br>
+<h3>Мы в Discord</h3>
+<p style="color: red;">Discord заблокирован в вашей стране, однако, если у вас работает дискорд, вы можете присоединиться к нашему Discord-серверу!</p>
+<br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
+<br>
+<h3>Мы в Telegram</h3>
+<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="craftbipedmc/4" data-width="100%"></script>
+<br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
+`;
+} else {
+var socialss = document.getElementById("insocials");
+socialss.innerHTML = `
+<h1>Мы в соц. сетях</h1>
+<br>
+<h3>Мы в Discord</h3>
+<iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
+<br>
+<h3>Мы в Telegram</h3>
+<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="craftbipedmc/4" data-width="100%"></script>
+<br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
+`;
+}
+
+}
 }
 
 
