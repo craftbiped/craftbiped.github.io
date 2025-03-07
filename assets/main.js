@@ -150,7 +150,7 @@ fetch('https://ipwho.is/?lang=ru')
 
 function checkcountry(ccode, counrtyname, img, rg){
 var ccodeccodename = document.getElementById("cname");
-ccodeccodename.innerHTML = ""+ img +" "+ rg +" "+ counrtyname +"";
+ccodeccodename.innerHTML = ""+ img +" "+ rg +", "+ counrtyname +"";
 }
 
 
