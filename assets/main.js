@@ -171,7 +171,7 @@ socialss.innerHTML = `
 var socialss = document.getElementById("insocials");
 socialss.innerHTML = `
 <center>
-<h1>Мы в соц. сетях</h1>
+<h1>Мы в <s>соц. сетях</s>мессенджерах</h1>
 <br>
 <h3>Мы в Discord</h3>
 <iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
