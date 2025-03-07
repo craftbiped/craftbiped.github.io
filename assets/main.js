@@ -73,7 +73,8 @@ cop.innerHTML = `
 <p><a href="/ds" class="bottom-element">Наш Discord</a></p>
 <p><a href="https://t.me/craftbipedmc" class="bottom-element">Наш Telegram</a></p>
 
-
+<br><br>
+<div id="countr"></div>
 
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
@@ -137,7 +138,7 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
-var countr = document.getElementById("menu");
+var countr = document.getElementById("countr");
 countr.innerHTML = `
 <h3>Ваш регион:</h3>
 <h3><div id="cname"></div></h3>
