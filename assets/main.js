@@ -137,6 +137,24 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
+var countr = document.getElementById("menu");
+countr.innerHTML = `
+<h3>Ваш регион:</h3>
+<h3><div id="cname"></div></h3>
+<h5>На сайте возможны изменения в зависимости от вашего региона.</h5>
+`;
+
+fetch('https://ipwho.is/?lang=ru')
+  .then(res => res.json())
+  .then(data => checkcountry(data.country_code, data.country, data.flag.emoji, data.region));
+
+function checkcountry(ccode, counrtyname, img, rg){
+var ccodeccodename = document.getElementById("cname");
+ccodeccodename.innerHTML = ""+ img +" "+ rg +" "+ counrtyname +"";
+}
+
+
+
 if (typeof parent.mobilemode !== 'undefined') {
 var appstyles = document.getElementById("customcss");
 appstyles.innerHTML = `
