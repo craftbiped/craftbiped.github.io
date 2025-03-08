@@ -77,6 +77,13 @@ cop.innerHTML = `
 <div id="countr"></div>
 
 <br>
+<div id="popup-overlay">
+  <div id="popup">
+    <h3 id="popheader">Popup!</h3>
+    <p id="poptext">popup content</p>
+    <p id="popbutton"><button onclick="hidePopup()">Закрыть окно</button></p>
+  </div>
+</div>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
 </center>
 <div class="avtor-pravo"><h5>© CraftBipedMC, 2023—2025</h5></div> <br>
@@ -186,7 +193,36 @@ socialss.innerHTML = `
 }
 }
 
+const popupOverlay = document.getElementById("popup-overlay");
+const popup = document.getElementById("popup");
+ 
+function showPopup() {
+  popupOverlay.style.display = "block";
+}
+ 
+function hidePopup() {
+  popupOverlay.style.display = "none";
+}
+ 
+popupOverlay.addEventListener("click", hidePopup);
+//popup.addEventListener("click", (event) =&gt; event.stopPropagation());
 
+
+
+function openpopup(header, text, button) {
+var popheaderpopheader = document.getElementById("popheader");
+popheaderpopheader.innerHTML = header;
+var poptextpoptext = document.getElementById("poptext");
+poptextpoptext.innerHTML = text;
+if (button === "close"){
+
+} else {
+var popbuttonpopbutton = document.getElementById("popbutton");
+popbuttonpopbutton.innerHTML = button;
+}
+
+showPopup()
+}
 
 if (typeof parent.mobilemode !== 'undefined') {
 var appstyles = document.getElementById("customcss");
