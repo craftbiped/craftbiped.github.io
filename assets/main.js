@@ -22,7 +22,7 @@ menumenu.innerHTML = `
 -->
 <br>
 <div class="site">
-<p>Московское время: <span id="timee">Загружаем...</span> (<a href="#" onclick="reloadmsk()">Обновить</a>)</p>
+<p>Московское время: <span id="timee">Загружаем...</span> (<a href="#" onclick="reloadmsk()">Обновить</a>)<br>Сервер "живёт" по этому времени.</p>
 <br><br>
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
 <h1>CraftBiped</h1>
