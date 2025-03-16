@@ -22,7 +22,7 @@ menumenu.innerHTML = `
 -->
 <br>
 <div class="site">
-<p>Московское время: <span id="timee">Загружаем...</span> (<a href="#" onclick="reloadmsk()">Обновить</a>)<br>Сервер "живёт" по этому времени.</p>
+<p>Московское время: <span id="timee"><img src="/assets/loading.gif" width="20" height="20"></span> (<a href="#" onclick="reloadmsk()">Обновить</a>)<br>Сервер "живёт" по этому времени.</p>
 <br><br>
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
 <h1>CraftBiped</h1>
@@ -240,6 +240,9 @@ console.log('Режим приложения выключен');
 }
 
 function reloadmsk() {
+var timeetimee = document.getElementById("timee");
+timeetimee.innerHTML = `<img src="/assets/loading.gif" width="20" height="20">`;
+
 fetch('https://timeapi.io/api/time/current/zone?timeZone=Europe%2FMoscow')
   .then(res => res.json())
   .then(data => timeecho(data.time, data.year, data.month, data.day));
