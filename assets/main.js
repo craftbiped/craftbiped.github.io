@@ -76,7 +76,7 @@ cop.innerHTML = `
 <p><a href="https://t.me/craftbipedmc" class="bottom-element">Наш Telegram</a></p>
 
 <br><br>
-<div id="countr"></div>
+<div id="countr"><img src="/assets/loading.gif" width="35" height="35"></div>
 
 <br>
 <div id="popup-overlay">
@@ -150,7 +150,7 @@ function copyToClipboard(element) {
 var countr = document.getElementById("countr");
 countr.innerHTML = `
 <h3>Ваш регион:</h3>
-<h3><div id="cname"></div></h3>
+<h3><div id="cname"><img src="/assets/loading.gif" width="35" height="35"></div></h3>
 <h5>На сайте возможны изменения в зависимости от вашего региона.</h5>
 `;
 
