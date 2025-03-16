@@ -22,6 +22,8 @@ menumenu.innerHTML = `
 -->
 <br>
 <div class="site">
+<p>Московское время: <span id="timee">Загружаем...</span> (<a href="#" onclick="reloadmsk()">Обновить</a>)</p>
+<br><br>
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
 <h1>CraftBiped</h1>
 <p>Работаем для вас уже не на Атернос!</p>
@@ -237,6 +239,21 @@ if (window.location.pathname == "/") {
 console.log('Режим приложения выключен');
 }
 
+function reloadmsk() {
+fetch('https://timeapi.io/api/time/current/zone?timeZone=Europe%2FMoscow')
+  .then(res => res.json())
+  .then(data => timeecho(data.time, data.year, data.month, data.day));
+function timeecho(time, year, month, day){
+if (month < 10){
+var themonth = "0"+ month +"";
+} else {
+var themonth = month;
+}
+var datatime = ""+ day +"."+ themonth +"."+ year +"  "+ time +""
+var timeetimee = document.getElementById("timee");
+timeetimee.innerHTML = datatime;
+}
+}
 
   if ('serviceWorker' in navigator) {
     console.log('CLIENT: service worker registration in progress.');
@@ -248,3 +265,5 @@ console.log('Режим приложения выключен');
   } else {
     console.log('CLIENT: service worker is not supported.');
   }
+
+reloadmsk()
