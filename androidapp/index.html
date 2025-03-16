@@ -284,9 +284,6 @@ display:block;
 
 </style>
 <script src="/jquery.js"></script>
-<script>
-mobilemode = true;
-</script>
 <style>
 #ifr {
     position: absolute;
@@ -412,13 +409,33 @@ mobilemode = true;
     overflow: auto;
 
 }
+.btn {
+          /* Меняем цвет фона, чтобы выделить кнопку */
+  background-color: #4CAF50;
+  /* Убираем границы блока */
+  border: none;
+  /* Меняем цвет текста */
+  color: white;
+  /* Добавляем отступы внутри */
+  padding: 15px 32px;
+  /* Центрируем текст по центру */
+  text-align: center;
+  /* Убираем нижнюю черту у тега a */
+  text-decoration: none;
+  /* Меняем тип на inline-block, чтобы кнопка занимала только столько места, сколько требуется */
+  display: inline-block;
+  /* Устанавливаем размер текста */
+  font-size: 16px;
+  /* При наведении курсора на блок будет меняться тип курсора */
+  cursor: pointer;
+}
 </style>
 </head>
 <body style="color: white;">
 <div style="text-align: center;">
 <br>
 <img src="/images/CraftBipedMinecraft.png" width="30" height="30"><br>
-<button onclick="openMenu()">≡ МЕНЮ</button>
+<a href="./menuapp.html" class="btn">меню</a>
 </div>
 <br>
 <div id="frm">
@@ -427,16 +444,25 @@ mobilemode = true;
 <div id="menu" class="modal">  <div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <h3 class="modal-title">Меню приложения</h3>        <a href="#" title="Закрыть" class="close">×</a>      </div>      <div class="modal-body">     
 <center><br><button onclick="loadIframeURL('/indexapp.html')">Главная</button> <button onclick="loadIframeURL('/donate')">Получение привилегии</button> <button onclick="loadIframeURL('/infoapp')">Информация о сервере</button> <button onclick="loadIframeURL('/blog/')">Официальный блог CraftBiped</button> <button onclick="loadIframeURL('/blog/news')">Новости сервера</button> <button onclick="loadIframeURL('/rules')">Правила сервера</button>  <button onclick="loadIframeURL('/expectations/')">Отсчёты до ожидаемых событий</button> <button onclick="loadIframeURL('/dsinapp')">Наш дискорд сервер</button> <button onclick="loadIframeURL('/videos/')">Видео</button>  <button onclick="loadIframeURL('/support')">Поддержка</button>  <button onclick="loadIframeURL('/sets/')">Наборы</button> <br><br></center></div>     </div>    </div>  </div></div>
 <script>
+mobilemode = true;
+</script>
+<script>
 function openMenu() {
-window.location.hash = "#menu";
+window.location.href = "./menuapp.html";
 }
 </script>
 <script>
 function loadIframeURL(url){
-window.location.hash = "#";
 var loadfrm = "<iframe id=\"ifr\" src=\""+ url +"\" allow=\"fullscreen;\"></iframe>"
 var crfrr = document.getElementById("frm");
 crfrr.innerHTML = loadfrm;
+}
+</script>
+<script>
+if (window.location.hash){
+loadIframeURL(window.location.hash.substring(1))
+} else {
+loadIframeURL("/indexapp")
 }
 </script>
 </body>
