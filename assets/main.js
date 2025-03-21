@@ -15,11 +15,9 @@ menumenu.innerHTML = `
 </div>
 <br>
 <nav>
-<!--
 <div id="jsnof">
-<p>В данный момент мы испытываем проблемы с интернетом, из-за чего сервер не может работать! Ожидайте новых постов в <a href="/blog/">нашем блоге</a>. <br><a href="https://craftbiped.github.io/blog/news/2025/01/29/internet-connection.html">Подробнее...</a></a>.</p>
+<p>ПРОЕКТУ ДВА ГОДА!!! В 19:30 по МСК НА СЕРВЕРЕ БУДЕТ ПИР! <a href="/blog/news/2025/03/21/two-years.html">Подробнее...</a></p>
 </div>
--->
 <br>
 <div class="site">
 <p>Московское время: <span id="timee"><img src="/assets/loading.gif" width="20" height="20"></span> (<a href="#" onclick="reloadmsk()">Обновить</a>)<br>Сервер "живёт" по этому времени.</p>
