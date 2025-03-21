@@ -17,9 +17,11 @@ menumenu.innerHTML = `
 -->
 <br>
 <nav>
+<!--
 <div style="background-color: green; text-align: center; border: 3px solid green;">
 <p>ПРОЕКТУ ДВА ГОДА!!! <a href="/blog/news/2025/03/21/two-years.html">Подробнее...</a></p>
 </div>
+-->
 <br>
 <div class="site">
 <p>Московское время: <span id="timee"><img src="/assets/loading.gif" width="20" height="20"></span> (<a href="#" onclick="reloadmsk()">Обновить</a>)<br>Сервер "живёт" по этому времени.</p>
