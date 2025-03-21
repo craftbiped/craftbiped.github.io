@@ -9,15 +9,15 @@ jjs.innerHTML = `
 
 var menumenu = document.getElementById("menu");
 menumenu.innerHTML = `
-<--
+<!--
 <div id="jsnof">
-<p>Наш новый IP: craftbiped.falixsrv.me <!--<a href="https://craftbiped.github.io/blog/news/2025/02/14/new-ip.html">Подробнее...</a></p>
---> </p>
+<p>Наш новый IP: craftbiped.falixsrv.me <a href="https://craftbiped.github.io/blog/news/2025/02/14/new-ip.html">Подробнее...</a></p>
+ </p>
 </div>
 -->
 <br>
 <nav>
-<div style="background-color: yellow; text-align: center; border: 3px solid green;">
+<div style="background-color: green; text-align: center; border: 3px solid green;">
 <p>ПРОЕКТУ ДВА ГОДА!!! В 19:30 по МСК НА СЕРВЕРЕ БУДЕТ ПИР! <a href="/blog/news/2025/03/21/two-years.html">Подробнее...</a></p>
 </div>
 <br>
