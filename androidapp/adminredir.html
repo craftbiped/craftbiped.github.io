@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function redir(){
+window.location.href = "https://client.falixnodes.net/";
+}
+</script>
+<style>
+@font-face {
+    font-family: 'Minecraft 1.1';
+    src: url('/assets/minecraft1.1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+background-color: gray;
+color: white;
+font-family: 'Minecraft 1.1';
+}
+.btn {
+  background-color: #4CAF50;
+  /* Убираем границы блока */
+  border: none;
+  /* Меняем цвет текста */
+  color: white;
+  /* Добавляем отступы внутри */
+  padding: 15px 32px;
+  /* Центрируем текст по центру */
+  text-align: center;
+  /* Убираем нижнюю черту у тега a */
+  text-decoration: none;
+  /* Меняем тип на inline-block, чтобы кнопка занимала только столько места, сколько требуется */
+  display: inline-block;
+  /* Устанавливаем размер текста */
+  font-size: 16px;
+  /* При наведении курсора на блок будет меняться тип курсора */
+  cursor: pointer;
+}
+a {
+color: white;
+}
+</style>
+</head>
+<body>
+<center>
+<h1><a href="#" onclick="window.history.back();" class="btn">Обратно</a></h1>
+<br>
+<b>
+<h1>Авторизация</h1>
+<h2>Введите пароль, чтобы перейти из приложения на сайт хостинга прямо из приложения. Введите пароль подтверждения.</h2>
+<input type="text" id="create" placeholder="*********">
+<button type="button" onclick="auth()">Авторизация</button>
+<div id="verno" style="color: red"></div>
+</b>
+<br><br>
+</center>
+<script>
+var get = document.getElementById('create');
+var pass = get.value;
+
+if (pass === "123321qwer1504"){
+window.location.href = "https://client.falixnodes.net/"
+} else {
+var vernoverno = document.getElementById("verno");
+vernoverno.innerHTML = `
+Вы ввели неверный пароль!
+`;
+}
+</script>
+</body>
+</html>
