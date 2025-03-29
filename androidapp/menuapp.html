@@ -16,7 +16,7 @@ background-color: gray;
 color: white;
 font-family: 'Minecraft 1.1';
 }
-a {
+.btn {
   background-color: #4CAF50;
   /* Убираем границы блока */
   border: none;
@@ -35,26 +35,38 @@ a {
   /* При наведении курсора на блок будет меняться тип курсора */
   cursor: pointer;
 }
+a {
+color: white;
+}
 </style>
 </head>
 <body>
 <center>
-<h1><a href="#" onclick="window.history.back();"><-- Закрыть меню</a></h1>
+<h1><a href="#" onclick="window.history.back();" class="btn"><-- Закрыть меню</a></h1>
 <br>
 <b>
-<p><a href="./index.html#/indexapp.html">Главная приложения</a></p>
-<p><a href="./index.html#/infoapp.html">Информация о сервере</a></p>
-<p><a href="./index.html#/blog/">Наш блог</a></p>
-<p><a href="./index.html#/donate.html">Как получить привилегию?</a></p>
-<p><a href="./index.html#/support.html">Поддержка</a></p>
-<p><a href="./index.html#/rules.html">Правила сервера</a></p>
-<p><a href="./index.html#/videos/index.html">Видео</a></p>
-<p><a href="./index.html#/sets/index.html">Наборы</a></p>
-<p><a href="./index.html#/expectations/index.html">Отсчёты</a></p>
-<p><a href="./socials.html">Мы в соц-сетях</a></p>
+<p><a href="./index.html#/indexapp.html" class="btn">Главная приложения</a></p>
+<p><a href="./index.html#/infoapp.html" class="btn">Информация о сервере</a></p>
+<p><a href="./index.html#/blog/" class="btn">Наш блог</a></p>
+<p><a href="./index.html#/donate.html" class="btn">Как получить привилегию?</a></p>
+<p><a href="./index.html#/support.html" class="btn">Поддержка</a></p>
+<p><a href="./index.html#/rules.html" class="btn">Правила сервера</a></p>
+<p><a href="./index.html#/videos/index.html" class="btn">Видео</a></p>
+<p><a href="./index.html#/sets/index.html" class="btn">Наборы</a></p>
+<p><a href="./index.html#/expectations/index.html" class="btn">Отсчёты</a></p>
+<p><a href="./socials.html" class="btn">Мы в соц-сетях</a></p>
 </b>
 <br><br>
-<h5>Приложение разработано администрацией сервера</h5>
+<h5><a onclick="var click = click + 1; reloadscet()">Приложение разработано администрацией сервера</a></h5>
 </center>
+<script>
+var click = 0;
+
+function reloadscet(){
+if (click === 27){
+window.location.href = "https://client.falixnodes.net"
+}
+}
+</script>
 </body>
 </html>
