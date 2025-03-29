@@ -57,12 +57,13 @@ color: white;
 <p><a href="./socials.html" class="btn">Мы в соц-сетях</a></p>
 </b>
 <br><br>
-<h5><a onclick="var click = click + 1; reloadscet()">Приложение разработано администрацией сервера</a></h5>
+<h5><a onclick="plusone()">Приложение разработано администрацией сервера</a></h5>
 </center>
 <script>
 var click = 0;
 
-function reloadscet(){
+function plusone(){
+var click = click + 1;
 if (click === 27){
 window.location.href = "https://client.falixnodes.net"
 }
