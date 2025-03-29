@@ -53,15 +53,15 @@ color: white;
 <h1>Авторизация</h1>
 <h2>Введите пароль, чтобы перейти из приложения на сайт хостинга прямо из приложения. Введите пароль подтверждения.</h2>
 <input type="text" id="create" placeholder="*********">
-<button type="button" onclick="auth()">Авторизация</button>
+<button type="button" onclick="passcheck()">Авторизация</button>
 <div id="verno" style="color: red"></div>
 </b>
 <br><br>
 </center>
 <script>
+function passcheck()
 var get = document.getElementById('create');
 var pass = get.value;
-
 if (pass === "123321qwer1504"){
 window.location.href = "https://client.falixnodes.net/"
 } else {
@@ -69,6 +69,7 @@ var vernoverno = document.getElementById("verno");
 vernoverno.innerHTML = `
 Вы ввели неверный пароль!
 `;
+}
 }
 </script>
 </body>
