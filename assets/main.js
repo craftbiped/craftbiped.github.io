@@ -47,7 +47,6 @@ menumenu.innerHTML = `
 <li><a href="/support">ПОДДЕРЖКА</a></li>
 <li><a href="/ds">НАШ DISCORD</a></li>
 <li><a href="https://t.me/craftbipedmc">НАШ TELEGRAM</a></li>
-<li><a href="/status">СТАТУС СЕРВЕРА</a></li>
 </ul>
 <h2 id="mobilemenu"><a onclick="openmenu()" id="openmenubutton" class="btn" style="color: white; text-decoration: none;">☰ меню</a></h2>
 <div id="menulist">
@@ -77,7 +76,6 @@ cop.innerHTML = `
 <p><a href="/support" class="bottom-element">Поддержка</a></p>
 <p><a href="/ds" class="bottom-element">Наш Discord</a></p>
 <p><a href="https://t.me/craftbipedmc" class="bottom-element">Наш Telegram</a></p>
-<p><a href="/status" class="bottom-element">Статус сервера</a></p>
 
 <br><br>
 <div id="countr"><img src="/assets/loading.gif" width="35" height="35"></div>
@@ -129,7 +127,6 @@ function openmenu(){
 <br>
 <li><a href="https://t.me/craftbipedmc"> НАШ TELEGRAM</a></li>
 <br>
-<li><a href="/status"> СТАТУС СЕРВЕРА</a></li>
 <br><br><br>
 </center>
     `;
