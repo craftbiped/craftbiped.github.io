@@ -9,12 +9,10 @@ jjs.innerHTML = `
 
 var menumenu = document.getElementById("menu");
 menumenu.innerHTML = `
-<!--
-<div id="jsnof">
-<p>Наш новый IP: craftbiped.falixsrv.me <a href="https://craftbiped.github.io/blog/news/2025/02/14/new-ip.html">Подробнее...</a></p>
+<div id="jsnof" style="background-color: green;">
+<p>Наш IP: f1.play2go.cloud:20819 <!--<a href="https://craftbiped.github.io/blog/news/2025/02/14/new-ip.html">Подробнее...</a>--></p>
  </p>
 </div>
--->
 <br>
 <nav>
 <!--
