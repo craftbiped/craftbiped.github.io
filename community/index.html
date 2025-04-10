@@ -82,7 +82,7 @@
 <h1 class="zag">Чатик</h1>
 <center>
 <p id="chat">Внимание! Не используйте этот чат для переписки и обмена данными. В данном чате нет регистрации, вы просто вводите ваш ник или имя и всё. Ваш ник может быть подменен. Поэтому, для переписки мы рекомендуем вам перейти в мессенджер. Этот чат можно использовать для обсуждения новостей сервера, новых обновлений и т.д.</p>
-<h1><a href="http://c98884cg.beget.tech/chat.php">Перейти в чат</a></h1>
+<div id="openchat"><h1><a href="http://c98884cg.beget.tech/chat.php" target="_blank">Перейти в чат</a></h1></div>
 </center>
 <br>
 <br><br><br><br><br><br>
@@ -114,5 +114,20 @@
 <div style="height: 10px; background: url(https://craftbiped.github.io/images/snow.png) repeat-x 100%;"></div>
 </div>
 <script src="/assets/main.js"></script>
+<script>
+if (typeof parent.mobilemode !== 'undefined') {
+var appstyles = document.getElementById("customcss");
+appstyles.innerHTML = `
+<link rel="stylesheet" type="text/css" href="/assets/app.css" />
+`;
+console.log('Режим приложения включён');
+var openchatopenchat = document.getElementById("openchat");
+openchatopenchat.innerHTML = `
+<h1><a href="http://c98884cg.beget.tech/chatapp.php" target="_blank">Перейти в чат</a></h1>
+`;
+} else {
+console.log('Режим приложения выключен');
+}
+</script>
 </body>
 </html>
