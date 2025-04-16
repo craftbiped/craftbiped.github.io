@@ -181,6 +181,26 @@ socialss.innerHTML = `
 <br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
 </center>
 `;
+}
+if (ccode == 'UA') {
+var socialss = document.getElementById("insocials");
+socialss.innerHTML = `
+<center>
+<br><br>
+<h1>Сообщение для игроков из Украины</h1>
+<p>Здравствуйте! Наш сервер русский, но мы рады жителям любой страны! Политические разговоры запрещены на сервере для жителей всех стран! Всё же сервер создан для игры, а не для обсуждения политики! Удачной игры!</p>
+<br><br>
+<h1>Мы в <s>соц. сетях</s> мессенджерах</h1>
+<br>
+<h3>Мы в Discord</h3>
+<p style="color: red;">Discord заблокирован в вашей стране, однако, если у вас работает дискорд, вы можете присоединиться к нашему Discord-серверу!</p>
+<br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
+<br>
+<h3>Мы в Telegram</h3>
+<br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
+</center>
+`;
+
 } else {
 var socialss = document.getElementById("insocials");
 socialss.innerHTML = `
