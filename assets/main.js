@@ -193,7 +193,7 @@ socialss.innerHTML = `
 <h1>Мы в <s>соц. сетях</s> мессенджерах</h1>
 <br>
 <h3>Мы в Discord</h3>
-<p style="color: red;">Discord заблокирован в вашей стране, однако, если у вас работает дискорд, вы можете присоединиться к нашему Discord-серверу!</p>
+<iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="276" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 <br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
 <br>
 <h3>Мы в Telegram</h3>
