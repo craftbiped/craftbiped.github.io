@@ -59,7 +59,7 @@ cop.innerHTML = `
 <br>
 <h2><img src="/images/CraftBipedMinecraft.png" width="70" height="70" align="center">
 <span class="sitename-12812">CraftBiped </span>
-</h2><h4 class="element-12812">f1.play2go.cloud:20819</h4>
+</h2><h4 class="element-12812">CraftBiped.mc.land</h4>
 <br><br>
 <br><br><center>
 <h3>Навигация</h3>
