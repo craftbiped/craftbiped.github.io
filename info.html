@@ -55,7 +55,7 @@
 <a href="#copy" onclick="copyToClipboard('#servipb'); copyed();"><p id="servipb" style="color:white;">craftbiped-pe.mc.land</p></a>
 <br><br>
 <p> Порт для Bedrock Edition:</p>
-<a href="#copy" onclick="copyToClipboard('#servipbp'); copyed();"><p id="servipbp" style="color:white;">28011</p></a>
+<a href="#copy" onclick="copyToClipboard('#servipbp'); copyedport();"><p id="servipbp" style="color:white;">28011</p></a>
 <br><br>
 <p> Версия: <br>Minecraft: Java Edition: 1.17.1 - 1.21.5<br>Minecraft: Bedrock Edition: 1.21.50-1.21.72<br></p>
 <br><br>
@@ -101,6 +101,9 @@
 <script>
 function copyed(){
 openpopup("CraftBipedMC", "IP успешно скопирован!", "<a class=\"btn\" a href=\"#ext\">Закрыть<a>")
+}
+function copyedport(){
+openpopup("CraftBipedMC", "Порт успешно скопирован!", "<a class=\"btn\" a href=\"#ext\">Закрыть<a>")
 }
 </script>
 </body>
