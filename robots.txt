@@ -17,3 +17,4 @@ Disallow: /site.js
 Disallow: /jquery.js
 Disallow: /wikipageadd
 Disallow: /htmlmenu.html
+Disallow: /ag.html
