@@ -65,8 +65,11 @@ button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 function redirtime() {
 let thecurrentDate = new Date();
 var month = thecurrentDate.getMonth();
+var day = thecurrentDate.getDate();
 if (month == "5") {
+if (day == "21") {
 window.location.href = "./end.html#summer";
+}
 }
 }
 
@@ -83,7 +86,9 @@ setInterval(redirtime, 1000);
 <p>
 <p id="clock"></p>
 <br>
-<h3>До лета 2025 осталось: </h3>
+<h4>! Календарное лето (1 июня) уже наступило. Это отсчёт до настоящего (астрономического) лета, которое начинается 21 (20) июня.</h4>
+<br><br>
+<h3>До АСТРОНОМИЧЕСКОГО лета 2025 осталось: </h3>
 </center>
 </div>
 <div class="countdown">
@@ -104,10 +109,10 @@ setInterval(redirtime, 1000);
   </div>
 </div>
 <br><br>
-<h1><center>ПЛАНЫ CraftBiped НА ЛЕТО 2025! <a href="https://craftbiped.github.io/blog/news/2025/05/30/summer-plans.html">(клик сюда)</a></center></h1>
+<h1><center>Уже начинаем реализовывать ПЛАНЫ CraftBiped НА ЛЕТО 2025! <a href="https://craftbiped.github.io/blog/news/2025/05/30/summer-plans.html">Узнать список планов</a></center></h1>
 <script>
 const countdown = document.querySelector('.countdown');
-const targetDate = new Date('2025-06-01T00:00:01');
+const targetDate = new Date('2025-06-21T00:00:00');
  
 function updateCountdown() {
   const now = new Date();
