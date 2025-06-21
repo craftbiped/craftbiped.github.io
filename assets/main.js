@@ -25,7 +25,7 @@ menumenu.innerHTML = `
 <br><br>
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
 <h1>CraftBiped</h1>
-<p>Работаем для вас уже не на Атернос!</p>
+<p>Работаем с 2023 года</p>
 <h5 id="path"></h5>
 <br>
 </div>
