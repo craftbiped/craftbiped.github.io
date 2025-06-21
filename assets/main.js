@@ -33,7 +33,6 @@ menumenu.innerHTML = `
 <li><a href="/">ГЛАВНАЯ</a></li>
 <li><a href="/info">ИНФОРМАЦИЯ</a></li>
 <li><a href="/blog/">БЛОГ</a></li>
-<li><a href="/blog/news">НОВОСТИ</a></li>
 <li><a href="/donate">ПОЛУЧЕНИЕ ПРИВИЛЕГИЙ</a></li>
 <li><a href="/rules">ПРАВИЛА</a></li>
 <li><a href="/expectations/">ОТСЧЁТЫ</a></li>
@@ -66,7 +65,6 @@ cop.innerHTML = `
 <br>
 <p><a href="/" class="bottom-element">Главная</a></p>
 <p><a href="/rules" class="bottom-element">Правила</a></p>
-<p><a href="/blog/news" class="bottom-element">Новости</a></p>
 <p><a href="/blog/" class="bottom-element">Наш блог</a></p>
 <p><a href="/info" class="bottom-element">Информация</a></p>
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
@@ -107,8 +105,6 @@ function openmenu(){
 <li><a href="/info"> ИНФОРМАЦИЯ</a></li>
 <br>
 <li><a href="/blog/"> БЛОГ</a></li>
-<br>
-<li><a href="/blog/news"> НОВОСТИ</a></li>
 <br>
 <li><a href="/donate"> ПОЛУЧЕНИЕ ПРИВИЛЕГИЙ</a></li>
 <br>
