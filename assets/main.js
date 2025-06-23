@@ -151,6 +151,37 @@ function copyToClipboard(element) {
   $temp.remove();
 }
 
+const popupOverlay = document.getElementById("popup-overlay");
+const popup = document.getElementById("popup");
+ 
+function showPopup() {
+  popupOverlay.style.display = "block";
+}
+ 
+function hidePopup() {
+  popupOverlay.style.display = "none";
+}
+ 
+popupOverlay.addEventListener("click", hidePopup);
+//popup.addEventListener("click", (event) =&gt; event.stopPropagation());
+
+
+
+function openpopup(header, text, button) {
+var popheaderpopheader = document.getElementById("popheader");
+popheaderpopheader.innerHTML = header;
+var poptextpoptext = document.getElementById("poptext");
+poptextpoptext.innerHTML = text;
+if (button === "close"){
+
+} else {
+var popbuttonpopbutton = document.getElementById("popbutton");
+popbuttonpopbutton.innerHTML = button;
+}
+
+showPopup()
+}
+
 var countr = document.getElementById("countr");
 countr.innerHTML = `
 <h3>Ваш регион:</h3>
@@ -218,40 +249,11 @@ socialss.innerHTML = `
 
 }
 if (ccode == 'IL') {
-document.body.innerHTML = "<h1>В данный момент CraftBiped не работает в вашей стране.</h1>"
+document.body.innerHTML = "<h1>Недоступно</h1>"
+openpopup("CraftBipedMC", "В данный момент CraftBiped не работает в вашей стране!", "...")
 }
 }
 
-const popupOverlay = document.getElementById("popup-overlay");
-const popup = document.getElementById("popup");
- 
-function showPopup() {
-  popupOverlay.style.display = "block";
-}
- 
-function hidePopup() {
-  popupOverlay.style.display = "none";
-}
- 
-popupOverlay.addEventListener("click", hidePopup);
-//popup.addEventListener("click", (event) =&gt; event.stopPropagation());
-
-
-
-function openpopup(header, text, button) {
-var popheaderpopheader = document.getElementById("popheader");
-popheaderpopheader.innerHTML = header;
-var poptextpoptext = document.getElementById("poptext");
-poptextpoptext.innerHTML = text;
-if (button === "close"){
-
-} else {
-var popbuttonpopbutton = document.getElementById("popbutton");
-popbuttonpopbutton.innerHTML = button;
-}
-
-showPopup()
-}
 
 if (typeof parent.mobilemode !== 'undefined') {
 var appstyles = document.getElementById("customcss");
