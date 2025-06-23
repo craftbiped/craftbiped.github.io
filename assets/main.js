@@ -181,9 +181,6 @@ socialss.innerHTML = `
 </center>
 `;
 }
-if (ccode == 'IL') {
-document.body.innerHTML = "<h1>В данный момент CraftBiped не работает в вашей стране.</h1>"
-}
 if (ccode == 'UA') {
 var socialss = document.getElementById("insocials");
 socialss.innerHTML = `
@@ -219,6 +216,9 @@ socialss.innerHTML = `
 `;
 }
 
+}
+if (ccode == 'IL') {
+document.body.innerHTML = "<h1>В данный момент CraftBiped не работает в вашей стране.</h1>"
 }
 }
 
