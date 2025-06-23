@@ -249,8 +249,9 @@ socialss.innerHTML = `
 
 }
 if (ccode == 'IL') {
-document.body.innerHTML = "<h1>Недоступно</h1>"
-openpopup("CraftBipedMC", "В данный момент CraftBiped не работает в вашей стране!", "...")
+document.body.innerHTML = "<h1>Error</h1>"
+document.title = "Error"
+alert("Наш сервер не работает в вашей стране.")
 }
 }
 
