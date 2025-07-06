@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Официальный сайт CraftBiped</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+background-color: gray;
+color: white;
+}
+a {
+color: orange;
+}
+</style>
+<script>
+window.location.pathname = "/";
+</script>
+</head>
+<body>
+<center>
+<br>
+<h1>CRAFTBIPED</h1>
+<br>
+<h1 id="nftext">Javascript отключён!</h1>
+<br>
+<h3>У нас всё в порядке</h3>
+<h3>Просто в вашем браузере отключён Javascript, либо же ваша версия JS устарела..... Включите его, чтобы использовать наш сайт!</h3>
+<h3><a href="/">Перейти на главную!</a></h3>
+</center>
+<script>
+var arrFunc=["prish", "bipedcraft", "died", "spit"];
+function randFunc() {
+  window[arrFunc[Math.floor(Math.random() * arrFunc.length)]]();
+}
+randFunc()
+
+function prish(){
+var nftextnftext = document.getElementById("nftext");
+nftextnftext.innerHTML = "Эту страницу похитили...";
+}
+function bipedcraft(){
+var nftextnftext = document.getElementById("nftext");
+nftextnftext.innerHTML = "Эту страницу взломали и удалили...";
+}
+function died(){
+var nftextnftext = document.getElementById("nftext");
+nftextnftext.innerHTML = "Эта страница умерла... :(";
+}
+function spit(){
+var nftextnftext = document.getElementById("nftext");
+nftextnftext.innerHTML = "Страница не найдена..";
+}
+</script>
+</body>
+</html>
