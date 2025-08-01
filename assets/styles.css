@@ -52,10 +52,19 @@ p {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 @font-face {
+    font-family: 'titlefont';
+    src: url('/assets/zag.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Minecraft 1.1';
     src: url('/assets/minecraft1.1.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+#title {
+     font-family: 'titlefont';
 }
  html {
      background-color: black;
