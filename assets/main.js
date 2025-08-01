@@ -20,31 +20,31 @@ menumenu.innerHTML = `
 <p>ПРОЕКТУ ДВА ГОДА!!! <a href="/blog/news/2025/03/21/two-years.html">Подробнее...</a></p>
 </div>
 -->
+
 <br>
 <div class="site">
 <br><br>
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
-<h1>CraftBiped</h1>
-<p>Крутяк)</p>
-<h5 id="path" style="display:none"></h5>
+<h1 id="title" style="color:green">CraftBiped</h1>
+<p id="title" style="color:yellow">Лето - это круто!</p>
+<h5 id="path" id="title" style="display:none"></h5>
 <br>
 </div>
 <ul class="themenu">
-<li><a href="/">ГЛАВНАЯ</a></li>
-<li><a href="/info">ИНФОРМАЦИЯ</a></li>
-<li><a href="/blog/">БЛОГ</a></li>
-<li><a href="/donate">ПОЛУЧЕНИЕ ПРИВИЛЕГИЙ</a></li>
-<li><a href="/rules">ПРАВИЛА</a></li>
-<li><a href="/expectations/">ОТСЧЁТЫ</a></li>
-<li><a href="/app">ПРИЛОЖЕНИЕ</a></li>
+<li><a href="/" style="color:#42aaff">ГЛАВНАЯ</a></li>
+<li><a href="/info" style="color:#42aaff">ИНФОРМАЦИЯ</a></li>
+<li><a href="/blog/" style="color:#42aaff">БЛОГ</a></li>
+<li><a href="/donate" style="color:#42aaff">ПОЛУЧЕНИЕ ПРИВИЛЕГИЙ</a></li>
+<li><a href="/rules" style="color:#42aaff">ПРАВИЛА</a></li>
+<li><a href="/expectations/" style="color:#42aaff">ОТСЧЁТЫ</a></li>
+<li><a href="/app" style="color:#42aaff">ПРИЛОЖЕНИЕ</a></li>
 <br><br>
-<li><a href="/videos/">ВИДЕО</a></li>
-<li><a href="/sets/">НАБОРЫ</a></li>
-<li><a href="/support">ПОДДЕРЖКА</a></li>
-<li><a href="/ds">НАШ DISCORD</a></li>
-<li><a href="https://t.me/craftbipedmc">НАШ TELEGRAM</a></li>
-<li><a href="/community/">СООБЩЕСТВО</a></li>
-<li><a href="https://craftbipedstatus.instatus.com/">СТАТУС</a></li>
+<li><a href="/videos/" style="color:#42aaff">ВИДЕО</a></li>
+<li><a href="/sets/" style="color:#42aaff">НАБОРЫ</a></li>
+<li><a href="/support" style="color:#42aaff">ПОДДЕРЖКА</a></li>
+<li><a href="/ds" style="color:#42aaff">НАШ DISCORD</a></li>
+<li><a href="https://t.me/craftbipedmc" style="color:#42aaff">НАШ TELEGRAM</a></li>
+<li><a href="/community/" style="color:#42aaff">СООБЩЕСТВО</a></li>
 </ul>
 <h2 id="mobilemenu"><a onclick="openmenu()" id="openmenubutton" class="btn" style="color: white; text-decoration: none;">☰ меню</a></h2>
 <div id="menulist">
@@ -57,8 +57,8 @@ var cop = document.getElementById("copyright");
 cop.innerHTML = `
 <br>
 <h2><img src="/images/CraftBipedMinecraft.png" width="70" height="70" align="center">
-<span class="sitename-12812">CraftBiped </span>
-</h2><h4 class="element-12812">CraftBiped.mc.land</h4>
+<span class="sitename-12812" id="title">CraftBiped </span>
+</h2><h4 class="element-12812" id="title">CraftBiped.mc.land</h4>
 <br><br>
 <br><br><center>
 <h3>Навигация</h3>
@@ -89,7 +89,7 @@ cop.innerHTML = `
 </div>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
 </center>
-<div class="avtor-pravo"><h5>© CraftBipedMC, 2023—2025</h5></div> <br>
+<div class="avtor-pravo"><h5 id="title">© CraftBipedMC, 2023—2025</h5></div> <br>
 `;
 function openmenu(){
     var menulogo = document.getElementById("mobilemenu");
