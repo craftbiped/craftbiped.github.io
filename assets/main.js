@@ -143,6 +143,10 @@ function closemenu(){
     `;
 }
 
+if(window.location.pathname === "/"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Главная";
+}
 function copyToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);
