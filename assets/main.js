@@ -147,6 +147,55 @@ if(window.location.pathname === "/"){
 var menussl = document.getElementById("path");
 menussl.innerHTML = "Главная";
 }
+if(window.location.pathname === "/info" || window.location.pathname === "/info.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Информация о сервере";
+}
+if(window.location.pathname === "/app" || window.location.pathname === "/app.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Приложение";
+}
+if(window.location.pathname === "/donate" || window.location.pathname === "/donate.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Как получить донат?";
+}
+if(window.location.pathname === "/form" || window.location.pathname === "/form.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Форма";
+}
+if(window.location.pathname === "/rules" || window.location.pathname === "/rules.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Правила";
+}
+if(window.location.pathname === "/support" || window.location.pathname === "/support.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Поддержка";
+}
+if(window.location.pathname === "/blacklist/" || window.location.pathname === "/blacklist/index" || window.location.pathname === "/blacklist/index.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Чёрный список";
+}
+if(window.location.pathname === "/community/" || window.location.pathname === "/community/index" || window.location.pathname === "/community/index.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Сообщество";
+}
+if(window.location.pathname === "/expectations/" || window.location.pathname === "/expectations/index" || window.location.pathname === "/expectations/index.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Отсчёты";
+}
+if(window.location.pathname === "/sets/" || window.location.pathname === "/sets/index" || window.location.pathname === "/sets/index.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Наборы";
+}
+if(window.location.pathname === "/videos/" || window.location.pathname === "/videos/index" || window.location.pathname === "/videos/index.html"){
+var menussl = document.getElementById("path");
+menussl.innerHTML = "Видео";
+} else {
+var menussl = document.getElementById("path");
+menussl.innerHTML = window.location.pathname;
+}
+
+
 function copyToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);
