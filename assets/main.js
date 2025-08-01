@@ -25,8 +25,8 @@ menumenu.innerHTML = `
 <br><br>
 <img src="/images/CraftBipedMinecraft.png" width="60" height="60">
 <h1>CraftBiped</h1>
-<p>Работаем с 2023 года</p>
-<h5 id="path"></h5>
+<p>Крутяк)</p>
+<h5 id="path" style="display:none"></h5>
 <br>
 </div>
 <ul class="themenu">
