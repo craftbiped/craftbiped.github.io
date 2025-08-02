@@ -215,20 +215,49 @@ socialss.innerHTML = `
 `;
 }
 if (ccode == 'UA') {
-var socialss = document.getElementById("insocials");
-socialss.innerHTML = `
-<center>
-<br><br>
-<h1>Мы в <s>соц. сетях</s> мессенджерах</h1>
-<br>
-<h3>Мы в Discord</h3>
-<iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="276" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-<br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
-<br>
-<h3>Мы в Telegram</h3>
-<br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
-</center>
-`;
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// Пример использования:
+let cookieValue = getCookie("notstandhoh");
+
+if (cookieValue) {
+console.log("ДА!")
+} else {
+console.log("НЕТ")
+window.location.pathname = "/errs/601.html";
+}
+
+}
+if (ccode == 'US') {
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// Пример использования:
+let cookieValue = getCookie("notstandhoh");
+
+if (cookieValue) {
+console.log("ДА!")
+} else {
+console.log("НЕТ")
+window.location.pathname = "/errs/601.html";
+}
 
 } else {
 var socialss = document.getElementById("insocials");
