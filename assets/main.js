@@ -213,6 +213,27 @@ socialss.innerHTML = `
 <br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
 </center>
 `;
+} else {
+var socialss = document.getElementById("insocials");
+socialss.innerHTML = `
+<center>
+<h1>Мы в <s>соц. сетях</s> мессенджерах</h1>
+<br>
+<h3>Мы в Discord</h3>
+<iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="276" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
+<br>
+<h3>Мы в Telegram</h3>
+<br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
+</center>
+`;
+}
+
+}
+if (ccode == 'IL') {
+document.body.innerHTML = "<h1>Error</h1>"
+document.title = "Error"
+alert("Наш сервер не работает в вашей стране.")
 }
 if (ccode == 'UA') {
 function getCookie(name) {
@@ -259,27 +280,6 @@ console.log("НЕТ")
 window.location.pathname = "/errs/601.html";
 }
 
-} else {
-var socialss = document.getElementById("insocials");
-socialss.innerHTML = `
-<center>
-<h1>Мы в <s>соц. сетях</s> мессенджерах</h1>
-<br>
-<h3>Мы в Discord</h3>
-<iframe src="https://discord.com/widget?id=1092814950596100116&theme=dark" width="276" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-<br><h4><a href="/ds">Перейти в дискорд-сервер!</a></h4>
-<br>
-<h3>Мы в Telegram</h3>
-<br><h4><a href="https://t.me/craftbipedmc">Перейти в телеграм канал!</a></h4>
-</center>
-`;
-}
-
-}
-if (ccode == 'IL') {
-document.body.innerHTML = "<h1>Error</h1>"
-document.title = "Error"
-alert("Наш сервер не работает в вашей стране.")
 }
 }
 
