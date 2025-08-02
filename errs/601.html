@@ -28,7 +28,9 @@ function setCookie(name, value, days) {
 function yes(){
 let notstandhohland = "yes";
 setCookie("notstandhoh", notstandhohland, 7000); 
-window.location.pathname = "/";
+let url = window.location.href;
+let hash = url.substring(url.indexOf('#') + 1);
+window.location.pathname = hash;
 }
 </script>
 </head>
