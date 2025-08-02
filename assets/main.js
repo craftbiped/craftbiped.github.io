@@ -255,7 +255,7 @@ console.log("ДА!")
 } else {
 console.log("НЕТ")
 redirurl = "/errs/601.html#"+ window.location.pathname +""
-window.location.pathname = redirurl;
+window.location.href = redirurl;
 }
 
 }
@@ -279,7 +279,7 @@ console.log("ДА!")
 } else {
 console.log("НЕТ")
 redirurl = "/errs/601.html#"+ window.location.pathname +""
-window.location.pathname = redirurl;
+window.location.href = redirurl;
 }
 
 }
