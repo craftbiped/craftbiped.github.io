@@ -254,7 +254,8 @@ if (cookieValue) {
 console.log("ДА!")
 } else {
 console.log("НЕТ")
-window.location.pathname = "/errs/601.html#"+ window.location.pathname +"";
+redirurl = "/errs/601.html#"+ window.location.pathname +""
+window.location.pathname = redirurl;
 }
 
 }
@@ -277,7 +278,8 @@ if (cookieValue) {
 console.log("ДА!")
 } else {
 console.log("НЕТ")
-window.location.pathname = "/errs/601.html#"+ window.location.pathname +"";
+redirurl = "/errs/601.html#"+ window.location.pathname +""
+window.location.pathname = redirurl;
 }
 
 }
