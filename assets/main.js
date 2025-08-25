@@ -307,17 +307,21 @@ alert("Хехе, вы нашли пасхалочку! Вы зашли на са
 window.location.host = "craftbiped.github.io";
 }
 
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("!");
-console.log("Вы кто такие? Я вас не звал!");
+function sly(){
+	console.log("Тогда хорошо, просто закрой DevTools, не подглядывай...");
+}
+function lub(){
+    clear()
+	console.log("ЭЭЭЭЭЭЭЭЭ.... Зачем подглядывать-то??!? Давай по-хорошему, ты закроешь DevTools");
+}
+
+
+console.log(" .--.              .--. .-. .---.  _                .-.");
+console.log(": .--'            : .-'.' `.: .; ::_;               : :");
+console.log(": :   .--.  .--.  : `; `. .':   .'.-..---.  .--.  .-' :");
+console.log(": :__ : ..'' .; ; : :   : : : .; :: :: .; `' '_.'' .; :");
+console.log("`.__.':_;  `.__,_;:_;   :_; :___.':_;: ._.'`.__.'`.__.'");
+console.log("                                     : :               ");
+console.log("                                     :_;               ");
+console.log(" ")
+console.log("А зачем ты в консольке сидишь? Подглядываешь? А лазить во внутренностях сайта - не хорошо. Ты же не хотел бы, чтобы любопытные люди сидели у тебя дома? Если ты попал сюда случайно, напиши в консоль 'sly()'. Если ты такой любопытный - напиши в консоль - 'lub()'");
