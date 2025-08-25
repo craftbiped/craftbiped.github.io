@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+  <url>
+    <loc>http://craftbiped.github.io/</loc>
+    <lastmod>2025-01-23T14:53:25+03:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/info</loc>
+    <lastmod>2025-01-23T14:53:25+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/donate</loc>
+    <lastmod>2025-01-23T14:53:25+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/rules</loc>
+    <lastmod>2025-01-23T14:53:25+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/update</loc>
+    <lastmod>2025-01-23T14:53:25+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/blog/</loc>
+    <lastmod>2025-01-22T18:46:11+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/blog/news/</loc>
+    <lastmod>2025-01-22T18:46:11+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://craftbiped.github.io/expectations/</loc>
+    <lastmod>2025-01-22T18:46:11+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

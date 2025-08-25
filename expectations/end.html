@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отсчёты - CraftBiped</title>
+  <link rel="icon" href="/assets/favicon.ico"><!-- 32×32 -->
+<style>
+a {
+    color: blue;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+ font-family: Arial;
+  color: black
+}
+ 
+.countdown-item {
+  margin: 0 20px;
+  text-align: center;
+  color: black
+}
+ 
+.countdown-item span {
+  display: block;
+  font-size: 2em;
+  color: black
+}
+ 
+.label {
+  font-size: 0.8em;
+  color: red
+}
+    { margin: 0; padding: 0; }
+    html {
+        background: url('../images/LETO.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: Arial;
+}
+button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+#title {
+   font-family: 'cursive';
+}
+</style>
+
+</head>
+<body>
+<center>
+<h1 id="header"></h1>
+<h2 id="disc"></h2>
+</center>
+</div>
+<script>
+function springtwo() {
+var headerheader = document.getElementById("header");
+headerheader.innerHTML = "Ура!";
+var discdisc = document.getElementById("disc");
+discdisc.innerHTML = "Наконец пришла эта тёплая пора! Кто-то будет отдыхать этим летом месяц, кто-то два, а кто-то и всё лето! Для школьников (не для всех) наступило беззаботное время отдыха!";
+setTimeout(springtri, 15000) 
+}
+function springtri() {
+var headerheader = document.getElementById("header");
+headerheader.innerHTML = "CraftBiped и ЛЕТО";
+var discdisc = document.getElementById("disc");
+discdisc.innerHTML = "Наши планы на лето 2025 можно прочитать <a href=\"https://craftbiped.github.io/blog/news/2025/05/30/summer-plans.html\">тут</a>!";
+setTimeout(springfo, 5500) 
+ // 11000
+}
+function springfo() {
+var headerheader = document.getElementById("header");
+headerheader.innerHTML = "Удачи!";
+var discdisc = document.getElementById("disc");
+discdisc.innerHTML = "Мы желаем вам удачно провести лето и не опустить его! Это то самое время, когда можно нассладиться теплом и хорошенько отдохнуть! Больше никаких холодов и грусти! УРА! Мы желаем вам удачи! До свидания!";
+setTimeout(end, 11000) 
+}
+
+
+
+
+
+function end() {
+window.location.href = "./";
+}
+</script>
+<script>
+var redir = "yes";
+if (window.location.hash == "#summer") {
+var redir = "no";
+var headerheader = document.getElementById("header");
+headerheader.innerHTML = "ДА! МЫ ДОЖДАЛИСЬ!";
+var discdisc = document.getElementById("disc");
+discdisc.innerHTML = "ЛЕТО НАСТУПИЛО! УРА!!!";
+setTimeout(springtwo, 3000) 
+}
+if (window.location.hash == "#newyear") {
+var redir = "no";
+}
+if (redir == "no") {
+// НЕТ РЕДИРЕКТА
+} 
+if (redir == "yes") {
+window.location.href = "./";
+}
+</script>
+</body>
+</html>

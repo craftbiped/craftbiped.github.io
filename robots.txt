@@ -1,0 +1,21 @@
+User-agent: *
+
+Disallow: /androidapp/
+Disallow: /images/
+Disallow: /content/
+Disallow: /go/
+Disallow: /offline/
+Disallow: /404.html
+Disallow: /400.html
+Disallow: /indexapp.html
+Disallow: /dsinapp.html
+Disallow: /infoapp.html
+Disallow: /maintenance.html
+Disallow: /favicon.ico
+Disallow: /styles.css
+Disallow: /site.js
+Disallow: /jquery.js
+Disallow: /wikipageadd
+Disallow: /htmlmenu.html
+Disallow: /ag.html
+Disallow: /ag

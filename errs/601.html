@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>страница ошибки 601</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+background-color: gray;
+color: white;
+}
+a {
+color: orange;
+}
+</style>
+<script>
+function setCookie(name, value, days) {
+  let expires = "";
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+// Пример использования:
+function yes(){
+let notstandhohland = "yes";
+setCookie("notstandhoh", notstandhohland, 7000); 
+let url = window.location.href;
+let hash = url.substring(url.indexOf('#') + 1);
+window.location.pathname = hash;
+}
+</script>
+</head>
+<body>
+<center>
+<br>
+<h1>Ошибка 601. Наш сервер не про политику!</h1>
+<br>
+<h1 id="nftext">Просто, на всякий случай!</h1>
+<br>
+<h3>Не пугайтесь, всё хорошо. Просто вам надо принять соглашение, что Вы не будете унижать какие-либо нации и/или государства!</h3>
+<h3>Наш сервер русский, однако, мы никого не унижаем! И Вы, пожалуйста, делайте взаимное, хотя бы в пределах нашего сервера!</h3>
+<h3>Вы принимаете это?</h3>
+<h3><a href="javascript:void(0)" onclick="yes()">ДА!</a></h3>
+<h3><a href="/errs/404.html">нет</a></h3>
+</center>
+</body>
+</html>

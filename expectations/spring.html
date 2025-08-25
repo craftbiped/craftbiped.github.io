@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ждём Весну 2026 вместе с CraftBiped</title>
+  <link rel="icon" href="/assets/favicon.ico"><!-- 32×32 -->
+<style>
+a {
+    color: blue;
+}
+.countdown {
+  justify-content: center;
+ font-family: Arial;
+  color: black
+}
+ 
+.countdown-item {
+  margin: 0 20px;
+  text-align: center;
+  color: black
+}
+ 
+.countdown-item span {
+  display: block;
+  font-size: 2em;
+  color: black
+}
+ 
+.label {
+  font-size: 0.8em;
+  color: red
+}
+    { margin: 0; padding: 0; }
+    html {
+        background: url('../images/spring.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: Arial;
+}
+button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+#title {
+   font-family: 'cursive';
+}
+</style>
+<script>
+function redirtime() {
+let thecurrentDate = new Date();
+var month = thecurrentDate.getMonth();
+if (month == "2") {
+window.location.href = "./end.html#spring";
+}
+}
+
+setInterval(redirtime, 1000);
+</script>
+</head>
+<body>
+<center>
+<p>
+  <button onclick="window.location.href = './';">Назад </button>
+</p>
+<div style="color: black">
+<h3>Сейчас:</h3>
+<p>
+<p id="clock"></p>
+<br>
+<h3>До весны 2026 осталось: </h3>
+</center>
+</div>
+<div class="countdown">
+  <div class="countdown-item">
+    <div><span id="days"></span> Дней</div>
+  </div>
+  <br><br>
+  <div class="countdown-item">
+    <div><span id="hours"></span> Часов</div>
+  </div>
+  <br><br>
+  <div class="countdown-item">
+    <div><span id="minutes"></span> Минут</div>
+  </div>
+  <br><br>
+  <div class="countdown-item">
+    <div><span id="seconds"></span> Секунд</div>
+  </div>
+</div>
+<script>
+const countdown = document.querySelector('.countdown');
+const targetDate = new Date('2026-03-01T00:00:01');
+ 
+function updateCountdown() {
+  const now = new Date();
+  const remainingTime = targetDate - now;
+ 
+  const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+ 
+  document.getElementById('days').innerText = days.toString().padStart(2, '0');
+  document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+  document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+  document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+}
+ 
+setInterval(updateCountdown, 20);
+</script>
+<script language="javascript" type="text/javascript">
+var d = new Date();
+var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
+var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа",
+"сентября","октября","ноября","декабря");
+var clockclock = document.getElementById("clock");
+clockclock.innerHTML = ""+day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ " " + d.getFullYear() + " г.";
+</script>
+<script>
+/*global window*/
+(function (global) {
+    "use strict";
+    function Clock(el) {
+        var document = global.document;
+        this.el = document.getElementById(el);
+        this.months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+        this.days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+    }
+    Clock.prototype.addZero = function (i) {
+        if (i < 10) {
+            i = "0" + i;
+            return i;
+        }
+        return i;
+    };
+    Clock.prototype.updateClock = function () {
+        var now, year, month, dayNo, day, hour, minute, second, result, self;
+        now = new global.Date();
+        year = now.getFullYear();
+        month = now.getMonth();
+        dayNo = now.getDay();
+        day = now.getDate();
+        hour = this.addZero(now.getHours());
+        minute = this.addZero(now.getMinutes());
+        second = this.addZero(now.getSeconds());
+        result = this.days[dayNo] + ", " + day + " " + this.months[month] + " " + year + " " + hour + ":" + minute + ":" + second;
+        self = this;
+        self.el.innerHTML = result;
+        global.setTimeout(function () {
+            self.updateClock();
+        }, 20);
+    };
+    global.Clock = Clock;
+}(window));
+
+function addEvent(elm, evType, fn, useCapture) {
+    "use strict";
+    if (elm.addEventListener) {
+        elm.addEventListener(evType, fn, useCapture);
+    } else if (elm.attachEvent) {
+        elm.attachEvent('on' + evType, fn);
+    } else {
+        elm['on' + evType] = fn;
+    }
+}
+
+addEvent(window, "load", function () {
+    if (document.getElementById("clock")) {
+        var clock = new Clock("clock");
+        clock.updateClock();
+    }
+});
+</script>
+</body>
+</html>
