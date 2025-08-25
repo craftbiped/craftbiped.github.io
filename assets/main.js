@@ -37,8 +37,8 @@ menumenu.innerHTML = `
 </div>
 <h2 id="title">CraftBiped - маленький сервер Minecraft!</h2>
 </a>
-<a href="/info" class="menuelement" id="title">ИНФОРМАЦИЯ О СЕРВЕРЕ</a><br><br>
-<a href="/assets/special/socials.html" class="menuelement" id="title">НАШИ СОЦ.СЕТИ</a><br>
+<a href="/info" class="menuelement">ИНФОРМАЦИЯ О СЕРВЕРЕ</a><br><br>
+<a href="/assets/special/socials.html" class="menuelement">НАШИ СОЦ.СЕТИ</a><br>
 <br>
 </div>
 <ul class="themenu" id="title">
