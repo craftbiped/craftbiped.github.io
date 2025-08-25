@@ -37,13 +37,12 @@ menumenu.innerHTML = `
 </div>
 <h2 id="title">CraftBiped - маленький сервер Minecraft!</h2>
 </a>
-<a href="/info" class="menuelement">ИНФОРМАЦИЯ О СЕРВЕРЕ</a><br><br>
-<a href="/assets/special/socials.html" class="menuelement">НАШИ СОЦ.СЕТИ</a><br>
 <br>
 </div>
 <ul class="themenu" id="title">
 <center>
-<li><a href="/" class="menuelement">ГЛАВНАЯ</a></li>
+<li><a href="/info" class="menuelement">ИНФОРМАЦИЯ О СЕРВЕРЕ</a></li>
+<li><a href="/assets/special/socials.html" class="menuelement">НАШИ СОЦ.СЕТИ</a></li>
 <li><a href="/donate" class="menuelement">ПОЛУЧЕНИЕ ПРИВИЛЕГИЙ</a></li>
 <li><a href="/rules" class="menuelement">ПРАВИЛА</a></li>
 <li><a href="/expectations/" class="menuelement">ОТСЧЁТЫ</a></li>
