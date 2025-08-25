@@ -58,7 +58,7 @@ p {
     font-style: normal;
 }
 #title {
-     font-family: 'titlefont';
+     font-family: 'Arial';
 }
  html {
      background-color: #aa7615;
@@ -132,7 +132,7 @@ border: 3px solid black;
 }
 .menuelement {
 color: white;
-font-family: 'Times New Roman';
+font-family: 'Arial';
 text-decoration: none;
 -webkit-text-stroke: 1px #000000; /* Толщина и цвет обводки */
   text-stroke: 1px #000000; /* Толщина и цвет обводки (стандартное свойство) */
