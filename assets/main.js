@@ -35,7 +35,7 @@ menumenu.innerHTML = `
 <div style="background-color:yellow; border: 1px double black; border-radius: 50%; width: 84px; height: 84px;"><br>
 <img src="/images/CraftBipedMinecraft.png" width="47" height="47">
 </div>
-<h2 id="title">CraftBiped - маленький сервер Minecraft!</h2>
+<h2 id="title">CRAFTBIPED - МАЛЕНЬКИЙ СЕРВЕР MINECRAFT!</h2>
 </a>
 <br>
 </div>
