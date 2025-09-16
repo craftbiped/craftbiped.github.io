@@ -134,8 +134,6 @@ border: 3px solid black;
 color: white;
 font-family: 'Arial';
 text-decoration: none;
--webkit-text-stroke: 1px #000000; /* Толщина и цвет обводки */
-  text-stroke: 1px #000000; /* Толщина и цвет обводки (стандартное свойство) */
 }
 .menuelement:hover {
 color: orange;
