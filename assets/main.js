@@ -302,8 +302,13 @@ console.log('Режим приложения выключен');
   }
 
 if (window.location.host == 'craftbiped.github.io.') {
+if (window.location.search == '?mode=admins') {
+	console.log("Тестирование новых функций");
+} else {
 alert("Хехе, вы нашли пасхалочку! Вы зашли на сайт craftbiped.github.io приписав в конце точку! Получилось: craftbiped.github.io. ! А теперь ловите пасхалку: 15 апреля 2012! Как вы думаете, что в этот день было?))) И нет, не только пасха!")
+	
 window.location.host = "craftbiped.github.io";
+}
 }
 
 function sly(){
