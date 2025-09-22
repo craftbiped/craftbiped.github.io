@@ -51,7 +51,7 @@ window.location.href = "http://t.me/s/craftbipedmc";
 <br><br><br><br><br><br>
 
 
-<p><a href="https://t.me/s/craftbipedmc">Ищите более старые новости? Кликните по этому тексту!</a></p>
+<news></news>
 <br><br><br>
 <br><br><br><br><br><br>
 <!-- Конец страницы -->
@@ -73,7 +73,11 @@ window.location.href = "http://t.me/s/craftbipedmc";
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
 
-
+<script>
+    fetch(`http://c98884cg.beget.tech/blog/allnews.html`).then(resu => resu.text()).then(text => {
+        document.getElementsByTagName('news')[0].innerHTML = text
+    })
+</script>
 <br>
 <h2 style="color:red;">МЫ НИКАК НЕ СВЯЗАНЫ С MOJANG AB И MICROSOFT CORP.</h2>
 </center>
