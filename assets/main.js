@@ -33,7 +33,7 @@ menumenu.innerHTML = `
 <center>
 <a href="/" class="menuelement">
 <div style="background-color:yellow; border: 1px double black; border-radius: 50%; width: 84px; height: 84px;"><br>
-<img src="/images/CraftBipedMinecraft.png" width="47" height="47">
+<img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="47" height="47">
 </div>
 <h2 id="title">CRAFTBIPED - МАЛЕНЬКИЙ СЕРВЕР MINECRAFT!</h2>
 </a>
@@ -65,7 +65,7 @@ menumenu.innerHTML = `
 var cop = document.getElementById("copyright");
 cop.innerHTML = `
 <br>
-<h2><img src="/images/CraftBipedMinecraft.png" width="70" height="70" align="center">
+<h2><img src="https://craftbiped.github.io/images/CraftBipedMinecraft.png" width="70" height="70" align="center">
 <span class="sitename-12812" id="title">CraftBiped </span>
 </h2><h4 class="element-12812" id="title">CraftBiped.mc.land</h4>
 <br><br>
