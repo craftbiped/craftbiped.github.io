@@ -45,6 +45,7 @@ menumenu.innerHTML = `
 <li><a href="/assets/special/socials.html" class="menuelement">НАШИ СОЦ.СЕТИ</a></li>
 <li><a href="/donate" class="menuelement">ПОЛУЧЕНИЕ ПРИВИЛЕГИЙ</a></li>
 <li><a href="/rules" class="menuelement">ПРАВИЛА</a></li>
+<li><a href="/blog/" class="menuelement">БЛОГ</a></li>
 <li><a href="/expectations/" class="menuelement">ОТСЧЁТЫ</a></li>
 <li><a href="/sets/" class="menuelement">НАБОРЫ</a></li>
 <li><a href="/support" class="menuelement">ПОДДЕРЖКА</a></li>
@@ -76,6 +77,7 @@ cop.innerHTML = `
 <p><a href="/rules" class="bottom-element">Правила</a></p>
 <p><a href="/info" class="bottom-element">Информация</a></p>
 <p><a href="/sets/" class="bottom-element">Наборы</a></p>
+<p><a href="/blog/" class="bottom-element">Блог</a></p>
 <p><a href="/donate" class="bottom-element">Получить привилегию</a></p>
 <p><a href="/expectations/" class="bottom-element">Отсчёты до ожидаемых событий</a></p>
 <p><a href="/support" class="bottom-element">Поддержка</a></p>
