@@ -114,6 +114,8 @@ function openmenu(){
 <br>
 <li><a href="/rules"> ПРАВИЛА</a></li>
 <br>
+<li><a href="/blog/"> БЛОГ</a></li>
+<br>
 <li><a href="/expectations/"> ОТСЧЁТЫ</a></li>
 <br>
 <li><a href="/support"> ПОДДЕРЖКА</a></li>
