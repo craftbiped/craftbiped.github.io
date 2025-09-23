@@ -55,7 +55,16 @@ if (window.location.search === "?craftbiped.github.io"){
 go();
 }
 if (window.location.search === "?craftbipedbuy.trademc.org"){
-go();
+var redirt = document.getElementById("redir");
+redirt.innerHTML = `
+<h1>Переход на: <span id="url23">Загрузка...</span> невозможен.</h1>
+<p>Начиная с января 2025 у нас снова бесплатный донат!</p>
+<br>
+<center>
+<h2><a href="/">Вернуться на главную официального сайта CraftBiped.</a></h2>
+<h2><a href="/blog/">Вернуться на главную официального блога CraftBiped.</a></h2>
+</center>
+`;
 } else {
 want()
 }
