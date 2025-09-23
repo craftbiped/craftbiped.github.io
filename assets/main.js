@@ -13,11 +13,6 @@ var jjs = document.getElementById("jsn");
 jjs.innerHTML = `
 `;
 
-    fetch(`https://craftbiped.github.io/assets/special/status.html`).then(resu => resu.text()).then(text => {
-        if (text == "maintenance"){
-			window.location.href == "/assets/special/maintenance.html"
-		}
-    })
 var menumenu = document.getElementById("menu");
 menumenu.innerHTML = `
 <!--<div id="jsnof" style="background-color: green;">
