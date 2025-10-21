@@ -58,7 +58,7 @@ p {
 }
 @font-face {
     font-family: 'titlefont';
-    src: url('/assets/zag.ttf') format('truetype');
+    src: url('https://craftbiped.is-best.net/assets/zag.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -74,7 +74,7 @@ p {
  #menu {
      border: 2px outset yellow;
      background-color: #ffb433;
-    background: url('/images/imagebg.png') no-repeat center center fixed;
+    background: url('https://craftbiped.is-best.net/images/imagebg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
