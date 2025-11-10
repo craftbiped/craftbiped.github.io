@@ -38,7 +38,7 @@ if errorlevel 1 (
   call :redraw
   echo [5;4HGAME[6;4HOVER[10;1H
   pause
-  exit
+  tetris.bat
 )
 
 :nextmove
