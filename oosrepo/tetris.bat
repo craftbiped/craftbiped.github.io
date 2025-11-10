@@ -98,7 +98,6 @@ if "%choiceIndex%"=="1" (
 )
 
 if "%choiceIndex%"=="5" (
-chcp 65001
 closeprogram
 )
 
@@ -318,4 +317,5 @@ for /L %%y in (%COPYTOLINE%,-1,0) do (
 )
 
 goto :eof
+
 
