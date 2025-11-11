@@ -7,7 +7,6 @@ cls
 if %yr% == 1900 set yr=1901
 if %yr% == 2113 set yr=2112
 set y=%yr%
-if %y% == 2023 goto e
 set jan_l=31&set feb_l=28&set mar_l=31&set apr_l=30&set may_l=31&set jun_l=30
 set jul_l=31&set aug_l=31&set sep_l=30&set oct_l=31&set nov_l=30&set dec_l=31
 set /a d=(y/4+y)-(y/100-y/400)
@@ -131,4 +130,5 @@ set /a yr=%y%+1
 goto snovy
 :tek
 set /a yr=%date:~-4,4%
+
 goto snovy
