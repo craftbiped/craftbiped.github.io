@@ -342,7 +342,7 @@ set "country_list[101]=Мальдивы"
 set "country_list[102]=Мальта" 
 set "country_list[103]=Марокко" 
 set "country_list[104]=Маршалловы Острова" 
-set "country_list[105]=Мексия" 
+set "country_list[105]=Мексика" 
 set "country_list[106]=Микронезия" 
 set "country_list[107]=Мозамбик" 
 set "country_list[108]=Молдова" 
@@ -601,4 +601,5 @@ echo del 5nc.bat >> remove5nc.bat
 echo closeprogram >> remove5nc.bat
 cd ..
 cd ..
+
 programfiles\temp\remove5nc.bat
