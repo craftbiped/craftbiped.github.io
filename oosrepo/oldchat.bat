@@ -1,14 +1,28 @@
 @echo off
-
+set inet=n
+echo Запуск...
+ping -n 1 c98884cg.beget.tech > nul
+if %ERRORLEVEL% equ 0 (
+    echo OK
+    set inet=y
+) else (
+    set inet=n
+    echo Нет подключения к интернету, либо сервера недоступны!
+    echo Проверьте подключение к интернету и повторите попытку!
+    echo Нажмите на любую клавишу для выхода...
+    pause > nul
+)
+if %inet% == y goto startt
+goto e
+:startt
 cls
 
 color 6f
 
 
 echo Добро пожаловать в OldChat 2.0!
-
 echo Укажите ваше имя:
-
+echo Нажмите Enter, чтобы оставить текущее имя пользователя.
 set namec=%username%
 
 set /p namec="? "
