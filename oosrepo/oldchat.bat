@@ -73,7 +73,7 @@ set /p jjjdjd="Введите новое сообщение. Введите upd,
 
 if "%jjjdjd%" == "exit" goto e
 
-if "%jjjdjd%" == "upd" goto go
+if "%jjjdjd%" == "upd" goto connect
 
 if "%jjjdjd%" == "ch" goto hah
 
