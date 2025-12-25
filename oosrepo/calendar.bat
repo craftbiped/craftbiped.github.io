@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 color 2f
-set yr=2114
+set yr=%date:~-4,4%
 :snovy
 cls
 if %yr% == 1900 set yr=1901
@@ -138,3 +138,4 @@ goto snovy
 set /a yr=%date:~-4,4%
 
 goto snovy
+
