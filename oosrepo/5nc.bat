@@ -271,7 +271,7 @@ goto skipdiscl
 :snbonus
 set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto otdali
+if "%country%" == "Украина" goto lost
 if "%country%" == "Литва" goto otdali
 if "%country%" == "Латвия" goto otdali
 if "%country%" == "Эстония" goto otdali
