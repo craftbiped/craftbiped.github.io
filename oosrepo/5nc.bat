@@ -20,7 +20,7 @@ cls
 echo Инициализация...
 cls
 color 2f
-echo ПЯТЬ НОЧЕЙ СО СТРАНАМИ (v2.0)
+echo ПЯТЬ НОЧЕЙ СО СТРАНАМ (v2.0)
 echo Ваша задача - любым способом спастись от Украины.
 echo Если вы столкнётесь с Украиной - конец игры.
 echo.
@@ -55,7 +55,7 @@ set /a prc=prc+1
 goto checks
 :sn1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto lost
+if "%country%" == "Украина" color 04 && goto ukraine
 ping 127.0.0.1 -n 2 > nul
 goto n1
 :n22
@@ -90,7 +90,7 @@ goto checks
 :sn2
 set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto lost
+if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
 if "%country%" == "Латвия" goto ucountry
 if "%country%" == "Эстония" goto ucountry
@@ -129,7 +129,7 @@ goto checks
 :sn3
 set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto lost
+if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
 if "%country%" == "Латвия" goto ucountry
 if "%country%" == "Эстония" goto ucountry
@@ -172,7 +172,7 @@ goto checks
 :sn4
 set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto lost
+if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
 if "%country%" == "Латвия" goto ucountry
 if "%country%" == "Эстония" goto ucountry
@@ -221,7 +221,7 @@ goto checks
 :sn5
 set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto lost
+if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
 if "%country%" == "Латвия" goto ucountry
 if "%country%" == "Эстония" goto ucountry
@@ -271,7 +271,7 @@ goto skipdiscl
 :snbonus
 set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
-if "%country%" == "Украина" goto lost
+if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto otdali
 if "%country%" == "Латвия" goto otdali
 if "%country%" == "Эстония" goto otdali
@@ -481,6 +481,42 @@ set "country_list[188]=Палестина"
 set /a random_index=%random% %% 189 
 set country=!country_list[%random_index%]!
 goto s%n%
+:ukraine
+ping 127.0.0.1 -n 3 > nul
+echo Тёмная ночь
+ping 127.0.0.1 -n 2 > nul
+echo Только пули свистят по степи
+ping 127.0.0.1 -n 2 > nul
+echo Только ветер гудит в проводах
+ping 127.0.0.1 -n 2 > nul
+echo Тускло звёзды мерцают
+ping 127.0.0.1 -n 2 > nul
+echo В тёмную ночь
+ping 127.0.0.1 -n 2 > nul
+echo Ты, любимая, знаю, не спишь
+ping 127.0.0.1 -n 2 > nul
+echo И у детской кроватки тайком
+ping 127.0.0.1 -n 2 > nul
+echo Ты слезу утираешь
+ping 127.0.0.1 -n 2 > nul
+color 40
+ping 127.0.0.1 -n 1 > nul
+color 04
+ping 127.0.0.1 -n 1 > nul
+color 40
+ping 127.0.0.1 -n 1 > nul
+color 04
+ping 127.0.0.1 -n 1 > nul
+color 40
+ping 127.0.0.1 -n 1 > nul
+color 04
+ping 127.0.0.1 -n 1 > nul
+color 40
+ping 127.0.0.1 -n 1 > nul
+color 04
+ping 127.0.0.1 -n 1 > nul
+color 40
+goto lost
 :otdali
 cls
 color 40
@@ -537,7 +573,7 @@ ping 127.0.0.1 -n 1 > nul
 color f4
 ping 127.0.0.1 -n 1 > nul
 ping 127.0.0.1 -n 3 > nul
-goto lost
+goto ukraine
 :ucountry
 cls
 color 4f
