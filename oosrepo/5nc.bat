@@ -245,7 +245,8 @@ color 5f
 echo.
 echo.    БОНУСНАЯ НОЧЬ...
 echo.    Сложность: СЛОЖНО
-echo.    Страны, КОТОРЫЕ ОТДАЮТ ВАС УКРАИНЕ: Литва, Латвия, Эстония, США, Япония, Азербайджан, Грузия, Германия, Финляндия, Микронезия, Польша
+echo.    Страны, КОТОРЫЕ ОТДАЮТ ВАС УКРАИНЕ: Литва, Эстония, США, Япония, Азербайджан, Грузия, Германия, Финляндия, Микронезия, Польша
+echo.    Страны, выполняющие ФУНКЦИЮ УКРАИНЫ: Латвия
 echo.    Принято стран: %prc%/30
 echo.
 if %prc% == 30 set prc=0&& goto winbonus
@@ -256,7 +257,7 @@ if %RNDD% == 8 echo Тсс, где-то рядом бегает Украина..
 choice /C 012 /M "К вам пришла страна. Нажмите на 1, чтобы открыть ей дверь. Нажмите 0, чтобы не впустить её, нажмите 2, чтобы выйти в главное меню"
 if %errorlevel% == 1 goto n5
 if %errorlevel% == 3 goto e
-goto checks
+goto checks2
 
 :winbonus
 color f0
@@ -273,7 +274,7 @@ set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
 if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto otdali
-if "%country%" == "Латвия" goto otdali
+if "%country%" == "Латвия" color 04 && goto ukraine
 if "%country%" == "Эстония" goto otdali
 if "%country%" == "Япония" goto otdali
 if "%country%" == "Азербайджан" goto otdali
@@ -536,6 +537,7 @@ echo %country% ТАЩИТ ВАС К УКРАИНЕ....................
 echo %country% ТАЩИТ ВАС К УКРАИНЕ....................
 echo %country% ТАЩИТ ВАС К УКРАИНЕ....................
 echo %country% ТАЩИТ ВАС К УКРАИНЕ....................
+set country=Украина
 color 4f
 ping 127.0.0.1 -n 1 > nul
 color f4
@@ -606,7 +608,7 @@ set country=!country_list[%random_index%]!
 goto s%n%
 :lost
 cls
-echo Украина..............
+echo %country%..............
 ping 127.0.0.1 -n 1 > nul
 color 36
 ping 127.0.0.1 -n 1 > nul
