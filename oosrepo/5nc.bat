@@ -32,6 +32,8 @@ choice /C 123 /M ""
 if %errorlevel% == 2 goto exit
 if %errorlevel% == 3 set prc=0 && goto nbonus
 set prc=0
+
+
 :n1
 cls
 color 08
@@ -56,6 +58,10 @@ goto checks
 :sn1
 echo К вам пришёл(ла).....%country%
 if "%country%" == "Украина" color 04 && goto ukraine
+if "%country%" == "Германия" goto germ
+if "%country%" == "Румыния" goto rum
+if "%country%" == "Франция" goto fr
+if "%country%" == "Хорватия" goto cro
 ping 127.0.0.1 -n 2 > nul
 goto n1
 :n22
@@ -92,8 +98,12 @@ set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
 if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
-if "%country%" == "Латвия" goto ucountry
+if "%country%" == "Латвия" goto latvijascha
 if "%country%" == "Эстония" goto ucountry
+if "%country%" == "Германия" goto germ
+if "%country%" == "Румыния" goto rum
+if "%country%" == "Франция" goto fr
+if "%country%" == "Хорватия" goto cro
 ping 127.0.0.1 -n 2 > nul
 goto n2
 
@@ -131,10 +141,14 @@ set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
 if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
-if "%country%" == "Латвия" goto ucountry
+if "%country%" == "Латвия" goto latvijascha
 if "%country%" == "Эстония" goto ucountry
 if "%country%" == "Польша" goto ucountry
 if "%country%" == "Япония" goto ucountry
+if "%country%" == "Германия" goto germ
+if "%country%" == "Румыния" goto rum
+if "%country%" == "Франция" goto fr
+if "%country%" == "Хорватия" goto cro
 ping 127.0.0.1 -n 2 > nul
 goto n3
 
@@ -174,15 +188,18 @@ set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
 if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
-if "%country%" == "Латвия" goto ucountry
+if "%country%" == "Латвия" goto latvijascha
 if "%country%" == "Эстония" goto ucountry
 if "%country%" == "Польша" goto ucountry
 if "%country%" == "Япония" goto ucountry
 if "%country%" == "Азербайджан" goto ucountry
 if "%country%" == "Грузия" goto ucountry
-if "%country%" == "Германия" goto ucountry
+if "%country%" == "Германия" goto germ3
 if "%country%" == "Финляндия" goto ucountry
 if "%country%" == "Микронезия" goto otdali
+if "%country%" == "Румыния" goto rum
+if "%country%" == "Франция" goto fr
+if "%country%" == "Хорватия" goto cro
 ping 127.0.0.1 -n 2 > nul
 goto n4
 
@@ -223,18 +240,21 @@ set /a prc=prc+1
 echo К вам пришёл(ла).....%country%
 if "%country%" == "Украина" color 04 && goto ukraine
 if "%country%" == "Литва" goto ucountry
-if "%country%" == "Латвия" goto ucountry
+if "%country%" == "Латвия" goto latvijascha
 if "%country%" == "Эстония" goto ucountry
 if "%country%" == "Япония" goto ucountry
 if "%country%" == "Азербайджан" goto ucountry
 if "%country%" == "Грузия" goto ucountry
-if "%country%" == "Германия" goto ucountry
+if "%country%" == "Германия" goto germ3
 if "%country%" == "Финляндия" goto ucountry
 if "%country%" == "Австрия" goto ucountry
 if "%country%" == "Великобритания" goto ucountry
 if "%country%" == "США" goto ucountry
 if "%country%" == "Микронезия" goto otdali
 if "%country%" == "Польша" goto otdali
+if "%country%" == "Румыния" goto rum
+if "%country%" == "Франция" goto fr
+if "%country%" == "Хорватия" goto cro
 ping 127.0.0.1 -n 2 > nul
 goto n5
 
@@ -286,6 +306,10 @@ if "%country%" == "Великобритания" goto otdali
 if "%country%" == "США" goto otdali
 if "%country%" == "Микронезия" goto otdali
 if "%country%" == "Польша" goto otdali
+if "%country%" == "Германия" goto germ
+if "%country%" == "Румыния" goto rum
+if "%country%" == "Франция" goto fr
+if "%country%" == "Хорватия" goto cro
 ping 127.0.0.1 -n 2 > nul
 goto nbonus
 
@@ -773,6 +797,125 @@ color f4
 ping 127.0.0.1 -n 1 > nul
 ping 127.0.0.1 -n 3 > nul
 goto ukraine
+
+
+
+:latvijascha
+cls
+set latvicount=0
+:latvijascha2
+cls
+echo ==-== ЧЕЛЛЕНДЖ ОТ ЛАТВИИ! ==-==
+echo НАЖМИ НА ЛЮБУЮ КЛАВИШУ 50 РАЗ!
+echo удачи!
+echo.
+echo %latvicount%/50
+if %latvicount% == 50 goto ucountry
+pause > nul
+set /a latvicount+=1
+goto latvijascha2
+
+
+
+
+
+:germ
+cls
+set latvicount=0
+:germ2
+cls
+echo ==-== ЧЕЛЛЕНДЖ ОТ ГЕРМАНИИ! ==-==
+echo НАЖМИ НА ЛЮБУЮ КЛАВИШУ 100 РАЗ!
+echo удачи!
+echo.
+echo %latvicount%/100
+if %latvicount% == 100 goto %n%
+pause > nul
+set /a latvicount+=1
+goto germ2
+
+:germ3
+cls
+set latvicount=0
+:germ23
+cls
+echo ==-== ЧЕЛЛЕНДЖ ОТ ГЕРМАНИИ! ==-==
+echo НАЖМИ НА ЛЮБУЮ КЛАВИШУ 100 РАЗ!
+echo удачи!
+echo.
+echo %latvicount%/100
+if %latvicount% == 100 goto ucountry
+pause > nul
+set /a latvicount+=1
+goto germ23
+
+
+
+
+
+
+
+:rum
+cls
+set latvicount=0
+:rum2
+cls
+echo ==-== ЧЕЛЛЕНДЖ ОТ РУМЫНИИ! ==-==
+echo НАЖМИ НА ЛЮБУЮ КЛАВИШУ 110 РАЗ!
+echo удачи!
+echo.
+echo %latvicount%/110
+if %latvicount% == 110 goto %n%
+pause > nul
+set /a latvicount+=1
+goto rum2
+
+
+
+
+
+
+
+:fr
+cls
+set latvicount=0
+:fr2
+cls
+echo ==-== ЧЕЛЛЕНДЖ ОТ ФРАНЦИИ! ==-==
+echo НАЖМИ НА ЛЮБУЮ КЛАВИШУ 90 РАЗ!
+echo удачи!
+echo.
+echo %latvicount%/90
+if %latvicount% == 90 goto %n%
+pause > nul
+set /a latvicount+=1
+goto fr2
+
+
+
+
+
+
+:cro
+cls
+set latvicount=0
+:cr2
+cls
+echo ==-== ЧЕЛЛЕНДЖ ОТ ХОРВАТИИ! ==-==
+echo НАЖМИ НА ЛЮБУЮ КЛАВИШУ 100 РАЗ!
+echo удачи!
+echo.
+echo %latvicount%/100
+if %latvicount% == 100 goto %n%
+pause > nul
+set /a latvicount+=1
+goto cr2
+
+
+
+
+
+
 :ucountry
 cls
 color 4f
