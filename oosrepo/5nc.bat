@@ -32,7 +32,7 @@ choice /C 123 /M ""
 if %errorlevel% == 2 goto exit
 if %errorlevel% == 3 set prc=0 && goto nbonus
 set prc=0
-
+set patron=0
 
 :n1
 cls
@@ -62,6 +62,7 @@ if "%country%" == "Германия" goto germ
 if "%country%" == "Румыния" goto rum
 if "%country%" == "Франция" goto fr
 if "%country%" == "Хорватия" goto cro
+if "%country%" == "Россия" goto immun
 ping 127.0.0.1 -n 2 > nul
 goto n1
 :n22
@@ -104,6 +105,7 @@ if "%country%" == "Германия" goto germ
 if "%country%" == "Румыния" goto rum
 if "%country%" == "Франция" goto fr
 if "%country%" == "Хорватия" goto cro
+if "%country%" == "Россия" goto immun
 ping 127.0.0.1 -n 2 > nul
 goto n2
 
@@ -149,6 +151,7 @@ if "%country%" == "Германия" goto germ
 if "%country%" == "Румыния" goto rum
 if "%country%" == "Франция" goto fr
 if "%country%" == "Хорватия" goto cro
+if "%country%" == "Россия" goto immun
 ping 127.0.0.1 -n 2 > nul
 goto n3
 
@@ -200,6 +203,7 @@ if "%country%" == "Микронезия" goto otdali
 if "%country%" == "Румыния" goto rum
 if "%country%" == "Франция" goto fr
 if "%country%" == "Хорватия" goto cro
+if "%country%" == "Россия" goto immun
 ping 127.0.0.1 -n 2 > nul
 goto n4
 
@@ -255,6 +259,7 @@ if "%country%" == "Польша" goto otdali
 if "%country%" == "Румыния" goto rum
 if "%country%" == "Франция" goto fr
 if "%country%" == "Хорватия" goto cro
+if "%country%" == "Россия" goto immun
 ping 127.0.0.1 -n 2 > nul
 goto n5
 
@@ -703,7 +708,25 @@ set "country_list[192]=Латвия"
 set /a random_index=%random% %% 192 
 set country=!country_list[%random_index%]!
 goto s%n%
+:immun
+set /a patron=patron+1
+echo +1 ПАТРОН ОТ ДРОБОВИКА
+color 2
+ping 127.0.0.1 -n 3 > nul
+goto %n%
 :ukraine
+if %patron% GTR 0 (
+echo.
+echo У ВАС ЕСТЬ ДРОБОВИК И %patron% ПАТРОНОВ К НЕМУ! 
+echo НАЖМИТЕ НА ЛЮБУЮ КЛАВИШУ ДЛЯ ВЫСТРЕЛА!
+pause > nul
+set /a patron=patron-1
+echo.
+color 2
+echo Вы можете продолжить игру! Но вы потеряли патрон! У вас осталось %patron% патронов!
+ping 127.0.0.1 -n 2 > nul
+goto %n%
+) 
 ping 127.0.0.1 -n 3 > nul
 echo Тёмная ночь
 ping 127.0.0.1 -n 2 > nul
