@@ -29,7 +29,7 @@ echo.
 echo.
 echo.
 choice /C 123 /M ""
-if %errorlevel% == 2 goto exit
+if %errorlevel% == 2 goto closeprogram
 if %errorlevel% == 3 set prc=0 && goto nbonus
 set prc=0
 set patron=0
@@ -1042,10 +1042,10 @@ pause > nul
 :e
 endlocal
 goto skipdiscl
-:exit
+:closeprogram
 endlocal
 closeprogram
-exit
+closeprogram
 :delete
 mkdir temp
 cd temp
